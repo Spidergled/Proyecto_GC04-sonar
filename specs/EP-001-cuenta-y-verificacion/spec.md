@@ -1,0 +1,188 @@
+# EP-001 — Cuenta y verificación institucional
+
+**Goals:** G-02, G-01
+**Alcance:** S-01
+**Baseline:** requisitos-v0 (Hito 2)
+**Boundary:** incluye el registro con correo institucional (sintético), la verificación del correo, el inicio y cierre de sesión, un perfil básico y la recuperación de contraseña. **No incluye** verificación de identidad por DNI, videollamada u otros medios (EX-04), ni integración con los sistemas reales de la UEx (EX-05).
+
+> Las estimaciones son la **referencia V0** propuesta antes del Planning Poker. Se sustituirán por la estimación consensuada; las individuales quedan en el Excel.
+
+## Epic outcome
+
+Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo institucional pueden publicar o contactar. Esa es la base de confianza de toda la plataforma.
+
+## Stories
+
+### US-001 — Registrar cuenta con correo institucional ⭐ *muestra detallada*
+
+> Como **estudiante de la UEx**, quiero **registrarme con mi correo institucional y una contraseña**, para **tener una cuenta en ErasmusNest que me identifique como miembro de la universidad**.
+
+- **Necesidad:** hoy no hay forma de saber si quien publica o responde un anuncio es estudiante de la UEx.
+- **Objetivo:** G-02 (confianza institucional).
+- **Prioridad:** Must. Sin cuenta no existe ninguna otra funcionalidad; es la primera pieza del recorrido esencial y la que hace posible G-02.
+- **Estimación:** 8 h-p
+- **Incertidumbre:** Baja
+- **Predecesoras:** —
+- **Plan inicial:** IT-001 (R1)
+
+#### Acceptance criteria
+
+- **US-001-AC-01:** el formulario pide correo, contraseña y confirmación de contraseña, y cada campo tiene su etiqueta visible.
+- **US-001-AC-02:** si el correo no pertenece al dominio institucional configurado, el registro se rechaza con el mensaje "Solo se admiten correos institucionales de la UEx".
+- **US-001-AC-03:** si el correo ya está registrado, se muestra un mensaje genérico ("Si el correo es válido, recibirás un enlace") que no revela si la cuenta existe.
+- **US-001-AC-04:** un registro válido crea la cuenta en estado **No verificada** y dispara el envío de la verificación (US-002).
+- **US-001-AC-05:** la contraseña debe tener al menos 8 caracteres, con una letra y un número; si no, se indica qué falta.
+
+#### Reglas, restricciones y NFR
+
+- **Reglas:** RN-01, RN-02.
+- **Restricciones:** solo cuentas sintéticas (NFR-009); el dominio institucional es configurable para poder usar un dominio de prueba.
+- **NFR:** NFR-001 (hash de contraseñas), NFR-004 (formulario accesible), NFR-007 (validación en servidor).
+- **Dependencias:**
+  - Funcionales: ninguna.
+  - Técnicas: modelo de datos de usuario y entorno base del proyecto, preparados por el TL en IT-001.
+  - Externas: tecnologías aprobadas en la asignatura (SU-07).
+
+#### Ejemplos
+
+| Entrada | Resultado |
+|---|---|
+| `ana.garcia@alumnos.unex.es` / `Erasmus2026` | Cuenta creada como **No verificada** y se envía la verificación. |
+| `ana.garcia@gmail.com` / `Erasmus2026` | Rechazado: correo no institucional. |
+| `ana.garcia@alumnos.unex.es` / `erasmus` | Rechazado: la contraseña necesita al menos 8 caracteres y un número. |
+
+#### Casos límite
+
+- Correo con mayúsculas (`Ana.Garcia@Alumnos.UNEX.es`): se normaliza a minúsculas y se trata como el mismo correo.
+- Espacios al principio o al final del correo: se eliminan antes de validar.
+- Subdominios parecidos (`@alumnos.unex.es.fake.com`): se rechazan, porque la validación comprueba que el correo *termina* exactamente en el dominio configurado.
+- Doble clic en "Registrarse": solo se crea una cuenta.
+
+#### Supuestos
+
+- SU-01: el dominio del correo basta para acreditar la pertenencia a la UEx.
+- El correo de verificación se recibe en un buzón de pruebas, no se envía a direcciones reales.
+
+---
+
+### US-002 — Verificar la cuenta mediante el correo institucional ⭐ *muestra detallada*
+
+> Como **estudiante recién registrado**, quiero **confirmar mi correo institucional mediante un enlace**, para **que mi cuenta quede verificada y pueda publicar y contactar**.
+
+- **Necesidad:** sin verificación, cualquiera podría registrarse con un correo institucional ajeno.
+- **Objetivo:** G-02; métrica M-02.
+- **Prioridad:** Must. Es lo que hace real la confianza institucional (G-02). Riesgo técnico medio por depender del envío de correo, así que conviene abordarlo pronto.
+- **Estimación:** 10 h-p
+- **Incertidumbre:** Media (envío de correo y caducidad del enlace)
+- **Predecesoras:** US-001
+- **Plan inicial:** IT-001 (R1)
+
+#### Acceptance criteria
+
+- **US-002-AC-01:** tras registrarse, el usuario recibe en su correo (buzón de pruebas) un enlace de verificación único.
+- **US-002-AC-02:** al abrir un enlace válido, la cuenta pasa a **Verificada** y se muestra un mensaje de confirmación.
+- **US-002-AC-03:** un enlace caducado (más de 24 h) o ya usado muestra un aviso y permite pedir un enlace nuevo.
+- **US-002-AC-04:** mientras la cuenta no está verificada, las acciones de publicar y contactar están bloqueadas y se indica por qué.
+
+#### Reglas, restricciones y NFR
+
+- **Reglas:** RN-02, RN-03.
+- **Restricciones:** no se envían correos a direcciones reales; en desarrollo y en la demo se usa un buzón de pruebas.
+- **NFR:** NFR-001, NFR-007, NFR-009.
+- **Dependencias:**
+  - Funcionales: US-001.
+  - Técnicas: componente de envío de correo.
+  - Externas: herramienta de buzón de pruebas compatible con las tecnologías aprobadas.
+
+#### Ejemplos
+
+- Ana se registra a las 10:00 y abre el enlace a las 10:05: su cuenta queda **Verificada** y ya ve el botón "Publicar anuncio".
+- Luis abre el enlace 30 horas después: ve "El enlace ha caducado" y el botón "Enviar un nuevo enlace".
+
+#### Casos límite
+
+- El usuario pide varios enlaces: solo vale el último; los anteriores quedan invalidados.
+- El enlace se abre exactamente a las 24:00:00 de su emisión: se considera caducado (el plazo es estrictamente menor de 24 h).
+- El enlace se abre con la sesión de otro usuario iniciada: verifica la cuenta del enlace, no la de la sesión.
+- Se manipula el token del enlace: "Enlace no válido", sin dar más detalles.
+
+#### Supuestos
+
+- Los participantes de las pruebas pueden consultar el buzón de pruebas durante la demo.
+
+---
+
+### US-003 — Iniciar y cerrar sesión
+
+> Como **estudiante verificado**, quiero **iniciar y cerrar sesión con mi correo y contraseña**, para **acceder a mis anuncios y conversaciones de forma segura**.
+
+- **Necesidad:** el usuario tiene que identificarse para publicar, contactar o consultar sus datos.
+- **Objetivo:** G-01, G-02.
+- **Prioridad:** Must. Todo el recorrido esencial pasa por aquí y es la base técnica de la autorización.
+- **Estimación:** 6 h-p
+- **Incertidumbre:** Baja
+- **Predecesoras:** US-001
+- **Plan inicial:** IT-001 (R1)
+
+#### Acceptance criteria
+
+- **US-003-AC-01:** con credenciales correctas el usuario accede a su panel; con credenciales incorrectas ve un mensaje genérico que no indica qué dato falla.
+- **US-003-AC-02:** tras 5 intentos fallidos seguidos, la cuenta se bloquea 15 minutos.
+- **US-003-AC-03:** "Cerrar sesión" invalida la sesión, y volver atrás en el navegador no muestra datos privados.
+- **US-003-AC-04:** la sesión caduca tras 2 horas de inactividad.
+
+#### Reglas, restricciones y NFR
+
+- **Reglas:** RN-02 (una cuenta no verificada puede entrar, pero con acciones limitadas).
+- **NFR:** NFR-001, NFR-004, NFR-007.
+- **Dependencias:** funcional US-001; técnica: mecanismo de sesión o autenticación definido por el TL.
+
+---
+
+### US-004 — Gestionar el perfil básico
+
+> Como **estudiante verificado**, quiero **indicar mi nombre visible, mi titulación y los idiomas en los que me puedo comunicar**, para **que la otra parte sepa con quién está tratando**.
+
+- **Necesidad:** mostrar solo "usuario verificado" genera poca confianza; un perfil mínimo ayuda a decidir.
+- **Objetivo:** G-02, G-01.
+- **Prioridad:** Should. Aporta confianza, pero el recorrido esencial funciona sin él. Su riesgo es bajo y no bloquea a otras historias.
+- **Estimación:** 5 h-p
+- **Incertidumbre:** Baja
+- **Predecesoras:** US-003
+- **Plan inicial:** IT-004 (R2)
+
+#### Acceptance criteria
+
+- **US-004-AC-01:** el usuario puede editar su nombre visible (2–40 caracteres), su titulación (lista cerrada) y sus idiomas (uno o varios).
+- **US-004-AC-02:** en anuncios y conversaciones se ven el nombre visible y el distintivo "Verificado UEx", pero nunca el correo.
+- **US-004-AC-03:** si se guarda con un campo obligatorio vacío, se indica qué campo falta.
+
+#### Reglas, restricciones y NFR
+
+- **NFR:** NFR-002, NFR-004, NFR-007.
+- **Dependencias:** funcional US-003.
+
+---
+
+### US-005 — Recuperar la contraseña
+
+> Como **estudiante registrado**, quiero **restablecer mi contraseña desde mi correo institucional**, para **no perder el acceso a mi cuenta si la olvido**.
+
+- **Necesidad:** sin recuperación, olvidar la contraseña obliga a crear otra cuenta, cosa que impide RN-01 porque el correo ya está registrado.
+- **Objetivo:** G-01.
+- **Prioridad:** Could. En una demo de 6 semanas con cuentas sintéticas el impacto es bajo; se podría resolver de forma manual en la demo.
+- **Estimación:** 5 h-p
+- **Incertidumbre:** Baja (reutiliza el mecanismo de envío de US-002)
+- **Predecesoras:** US-002, US-003
+- **Plan inicial:** IT-006 (R3)
+
+#### Acceptance criteria
+
+- **US-005-AC-01:** al pedir la recuperación se muestra siempre el mismo mensaje, exista o no la cuenta.
+- **US-005-AC-02:** el enlace recibido permite fijar una nueva contraseña que cumpla la política de US-001-AC-05; el enlace caduca en 1 hora y solo sirve una vez.
+- **US-005-AC-03:** tras el cambio, las sesiones abiertas de esa cuenta se cierran.
+
+#### Reglas, restricciones y NFR
+
+- **NFR:** NFR-001, NFR-007.
+- **Dependencias:** funcionales US-002 y US-003; técnica: componente de envío de correo.
