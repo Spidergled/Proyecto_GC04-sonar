@@ -40,6 +40,20 @@ Quedan expresamente fuera del proyecto:
 - **EX-04:** verificación de identidad más allá del correo institucional (DNI, videollamada u otros medios).
 - **EX-05:** integración con sistemas reales de la universidad (Aula Virtual, SIGMA u otros).
 
+## Supuestos
+
+El proyecto se planifica dando por ciertas las siguientes condiciones. Si alguna
+deja de cumplirse, se tratará como un cambio según el apartado *Gestión de cambios*.
+
+- **SU-01:** todo estudiante de la UEx dispone de un correo institucional con un dominio identificable, suficiente para acreditar su pertenencia a la universidad. En el proyecto se simula con cuentas de correo sintéticas.
+- **SU-02:** el acuerdo económico y legal del subarriendo (pago, fianza, contrato) se cierra entre las partes fuera de la plataforma; ErasmusNest solo facilita el encuentro y el contacto (coherente con EX-01 y EX-02).
+- **SU-03:** el estudiante que publica un anuncio cuenta con permiso del propietario del piso para subarrendar su habitación; la plataforma no lo comprueba y es responsabilidad del oferente.
+- **SU-04:** los usuarios acceden a la plataforma desde un navegador web actual, en ordenador o en móvil.
+- **SU-05:** la Delegación de Estudiantes (cliente) estará disponible para revisar y aceptar el incremento al cierre de cada release; en el contexto de la asignatura, este papel lo representa el profesorado.
+- **SU-06:** será posible reunir al menos cinco participantes ajenos al desarrollo (por ejemplo, compañeros de otros grupos) para medir M-01, M-03 y M-04.
+- **SU-07:** las tecnologías y convenciones que se aprueben en la asignatura permiten construir una aplicación web con autenticación y mensajería básica sin cambiar el alcance definido.
+- **SU-08:** la disponibilidad de cada miembro se mantiene según lo registrado en el cálculo de capacidad; las ausencias conocidas ya están descontadas.
+
 ## Restricciones
 
 El proyecto debe respetar las siguientes condiciones:
