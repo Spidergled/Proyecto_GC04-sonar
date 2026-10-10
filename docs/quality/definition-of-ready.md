@@ -28,7 +28,8 @@ No exige saberlo todo, sino lo suficiente para asumir el trabajo con una expecta
 
 - [ ] Tiene prioridad MoSCoW asignada y justificada (valor, riesgo, dependencias).
 - [ ] Tiene una estimación en horas-persona consensuada en Planning Poker.
-- [ ] La estimación cabe en **un solo sprint**: no supera la capacidad efectiva del equipo en esa iteración (hoja *Capacidad* del Excel). Si la supera, se divide antes de entrar al sprint.
+- [ ] La estimación cabe en **un solo sprint**: no supera la capacidad efectiva del equipo en esa iteración (hoja *Capacidad* del Excel). Si la supera, se divide en historias más pequeñas siempre que el catálogo no pase de 25 requisitos.
+- [ ] **Excepción (DEC-018):** si dividirla haría perder valor o superaría los 25 requisitos, la historia puede ocupar **como máximo dos iteraciones consecutivas**, siempre que su estimación no supere la capacidad efectiva de esas dos iteraciones. La justificación se escribe en su `spec.md` (campo *Plan inicial*). La historia solo cuenta como Hecha al final de la segunda iteración, cuando cumple la DoD completa. No se usa la descomposición en tareas (`TK-XXX`) para saltarse esta regla.
 - [ ] El nivel de incertidumbre está indicado (Baja / Media / Alta). Una historia con incertidumbre Alta solo entra si se ha planificado cómo reducirla (spike, consulta o prototipo).
 - [ ] Sus predecesoras están terminadas o planificadas en el mismo sprint antes que ella.
 
