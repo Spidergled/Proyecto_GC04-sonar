@@ -5,7 +5,7 @@
 **Baseline:** requisitos-v0 (Hito 2)
 **Boundary:** incluye el registro con correo institucional (sintético), la verificación del correo, el inicio y cierre de sesión, un perfil básico y la recuperación de contraseña. **No incluye** verificación de identidad por DNI, videollamada u otros medios (EX-04), ni integración con los sistemas reales de la UEx (EX-05).
 
-> Las estimaciones son la **referencia V0** propuesta antes del Planning Poker. Se sustituirán por la estimación consensuada; las individuales quedan en el Excel.
+> Las estimaciones son las **consensuadas en el Planning Poker del 10/10/2026**; entre paréntesis queda la referencia V0. Las estimaciones individuales están en el Excel y en la Wiki.
 
 ## Epic outcome
 
@@ -20,7 +20,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 - **Necesidad:** hoy no hay forma de saber si quien publica o responde un anuncio es estudiante de la UEx.
 - **Objetivo:** G-02 (confianza institucional).
 - **Prioridad:** Must. Sin cuenta no existe ninguna otra funcionalidad; es la primera pieza del recorrido esencial y la que hace posible G-02.
-- **Estimación:** 8 h-p
+- **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 8 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** —
 - **Plan inicial:** IT-001 (R1)
@@ -72,7 +72,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 - **Necesidad:** sin verificación, cualquiera podría registrarse con un correo institucional ajeno.
 - **Objetivo:** G-02; métrica M-02.
 - **Prioridad:** Must. Es lo que hace real la confianza institucional (G-02). Riesgo técnico medio por depender del envío de correo, así que conviene abordarlo pronto.
-- **Estimación:** 10 h-p
+- **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 10 h-p)
 - **Incertidumbre:** Media (envío de correo y caducidad del enlace)
 - **Predecesoras:** US-001
 - **Plan inicial:** IT-001 (R1)
@@ -119,7 +119,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 - **Necesidad:** el usuario tiene que identificarse para publicar, contactar o consultar sus datos.
 - **Objetivo:** G-01, G-02.
 - **Prioridad:** Must. Todo el recorrido esencial pasa por aquí y es la base técnica de la autorización.
-- **Estimación:** 6 h-p
+- **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 6 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-001
 - **Plan inicial:** IT-001 (R1)
@@ -147,7 +147,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 - **Necesidad:** mostrar solo "usuario verificado" genera poca confianza; un perfil mínimo ayuda a decidir.
 - **Objetivo:** G-02, G-01.
 - **Prioridad:** Should. Aporta confianza, pero el recorrido esencial funciona sin él. Su riesgo es bajo y no bloquea a otras historias.
-- **Estimación:** 5 h-p
+- **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-003
 - **Plan inicial:** IT-004 (R2)
@@ -174,7 +174,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 - **Necesidad:** sin recuperación, olvidar la contraseña obliga a crear otra cuenta, cosa que impide RN-01 porque el correo ya está registrado.
 - **Objetivo:** G-01.
 - **Prioridad:** Could. En una demo de 6 semanas con cuentas sintéticas el impacto es bajo; se podría resolver de forma manual en la demo.
-- **Estimación:** 5 h-p
+- **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja (reutiliza el mecanismo de envío de US-002)
 - **Predecesoras:** US-002, US-003
 - **Plan inicial:** IT-006 (R3)

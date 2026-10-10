@@ -5,7 +5,7 @@
 **Baseline:** requisitos-v0 (Hito 2)
 **Boundary:** incluye el conjunto de datos sintéticos, el guion de instalación y evaluación para un tercero, y la interfaz en español e inglés. **No incluye** el despliegue en producción con usuarios reales, la migración de datos reales (NFR-009) ni una app nativa (EX-03).
 
-> Las estimaciones son la **referencia V0** propuesta antes del Planning Poker.
+> Las estimaciones son las **consensuadas en el Planning Poker del 10/10/2026**; entre paréntesis queda la referencia V0. Las estimaciones individuales están en el Excel y en la Wiki.
 
 ## Epic outcome
 
@@ -20,7 +20,7 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 - **Necesidad:** sin datos, la demo está vacía y no se pueden probar la búsqueda, el rendimiento ni las métricas.
 - **Objetivo:** G-04; habilita las pruebas de M-01 a M-03.
 - **Prioridad:** Must. Lo exigen S-06 y la restricción de datos sintéticos. Reduce el riesgo de todas las pruebas, porque se usa desde R1.
-- **Estimación:** 6 h-p
+- **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 6 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-001, US-006
 - **Plan inicial:** IT-002 (R1); se amplía con conversaciones en IT-004
@@ -48,7 +48,7 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 - **Necesidad:** G-04 exige que un tercero pueda instalar y evaluar el incremento.
 - **Objetivo:** G-04; métrica M-04.
 - **Prioridad:** Must. Sin él, G-04 y M-04 no se cumplen y la entrega no se puede evaluar. Tiene un riesgo de integración que conviene probar antes de la última release.
-- **Estimación:** 5 h-p
+- **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Media (depende de las tecnologías que se aprueben)
 - **Predecesoras:** US-022
 - **Plan inicial:** IT-005 (R3); primera versión mínima en R1 para las revisiones
@@ -75,7 +75,7 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 - **Necesidad:** parte de los demandantes son estudiantes extranjeros que llegan a la UEx (ver la misión, experiencia "Inclusiva").
 - **Objetivo:** G-01.
 - **Prioridad:** Could. Tiene valor alto para un tipo de usuario, pero no figura en el alcance S-01…S-06. Es un esfuerzo transversal que conviene abordar cuando todas las pantallas estén estables. Si se planifica, se registrará la decisión de ampliar el alcance.
-- **Estimación:** 8 h-p
+- **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 8 h-p)
 - **Incertidumbre:** Media (afecta a todas las pantallas)
 - **Predecesoras:** US-015, US-018 (pantallas principales terminadas)
 - **Plan inicial:** IT-006 (R3)

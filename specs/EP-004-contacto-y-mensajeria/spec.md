@@ -5,7 +5,7 @@
 **Baseline:** requisitos-v0 (Hito 2)
 **Boundary:** incluye iniciar un contacto desde un anuncio, mantener una conversación de texto entre las dos partes, avisar de los mensajes nuevos dentro de la aplicación y reportar anuncios sospechosos. **No incluye** chat en tiempo real con indicador de "escribiendo", envío de ficheros, videollamadas, notificaciones por correo o push, ni negociación de pagos o contratos (EX-01, EX-02).
 
-> Las estimaciones son la **referencia V0** propuesta antes del Planning Poker.
+> Las estimaciones son las **consensuadas en el Planning Poker del 10/10/2026**; entre paréntesis queda la referencia V0. Las estimaciones individuales están en el Excel y en la Wiki.
 
 ## Epic outcome
 
@@ -20,7 +20,7 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 - **Necesidad:** en los canales informales hay que dar el teléfono a desconocidos, sin saber si son estudiantes reales.
 - **Objetivo:** G-01 (completa el recorrido esencial "buscar y contactar") y G-02 (solo contactan usuarios verificados).
 - **Prioridad:** Must. Sin contacto, el recorrido esencial no se completa y no se puede medir M-01. También es donde se aplica la protección de datos (NFR-002).
-- **Estimación:** 8 h-p
+- **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 8 h-p)
 - **Incertidumbre:** Media (modelo de conversación compartido con US-018)
 - **Predecesoras:** US-015, US-002
 - **Plan inicial:** IT-004 (R2)
@@ -69,7 +69,7 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 - **Necesidad:** un contacto sin respuesta posible no resuelve nada; hace falta ida y vuelta.
 - **Objetivo:** G-01, G-02.
 - **Prioridad:** Must. Sin respuesta no hay recorrido esencial. Es la historia de mayor esfuerzo de la épica, así que conviene empezarla pronto, en R2.
-- **Estimación:** 10 h-p
+- **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 10 h-p)
 - **Incertidumbre:** Media
 - **Predecesoras:** US-017
 - **Plan inicial:** IT-004 (R2)
@@ -97,7 +97,7 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 - **Necesidad:** la falta de respuesta rápida hace perder oportunidades de alojamiento.
 - **Objetivo:** G-01.
 - **Prioridad:** Should. Mejora mucho la experiencia, pero no bloquea el recorrido; su riesgo es bajo.
-- **Estimación:** 4 h-p
+- **Estimación:** 2 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 4 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-018
 - **Plan inicial:** IT-005 (R3)
@@ -124,7 +124,7 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 - **Necesidad:** aun con verificación pueden aparecer anuncios engañosos.
 - **Objetivo:** G-02.
 - **Prioridad:** Could. Refuerza la confianza, pero la verificación institucional ya cubre el riesgo principal. La revisión de los reportes quedaría para una versión futura.
-- **Estimación:** 4 h-p
+- **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 4 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-015, US-003
 - **Plan inicial:** IT-006 (R3)

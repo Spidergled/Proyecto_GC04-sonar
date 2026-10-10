@@ -5,7 +5,7 @@
 **Baseline:** requisitos-v0 (Hito 2)
 **Boundary:** incluye publicar, editar y cerrar el anuncio de una habitación, consultar los anuncios propios y su estado, y añadir fotos. **No incluye** pagos, fianzas ni reservas con compromiso económico (EX-01), contratos de subarriendo (EX-02) ni comprobar que el propietario autoriza el subarriendo (SU-03).
 
-> Las estimaciones son la **referencia V0** propuesta antes del Planning Poker.
+> Las estimaciones son las **consensuadas en el Planning Poker del 10/10/2026**; entre paréntesis queda la referencia V0. Las estimaciones individuales están en el Excel y en la Wiki.
 
 ## Epic outcome
 
@@ -20,7 +20,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 - **Necesidad:** hoy el estudiante difunde su habitación por grupos de WhatsApp o Facebook, sin formato común ni garantías.
 - **Objetivo:** G-01 (recorrido esencial: publicar).
 - **Prioridad:** Must. Sin anuncios no hay oferta que buscar: es el núcleo de valor del producto y el predecesor de toda EP-003 y EP-004.
-- **Estimación:** 10 h-p
+- **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 10 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-002, US-003
 - **Plan inicial:** IT-002 (R1)
@@ -73,7 +73,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 - **Necesidad:** sin fotos, el demandante tiene que pedir imágenes por mensaje, lo que alarga el proceso.
 - **Objetivo:** G-01.
 - **Prioridad:** Should. Aumenta mucho el valor percibido del anuncio, pero el recorrido esencial funciona sin fotos. Tiene un riesgo técnico moderado (almacenamiento de ficheros).
-- **Estimación:** 6 h-p
+- **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 6 h-p)
 - **Incertidumbre:** Media (almacenamiento de imágenes)
 - **Predecesoras:** US-006
 - **Plan inicial:** IT-005 (R3)
@@ -101,7 +101,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 - **Necesidad:** las fechas de movilidad cambian a menudo, y un anuncio desactualizado genera contactos inútiles.
 - **Objetivo:** G-03.
 - **Prioridad:** Should. Mantiene la información correcta (G-03), pero hay una alternativa temporal: cerrar el anuncio y publicar otro.
-- **Estimación:** 5 h-p
+- **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-006
 - **Plan inicial:** IT-005 (R3)
@@ -128,7 +128,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 - **Necesidad:** en los canales informales los anuncios resueltos siguen circulando y nadie sabe si siguen vigentes.
 - **Objetivo:** G-03 (claridad del estado); métrica M-03.
 - **Prioridad:** Must. Es el núcleo de G-03 y cierra el recorrido esencial (verificarse → publicar → buscar → contactar → cerrar). Tiene esfuerzo bajo y riesgo bajo.
-- **Estimación:** 4 h-p
+- **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 4 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-006
 - **Plan inicial:** IT-002 (R1)
@@ -175,7 +175,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 - **Necesidad:** el estudiante no sabe si su anuncio sigue vigente.
 - **Objetivo:** G-03.
 - **Prioridad:** Must. Es el punto desde el que se edita y se cierra el anuncio, y cumple la experiencia "Transparente" de la misión. Esfuerzo bajo.
-- **Estimación:** 5 h-p
+- **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-006
 - **Plan inicial:** IT-002 (R1)
@@ -202,7 +202,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 - **Necesidad:** muchos oferentes olvidan cerrar el anuncio.
 - **Objetivo:** G-03.
 - **Prioridad:** Could. Mejora G-03, pero el cierre manual (US-009) ya cubre lo esencial y en una demo de 6 semanas casi ningún anuncio llega a caducar.
-- **Estimación:** 4 h-p
+- **Estimación:** 2 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 4 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-009
 - **Plan inicial:** IT-006 (R3)
