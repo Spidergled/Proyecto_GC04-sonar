@@ -88,7 +88,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 
 - **Reglas:** RN-02, RN-03.
 - **Restricciones:** no se envían correos a direcciones reales; en desarrollo y en la demo se usa un buzón de pruebas.
-- **NFR:** NFR-001, NFR-007, NFR-009.
+- **NFR:** NFR-001, NFR-004 (avisos y botón de reenvío accesibles), NFR-007, NFR-009.
 - **Dependencias:**
   - Funcionales: US-001.
   - Técnicas: componente de envío de correo.

@@ -64,8 +64,8 @@ Un estudiante que busca alojamiento temporal encuentra en un solo sitio las habi
 #### Reglas, restricciones y NFR
 
 - **Reglas:** RN-08, RN-10.
-- **Restricciones:** las fechas se muestran en formato dd/mm/aaaa y se interpretan en hora peninsular española.
-- **NFR:** NFR-004 (selector de fechas usable con teclado), NFR-005 (< 2 s con ≥ 100 anuncios), NFR-007.
+- **Restricciones:** las fechas se muestran en formato dd/mm/aaaa y se interpretan en hora peninsular española; solo datos sintéticos (NFR-009).
+- **NFR:** NFR-004 (selector de fechas usable con teclado), NFR-005 (< 2 s con ≥ 100 anuncios), NFR-007, NFR-009.
 - **Dependencias:**
   - Funcionales: US-012. Debe combinarse con US-014.
   - Técnicas: consulta por rangos de fechas en el modelo de anuncio.
