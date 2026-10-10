@@ -84,6 +84,7 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 #### Reglas, restricciones y NFR
 
 - **Reglas:** RN-08, RN-11.
+- **Restricciones:** los mensajes de la demo son sintéticos (NFR-009); sin chat en tiempo real ni envío de ficheros (Boundary de EP-004).
 - **NFR:** NFR-002, NFR-004, NFR-005, NFR-007.
 - **Dependencias:** funcional US-017; técnica: el mismo modelo de conversación.
 
@@ -109,6 +110,8 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 
 #### Reglas, restricciones y NFR
 
+- **Reglas:** RN-11 (solo cuenta las conversaciones propias).
+- **Restricciones:** solo avisos dentro de la aplicación, sin correo ni push (Boundary de EP-004).
 - **NFR:** NFR-004.
 - **Dependencias:** funcional US-018.
 
@@ -134,6 +137,8 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 
 #### Reglas, restricciones y NFR
 
+- **Reglas:** ninguna específica.
+- **Restricciones:** la revisión de los reportes por la Delegación queda fuera de esta historia.
 - **NFR:** NFR-007.
 - **Dependencias:** funcionales US-015 y US-003.
 
@@ -158,5 +163,7 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 
 #### Reglas, restricciones y NFR
 
+- **Reglas:** pendientes de definir con la Delegación (EXT-04).
 - **Restricciones:** requeriría registrar una decisión de ampliación de alcance (`goals.md`, *Gestión de cambios*).
+- **NFR:** pendientes; la historia no se planifica.
 - **Dependencias:** funcional US-018; externa: criterio de moderación por parte de la Delegación.

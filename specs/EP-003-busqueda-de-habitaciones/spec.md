@@ -35,6 +35,7 @@ Un estudiante que busca alojamiento temporal encuentra en un solo sitio las habi
 #### Reglas, restricciones y NFR
 
 - **Reglas:** RN-08.
+- **Restricciones:** ninguna específica además de las generales del proyecto (solo datos sintéticos, NFR-009).
 - **NFR:** NFR-002 (no se muestra el correo del autor), NFR-005, NFR-006.
 - **Dependencias:** funcional US-006; conviene tener los datos sintéticos de US-022 para probar la paginación y el rendimiento.
 
@@ -115,6 +116,7 @@ Supongamos tres anuncios disponibles: **A** del 01/02 al 30/06, **B** del 15/03 
 #### Reglas, restricciones y NFR
 
 - **Reglas:** RN-06.
+- **Restricciones:** la lista de zonas es la misma que en US-006 (TD-03).
 - **NFR:** NFR-004, NFR-005.
 - **Dependencias:** funcional US-012; técnica: la lista de zonas compartida con US-006.
 
@@ -141,6 +143,7 @@ Supongamos tres anuncios disponibles: **A** del 01/02 al 30/06, **B** del 15/03 
 #### Reglas, restricciones y NFR
 
 - **Reglas:** RN-08.
+- **Restricciones:** nunca se muestra la dirección exacta ni el correo del autor (NFR-002).
 - **NFR:** NFR-002, NFR-004.
 - **Dependencias:** funcional US-012; el perfil (US-004) y las fotos (US-007) se añaden al detalle cuando estén terminadas.
 
@@ -165,5 +168,7 @@ Supongamos tres anuncios disponibles: **A** del 01/02 al 30/06, **B** del 15/03 
 
 #### Reglas, restricciones y NFR
 
+- **Reglas:** RN-08, RN-10 (prioridad por cobertura completa).
+- **Restricciones:** ninguna específica además de las generales del proyecto (solo datos sintéticos, NFR-009).
 - **NFR:** NFR-005.
 - **Dependencias:** funcionales US-012 y US-013 (por la regla de cobertura).

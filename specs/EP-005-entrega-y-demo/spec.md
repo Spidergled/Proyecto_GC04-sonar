@@ -35,6 +35,7 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 #### Reglas, restricciones y NFR
 
 - **Reglas:** todas las RN se cumplen también en los datos generados.
+- **Restricciones:** los correos usan el dominio de prueba configurado; ningún dato real (NFR-009).
 - **NFR:** NFR-005 (volumen para medir el rendimiento), NFR-009.
 - **Dependencias:** funcionales US-001 y US-006 (modelos de usuario y anuncio); se amplía cuando existe US-017.
 
@@ -60,6 +61,8 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 
 #### Reglas, restricciones y NFR
 
+- **Reglas:** ninguna específica.
+- **Restricciones:** depende de las tecnologías aprobadas en la asignatura (SU-07, EXT-01).
 - **NFR:** NFR-008.
 - **Dependencias:** funcional US-022; externa: disponibilidad de un evaluador externo (SU-06).
 
@@ -85,5 +88,7 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 
 #### Reglas, restricciones y NFR
 
+- **Reglas:** ninguna específica.
+- **Restricciones:** solo español e inglés; el contenido escrito por los usuarios no se traduce.
 - **NFR:** NFR-004 (atributo de idioma correcto en la página).
 - **Dependencias:** funcionales US-015 y US-018; técnica: textos de la interfaz separados del código desde el inicio, para que traducir sea barato. Es una recomendación al TL para IT-001.

@@ -87,6 +87,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 
 #### Reglas, restricciones y NFR
 
+- **Reglas:** ninguna específica.
 - **Restricciones:** en la demo solo se usan imágenes sintéticas o libres de derechos.
 - **NFR:** NFR-004, NFR-007, NFR-009.
 - **Dependencias:** funcional US-006; técnica: almacenamiento de ficheros.
@@ -114,6 +115,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 #### Reglas, restricciones y NFR
 
 - **Reglas:** RN-04, RN-05, RN-06, RN-08.
+- **Restricciones:** ninguna específica además de las generales del proyecto (solo datos sintéticos, NFR-009).
 - **NFR:** NFR-007.
 - **Dependencias:** funcional US-006.
 
@@ -125,7 +127,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 
 - **Necesidad:** en los canales informales los anuncios resueltos siguen circulando y nadie sabe si siguen vigentes.
 - **Objetivo:** G-03 (claridad del estado); métrica M-03.
-- **Prioridad:** Must. Es el núcleo de G-03 y una de las cinco capacidades del MVP que fija la constitución. Tiene esfuerzo bajo y riesgo bajo.
+- **Prioridad:** Must. Es el núcleo de G-03 y cierra el recorrido esencial (verificarse → publicar → buscar → contactar → cerrar). Tiene esfuerzo bajo y riesgo bajo.
 - **Estimación:** 4 h-p
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-006
@@ -141,6 +143,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 #### Reglas, restricciones y NFR
 
 - **Reglas:** RN-07, RN-08.
+- **Restricciones:** solo el autor puede cerrar su anuncio; solo datos sintéticos (NFR-009).
 - **NFR:** NFR-004 (el estado no se transmite solo con color, también con texto).
 - **Dependencias:**
   - Funcionales: US-006. US-012 y US-017 deben respetar el estado.
@@ -185,6 +188,8 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 
 #### Reglas, restricciones y NFR
 
+- **Reglas:** RN-07, RN-08.
+- **Restricciones:** ninguna específica además de las generales del proyecto (solo datos sintéticos, NFR-009).
 - **NFR:** NFR-002 (solo el autor ve esta lista), NFR-004.
 - **Dependencias:** funcional US-006.
 
@@ -210,4 +215,6 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 #### Reglas, restricciones y NFR
 
 - **Reglas:** RN-08.
+- **Restricciones:** el cierre se hace sin intervención del usuario; las fechas se interpretan en hora peninsular española, como en US-013.
+- **NFR:** ninguno específico.
 - **Dependencias:** funcional US-009; técnica: tarea programada o comprobación al consultar.

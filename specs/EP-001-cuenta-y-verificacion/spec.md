@@ -134,6 +134,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 #### Reglas, restricciones y NFR
 
 - **Reglas:** RN-02 (una cuenta no verificada puede entrar, pero con acciones limitadas).
+- **Restricciones:** solo cuentas sintéticas (NFR-009); el mecanismo de sesión depende de las tecnologías aprobadas en la asignatura (SU-07).
 - **NFR:** NFR-001, NFR-004, NFR-007.
 - **Dependencias:** funcional US-001; técnica: mecanismo de sesión o autenticación definido por el TL.
 
@@ -159,6 +160,8 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 
 #### Reglas, restricciones y NFR
 
+- **Reglas:** ninguna específica.
+- **Restricciones:** la titulación se elige de una lista cerrada; solo datos sintéticos (NFR-009).
 - **NFR:** NFR-002, NFR-004, NFR-007.
 - **Dependencias:** funcional US-003.
 
@@ -184,5 +187,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 
 #### Reglas, restricciones y NFR
 
+- **Reglas:** RN-01 (el enlace solo se envía al correo institucional registrado).
+- **Restricciones:** no se envían correos a direcciones reales; se usa el buzón de pruebas (EXT-02).
 - **NFR:** NFR-001, NFR-007.
 - **Dependencias:** funcionales US-002 y US-003; técnica: componente de envío de correo.
