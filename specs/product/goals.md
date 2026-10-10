@@ -1,5 +1,15 @@
 # ErasmusNest — Objetivos
 
+## Stakeholders
+
+| ID | Stakeholder | Interés | Influencia |
+|---|---|---|---|
+| SH-01 | Delegación de Estudiantes UEx (cliente) | Disponer de una herramienta institucional que ordene el subarriendo temporal de habitaciones entre su alumnado y le sirva para evaluar y reforzar el apoyo a la movilidad. | Alta: valida el producto y acepta el incremento al cierre de cada release (SU-05). |
+| SH-02 | Estudiantes oferentes | Subalquilar su habitación durante su periodo fuera a un estudiante verificado, sin depender de canales informales. | Media: sus necesidades guían las historias de publicación y cierre de anuncios, y participan en la medición de M-01 y M-03. |
+| SH-03 | Estudiantes demandantes | Encontrar una habitación que encaje con sus fechas de estancia y contactar con confianza con quien la ofrece. | Media: sus necesidades guían las historias de búsqueda y contacto, y participan en la medición de M-01 y M-03. |
+| SH-04 | Profesorado de la asignatura (revisor) | Comprobar que el proceso y los artefactos siguen la metodología de la asignatura y que el incremento es revisable. | Alta: revisa y evalúa cada entrega y, en el contexto de la asignatura, representa a la Delegación de Estudiantes (SU-05). |
+| SH-05 | Equipo Practical Software (Hugo, Gled y José) | Entregar un incremento de calidad, trazable y dentro del plazo, aprendiendo el proceso de la asignatura. | Alta: decide la solución técnica, planifica y construye el producto; el Product Owner decide sobre los cambios de alcance. |
+
 ## Objetivos
 
 | ID | Objetivo | Resultado esperado |
@@ -67,7 +77,9 @@ El proyecto debe respetar las siguientes condiciones:
 
 La cadena de trazabilidad será:
 
-**Misión → objetivos → épicas → historias → tareas → código y pruebas → evidencias**
+**Misión → Objetivos (G-XX) → Épicas (EP-XXX) → Historias (US-XXX) → Plan → Tareas (TK-XXX) → Código y Pruebas → Evidencias**
+
+Las evidencias son una extensión de la cadena oficial: recogen la prueba de que cada historia se ha entregado y verificado.
 
 Una épica que no contribuya a ningún objetivo se considera fuera del alcance hasta que se apruebe un cambio en este documento.
 
