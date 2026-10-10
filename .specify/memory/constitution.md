@@ -1,6 +1,6 @@
 # ErasmusNest — Constitution
 
-**Versión:** 1.0.0
+**Versión:** 1.1.0
 **Fecha de ratificación:** 2026-09-30
 **Ratificada por:** Hugo, Gled y José (equipo fundador, Practical Software)
 
@@ -20,7 +20,7 @@ respetar.
 Toda funcionalidad de ErasmusNest debe estar especificada antes de implementarse.
 Debe poder seguirse en todo momento la relación:
 
-**Necesidad → requisito → plan → tareas → código → pruebas**
+**Misión → Objetivos (G-XX) → Épicas (EP-XXX) → Historias (US-XXX) → Plan → Tareas (TK-XXX) → Código y pruebas → Evidencias**
 
 No se implementará ninguna funcionalidad que no esté justificada por una
 especificación aprobada.
@@ -28,9 +28,8 @@ especificación aprobada.
 ### 2. Disciplina de alcance del MVP
 
 El equipo se centra en las funcionalidades necesarias para un producto mínimo
-viable: verificación con correo institucional, publicación de anuncios,
-búsqueda/filtrado por fechas y zona, contacto entre las partes, y cierre de un
-anuncio. Cualquier ampliación de alcance deberá:
+viable, tal y como queda delimitado en el alcance incluido de
+`specs/product/goals.md`. Cualquier ampliación de alcance deberá:
 
 - Estar justificada.
 - Ser priorizada.
@@ -64,7 +63,8 @@ dominar el español y que utilizan la plataforma bajo presión de tiempo (llegad
 inminente, plazo de salida). Las funcionalidades deben ser comprensibles,
 consistentes y fáciles de usar. Los flujos principales, los mensajes de error y
 las interfaces deberán diseñarse teniendo en cuenta la accesibilidad y la
-diversidad de usuarios.
+diversidad de usuarios. Su cumplimiento se verifica mediante los criterios de
+aceptación de las historias afectadas.
 
 ## Reglas de Documentación
 
@@ -76,6 +76,12 @@ Cada artefacto tiene una responsabilidad diferente:
 
 Las decisiones importantes deberán quedar documentadas y los artefactos deberán
 mantener la trazabilidad entre ellos.
+
+Todo artefacto usa los identificadores acordados por el equipo: G-XX (objetivos),
+M-XX (indicadores), S-XX (alcance), EX-XX (exclusiones), SU-XX (supuestos) y
+SH-XX (stakeholders) en `goals.md`; EP-XXX, US-XXX, AC-XX, TK-XXX, ST-XXXX e
+IT-XXX en especificaciones, planes y tareas. Cada elemento referencia el
+identificador del nivel superior del que procede.
 
 ## Controles de Calidad
 
@@ -107,3 +113,4 @@ posible, temporales.
 | Versión | Fecha | Cambio |
 |---|---|---|
 | 1.0.0 | 2026-09-30 | Versión inicial de la constitución para ErasmusNest. |
+| 1.1.0 | 2026-10-10 | Correcciones de la auditoría del Hito 1: la cadena de trazabilidad del principio 1 se alinea con `goals.md`; el principio 2 remite al alcance de `goals.md` en lugar de enumerar funcionalidades; se añaden los identificadores a las Reglas de Documentación y el criterio de verificación del principio 5. Documentos afectados: `goals.md` (sin cambios de contenido por esta versión). |

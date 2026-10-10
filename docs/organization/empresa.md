@@ -27,7 +27,9 @@ especificación hasta la entrega final.
 
 - Equipo de 3 personas: Hugo (Product Owner), Gled (Tech Lead) y José (Scrum
   Master); las tareas de DevOps/QA se reparten de forma equitativa entre los
-  tres.
+  tres. El enunciado prevé equipos de 4–5 personas; al ser 3, DevOps/QA no
+  tiene responsable principal único y se reparte según el team charter
+  (justificación en la Wiki, DEC-002).
 - Cliente actual: la Delegación de Estudiantes de la Universidad de
   Extremadura (UEx), para quien se desarrolla **ErasmusNest**.
 - Tipo de cliente habitual: organizaciones pequeñas o medianas (asociaciones,

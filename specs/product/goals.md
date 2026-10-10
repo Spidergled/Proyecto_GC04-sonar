@@ -24,7 +24,7 @@
 | ID | Objetivo | Meta |
 |---|---|---|
 | M-01 | G-01 | Al menos cuatro de cinco participantes completan el recorrido esencial (publicar, o buscar y contactar) en menos de cinco minutos y sin ayuda. |
-| M-02 | G-02 | El 100 % de las cuentas de la demo quedan verificadas mediante correo institucional (sintético) antes de poder publicar o contactar. |
+| M-02 | G-02 | En las pruebas de aceptación, el 100 % de los intentos de publicar un anuncio o contactar desde una cuenta no verificada son rechazados, y el 100 % de las cuentas sintéticas de la demo se verifican mediante correo institucional antes de poder hacerlo. |
 | M-03 | G-03 | Al menos cuatro de cinco participantes identifican correctamente si un anuncio está disponible o cerrado tras consultarlo. |
 | M-04 | G-04 | Una persona que no haya participado en el desarrollo puede seguir el guion de instalación y evaluación sin intervenciones no documentadas. |
 | M-05 | Todos | No existe ningún defecto bloqueante abierto durante la revisión final de cada release. |

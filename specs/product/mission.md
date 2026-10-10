@@ -11,10 +11,10 @@ La experiencia debe permitir al estudiante:
 
 1. Verificarse como miembro de la UEx mediante su correo institucional.
 2. Publicar una habitación disponible o buscar una que se ajuste a sus fechas.
-3. Comparar las opciones disponibles por fecha, zona y condiciones.
+3. Comparar las opciones disponibles por fecha y zona.
 4. Contactar con la otra parte de forma segura dentro de la propia plataforma.
 5. Marcar el anuncio como cerrado cuando deja de estar disponible.
-6. Consultar en cualquier momento el estado de sus anuncios o contactos.
+6. Consultar en cualquier momento el estado de sus anuncios.
 
 ## Problema que se quiere resolver
 
@@ -76,5 +76,5 @@ ErasmusNest debe ofrecer una experiencia:
   visible y está actualizado.
 - **Segura:** el contacto entre las partes ocurre dentro de la plataforma, sin
   exponer datos innecesarios.
-- **Inclusiva:** comprensible también para estudiantes de intercambio que no
-  dominan el español.
+- **Inclusiva:** lenguaje claro y sencillo, comprensible también para
+  estudiantes de intercambio.
