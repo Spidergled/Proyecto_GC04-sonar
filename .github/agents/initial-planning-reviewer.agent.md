@@ -6,7 +6,6 @@ agents: []
 user-invocable: true
 disable-model-invocation: true
 ---
----
 
 # Initial Planning Reviewer
 
@@ -26,22 +25,30 @@ or generate an Excel workbook, ProjectLibre file, plan.md or tasks.md.
 
 ## Project configuration
 
-- Project: <PROJECT_NAME>
-- Input: docs/project/<EXCEL_NAME> if no file is found, ask for it.
-- Permitted report directory: docs/project/reviews/initial-planning/
+- Project: ErasmusNest (Proyecto_GC04, Practical Software).
+- Agent file version: 1.1 (2026-10-12). Record this version in every report.
+- Planning workbook: `docs/ErasmusNest_GC04_Requisitos_Capacidad.xlsx`. It is binary:
+  if you cannot read its cells, ask the team for a text export (CSV or Markdown) of the
+  sheets Requisitos, Capacidad and Resumen and of the planning sheet. Never guess values.
+- Permitted report directory: `docs/project/reviews/initial-planning/`
 - Report basename: initial-planning-review-vNN.md
-- Default report language: <LANGUAGE>.
+- Default report language: Spanish.
 - Default mode: READINESS; use CONSISTENCY only when explicitly requested.
-
-- Sprint length for this course: one week. 
+- Sprint length for this course: one week (IT-001 to IT-006, Wednesday to Tuesday).
+- Estimation unit: person-hours (h-p), consensus values from Planning Poker.
 - Baseline and reviewed scope: use the exact IDs and versions in the manifest.
+- Nomenclature: EP-XXX epics, US-XXX user stories, US-XXX-AC-NN acceptance criteria,
+  TK-XXX tasks, ST-XXXX subtasks, IT-XXX sprints.
 
-Adapt the paths to the real repository before use. Reuse existing shared sources
-instead of creating duplicate definitions. 
+Source locations, to be resolved through the manifest:
 
-Suggested source locations, to be resolved through the manifest:
-
-- <FILES or FOLDERS>
+- Governance: `.specify/memory/constitution.md`.
+- Goals, scope S-XX, exclusions EX-XX, assumptions and constraints: `specs/product/goals.md`.
+- Stories with priority, estimate, predecessors and initial plan: `specs/EP-XXX-*/spec.md`.
+- NFRs and business rules: `specs/product/nfr-y-reglas.md`.
+- Definition of Ready and Done: `docs/quality/definition-of-ready.md`, `docs/quality/definition-of-done.md`.
+- Requirements disposition: latest `docs/project/reviews/requirements/requirements-report-vNN.md`
+  and the human decision log `docs/project/reviews/registro-ia.md`.
 
 ## Read and write boundaries
 
@@ -71,6 +78,13 @@ Suggested source locations, to be resolved through the manifest:
   and money are different quantities. 
 - Derive effective capacity from declared availability and explicit deductions.
   Do not assume a standard workweek or an invented focus factor. 
+- Ask the team for missing data. Do not invent estimates, a historical velocity or a
+  conversion factor. If the team declares a conversion model (for example, story
+  points to person-hours), record it as an assumption that needs evidence.
+- Overallocation is not allowed in this course: any person and week whose assigned
+  load exceeds that person's effective capacity is a blocking finding.
+- Cost requires a rate per person or role supplied by the team; without it, report
+  cost as unknown and ask for the rate.
 
 ## Review procedure
 
