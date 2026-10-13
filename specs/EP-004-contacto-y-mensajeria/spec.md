@@ -19,7 +19,7 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 
 - **Necesidad:** en los canales informales hay que dar el teléfono a desconocidos, sin saber si son estudiantes reales.
 - **Objetivo:** G-01 (completa el recorrido esencial "buscar y contactar") y G-02 (solo contactan usuarios verificados).
-- **Prioridad:** Must. Sin contacto, el recorrido esencial no se completa y no se puede medir M-01. También es donde se aplica la protección de datos (NFR-002).
+- **Prioridad:** Must. Sin contacto, el recorrido esencial no se completa y no se puede medir M-01. También es donde se aplica la protección de datos (NFR-002). Riesgo medio: define el modelo de conversación que comparte con US-018 y es donde más fácil sería exponer datos de otro usuario (RN-11).
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 8 h-p)
 - **Incertidumbre:** Media (modelo de conversación compartido con US-018)
 - **Predecesoras:** US-015, US-002
@@ -68,7 +68,7 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 
 - **Necesidad:** un contacto sin respuesta posible no resuelve nada; hace falta ida y vuelta.
 - **Objetivo:** G-01, G-02.
-- **Prioridad:** Must. Sin respuesta no hay recorrido esencial. Es la historia de mayor esfuerzo de la épica, así que conviene empezarla pronto, en R2.
+- **Prioridad:** Must. Sin respuesta no hay recorrido esencial. Es la historia de mayor esfuerzo de la épica, así que conviene empezarla pronto, en R2. Riesgo medio, por compartir el modelo con US-017 y por el control de acceso a conversaciones ajenas (RN-11).
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 10 h-p)
 - **Incertidumbre:** Media
 - **Predecesoras:** US-017

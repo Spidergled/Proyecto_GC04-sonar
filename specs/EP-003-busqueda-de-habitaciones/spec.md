@@ -19,7 +19,7 @@ Un estudiante que busca alojamiento temporal encuentra en un solo sitio las habi
 
 - **Necesidad:** hoy la oferta está dispersa en varios canales.
 - **Objetivo:** G-01.
-- **Prioridad:** Must. Es la base de toda la búsqueda y la primera pantalla del recorrido del demandante.
+- **Prioridad:** Must. Es la base de toda la búsqueda y la primera pantalla del recorrido del demandante. Riesgo funcional bajo, pero con riesgo de rendimiento (NFR-005) en cuanto haya 100 anuncios, por eso se prueba con los datos de US-022.
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 6 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-006
@@ -128,7 +128,7 @@ Supongamos tres anuncios disponibles: **A** del 01/02 al 30/06, **B** del 15/03 
 
 - **Necesidad:** antes de contactar hay que saber qué se ofrece exactamente y si sigue vigente.
 - **Objetivo:** G-03 (métrica M-03), G-01.
-- **Prioridad:** Must. Es donde se materializa la claridad del estado (G-03) y el punto de entrada al contacto (US-017).
+- **Prioridad:** Must. Es donde se materializa la claridad del estado (G-03) y el punto de entrada al contacto (US-017). Riesgo bajo, aunque concentra las exigencias de privacidad (NFR-002) y de accesibilidad del estado (NFR-004).
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-012
@@ -155,7 +155,7 @@ Supongamos tres anuncios disponibles: **A** del 01/02 al 30/06, **B** del 15/03 
 
 - **Necesidad:** con muchos resultados, comparar a mano es lento.
 - **Objetivo:** G-01.
-- **Prioridad:** Could. Comodidad con valor bajo: con el volumen de la demo los filtros son suficientes.
+- **Prioridad:** Could. Comodidad con valor bajo: con el volumen de la demo los filtros son suficientes. Riesgo bajo, siempre que la regla de cobertura de US-013 esté cerrada antes.
 - **Estimación:** 2 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 3 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-012, US-013

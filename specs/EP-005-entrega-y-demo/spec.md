@@ -74,7 +74,7 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 
 - **Necesidad:** parte de los demandantes son estudiantes extranjeros que llegan a la UEx (ver la misión, experiencia "Inclusiva").
 - **Objetivo:** G-01.
-- **Prioridad:** Could. Tiene valor alto para un tipo de usuario, pero no figura en el alcance S-01…S-06. Es un esfuerzo transversal que conviene abordar cuando todas las pantallas estén estables. Si se planifica, se registrará la decisión de ampliar el alcance.
+- **Prioridad:** Could. Tiene valor alto para un tipo de usuario, pero no figura en el alcance S-01…S-06. Es un esfuerzo transversal que conviene abordar cuando todas las pantallas estén estables. Si se planifica, se registrará la decisión de ampliar el alcance. Riesgo medio: afecta a todas las pantallas, y si los textos no se separan del código desde IT-001, traducir sale mucho más caro.
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 8 h-p)
 - **Incertidumbre:** Media (afecta a todas las pantallas)
 - **Predecesoras:** US-015, US-018 (pantallas principales terminadas)

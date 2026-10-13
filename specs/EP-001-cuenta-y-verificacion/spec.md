@@ -19,7 +19,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 
 - **Necesidad:** hoy no hay forma de saber si quien publica o responde un anuncio es estudiante de la UEx.
 - **Objetivo:** G-02 (confianza institucional).
-- **Prioridad:** Must. Sin cuenta no existe ninguna otra funcionalidad; es la primera pieza del recorrido esencial y la que hace posible G-02.
+- **Prioridad:** Must. Sin cuenta no existe ninguna otra funcionalidad; es la primera pieza del recorrido esencial y la que hace posible G-02. Riesgo bajo en sí misma, pero fija el modelo de usuario del que dependen todas las demás historias: un retraso aquí bloquea el proyecto entero.
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 8 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** —
@@ -118,7 +118,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 
 - **Necesidad:** el usuario tiene que identificarse para publicar, contactar o consultar sus datos.
 - **Objetivo:** G-01, G-02.
-- **Prioridad:** Must. Todo el recorrido esencial pasa por aquí y es la base técnica de la autorización.
+- **Prioridad:** Must. Todo el recorrido esencial pasa por aquí y es la base técnica de la autorización. Riesgo bajo, aunque un fallo de autenticación comprometería G-02 y NFR-001; por eso se aborda en la primera iteración.
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 6 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-001
@@ -173,7 +173,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 
 - **Necesidad:** sin recuperación, olvidar la contraseña obliga a crear otra cuenta, cosa que impide RN-01 porque el correo ya está registrado.
 - **Objetivo:** G-01.
-- **Prioridad:** Could. En una demo de 6 semanas con cuentas sintéticas el impacto es bajo; se podría resolver de forma manual en la demo.
+- **Prioridad:** Could. En una demo de 6 semanas con cuentas sintéticas el impacto es bajo; se podría resolver de forma manual en la demo. Riesgo bajo, porque reutiliza el envío de correo de US-002; dejarla para el final no compromete a ninguna otra historia.
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja (reutiliza el mecanismo de envío de US-002)
 - **Predecesoras:** US-002, US-003
