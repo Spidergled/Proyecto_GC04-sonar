@@ -1,6 +1,6 @@
 # ErasmusNest — Constitution
 
-**Versión:** 1.1.0
+**Versión:** 1.2.0
 **Fecha de ratificación:** 2026-09-30
 **Ratificada por:** Hugo, Gled y José (equipo fundador, Practical Software)
 
@@ -95,6 +95,29 @@ comprobarse que:
 - Considera calidad, pruebas, seguridad y accesibilidad.
 - No contiene decisiones importantes sin justificar.
 
+## Flujo de entrega
+
+Toda historia recorre estas etapas en orden. Ninguna se salta; cualquier excepción
+se trata según el apartado *Gobierno*. El detalle operativo (ceremonias, estados
+del tablero y estimación) está en la página *Proceso de desarrollo* de la Wiki.
+
+1. **Especificación:** la historia se redacta en el `spec.md` de su épica, con su
+   trazabilidad a `goals.md` (G-XX y S-XX).
+2. **Refinamiento:** el Product Owner comprueba la Definition of Ready. Si no la
+   cumple, no entra en el Sprint Planning.
+3. **Planificación:** entra en una iteración solo si su estimación cabe en la
+   capacidad efectiva disponible y sus predecesoras están terminadas o planificadas
+   antes en la misma iteración.
+4. **Implementación:** se trabaja en una rama propia; los commits citan el `US-XXX`
+   o el `TK-XXX` correspondiente.
+5. **Integración:** el cambio entra en `main` solo mediante una pull request
+   revisada y aprobada por un miembro distinto de su autor.
+6. **Verificación:** se cumple la Definition of Done y las evidencias de los
+   criterios de aceptación quedan enlazadas desde la historia.
+7. **Aceptación:** el Product Owner acepta o rechaza la historia en la Sprint
+   Review frente a sus criterios de aceptación; cualquier desviación se registra
+   como decisión.
+
 ## Gobierno
 
 Esta constitución tiene prioridad sobre el resto de los documentos del proyecto.
@@ -114,3 +137,4 @@ posible, temporales.
 |---|---|---|
 | 1.0.0 | 2026-09-30 | Versión inicial de la constitución para ErasmusNest. |
 | 1.1.0 | 2026-10-10 | Correcciones de la auditoría del Hito 1: la cadena de trazabilidad del principio 1 se alinea con `goals.md`; el principio 2 remite al alcance de `goals.md` en lugar de enumerar funcionalidades; se añaden los identificadores a las Reglas de Documentación y el criterio de verificación del principio 5. Documentos afectados: `goals.md` (sin cambios de contenido por esta versión). |
+| 1.2.0 | 2026-10-13 | Se añade la sección *Flujo de entrega* para cubrir el apartado de Quality Gates and Delivery Workflow (DEC-019). No cambia ningún principio. Documentos afectados: ninguno; la DoR, la DoD y *Proceso de desarrollo* ya recogen estas comprobaciones. |
