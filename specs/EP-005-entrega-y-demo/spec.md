@@ -19,7 +19,7 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 
 - **Necesidad:** sin datos, la demo está vacía y no se pueden probar la búsqueda, el rendimiento ni las métricas.
 - **Objetivo:** G-04; habilita las pruebas de M-01 a M-03.
-- **Prioridad:** Must. Lo exigen S-06 y la restricción de datos sintéticos. Reduce el riesgo de todas las pruebas, porque se usa desde R1.
+- **Prioridad:** Must. Valor: lo exigen S-06 y la restricción de datos sintéticos; habilita las pruebas de M-01 a M-03. · Riesgo: bajo, y reduce el riesgo de todas las pruebas porque se usa desde R1. · Dependencias: necesita US-001 y US-006; de ella depende US-023.
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 6 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-001, US-006
@@ -47,7 +47,7 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 
 - **Necesidad:** G-04 exige que un tercero pueda instalar y evaluar el incremento.
 - **Objetivo:** G-04; métrica M-04.
-- **Prioridad:** Must. Sin él, G-04 y M-04 no se cumplen y la entrega no se puede evaluar. Tiene un riesgo de integración que conviene probar antes de la última release.
+- **Prioridad:** Must. Valor: sin él no se cumplen G-04 ni M-04 y la entrega no se puede evaluar. · Riesgo: medio de integración (depende de las tecnologías aprobadas, EXT-01, y de un evaluador externo, EXT-03); conviene probarlo antes de la última release. · Dependencias: necesita US-022; ninguna depende de ella.
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Media (depende de las tecnologías que se aprueben)
 - **Predecesoras:** US-022
@@ -74,7 +74,7 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 
 - **Necesidad:** parte de los demandantes son estudiantes extranjeros que llegan a la UEx (ver la misión, experiencia "Inclusiva").
 - **Objetivo:** G-01.
-- **Prioridad:** Could. Tiene valor alto para un tipo de usuario, pero no figura en el alcance S-01…S-06. Es un esfuerzo transversal que conviene abordar cuando todas las pantallas estén estables. Si se planifica, se registrará la decisión de ampliar el alcance. Riesgo medio: afecta a todas las pantallas, y si los textos no se separan del código desde IT-001, traducir sale mucho más caro.
+- **Prioridad:** Could. Valor: alto para un tipo de usuario, pero no figura en el alcance S-01…S-06; si se planifica, se registrará la decisión de ampliar el alcance. · Riesgo: medio; afecta a todas las pantallas y solo es barata si los textos se externalizan desde IT-001 (TD-06). · Dependencias: necesita US-015 y US-018; ninguna depende de ella.
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 8 h-p)
 - **Incertidumbre:** Media (afecta a todas las pantallas)
 - **Predecesoras:** US-015, US-018 (pantallas principales terminadas)

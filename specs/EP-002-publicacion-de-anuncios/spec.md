@@ -19,7 +19,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 
 - **Necesidad:** hoy el estudiante difunde su habitación por grupos de WhatsApp o Facebook, sin formato común ni garantías.
 - **Objetivo:** G-01 (recorrido esencial: publicar).
-- **Prioridad:** Must. Sin anuncios no hay oferta que buscar: es el núcleo de valor del producto y el predecesor de toda EP-003 y EP-004. Riesgo técnico bajo, pero es la historia con más reglas de validación (RN-04 a RN-07), por lo que conviene cerrarla pronto.
+- **Prioridad:** Must. Valor: sin anuncios no hay oferta que buscar; es el núcleo de valor del producto. · Riesgo: técnico bajo, pero es la historia con más reglas de validación (RN-04 a RN-07), así que conviene cerrarla pronto. · Dependencias: necesita US-002 y US-003; es la historia con más sucesoras (US-007, US-008, US-009, US-010, US-012 y US-022) y la predecesora de toda EP-003 y EP-004.
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 10 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-002, US-003
@@ -72,7 +72,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 
 - **Necesidad:** sin fotos, el demandante tiene que pedir imágenes por mensaje, lo que alarga el proceso.
 - **Objetivo:** G-01.
-- **Prioridad:** Should. Aumenta mucho el valor percibido del anuncio, pero el recorrido esencial funciona sin fotos. Tiene un riesgo técnico moderado (almacenamiento de ficheros).
+- **Prioridad:** Should. Valor: aumenta mucho el valor percibido del anuncio, pero el recorrido esencial funciona sin fotos. · Riesgo: técnico moderado, por el almacenamiento de ficheros (TD-05). · Dependencias: necesita US-006; ninguna depende de ella.
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 6 h-p)
 - **Incertidumbre:** Media (almacenamiento de imágenes)
 - **Predecesoras:** US-006
@@ -100,7 +100,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 
 - **Necesidad:** las fechas de movilidad cambian a menudo, y un anuncio desactualizado genera contactos inútiles.
 - **Objetivo:** G-03.
-- **Prioridad:** Should. Mantiene la información correcta (G-03), pero hay una alternativa temporal: cerrar el anuncio y publicar otro. Riesgo bajo: reutiliza las validaciones de US-006.
+- **Prioridad:** Should. Valor: mantiene la información correcta (G-03), pero hay una alternativa temporal: cerrar el anuncio y publicar otro. · Riesgo: bajo; reutiliza las validaciones de US-006. · Dependencias: necesita US-006; ninguna depende de ella.
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-006
@@ -127,7 +127,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 
 - **Necesidad:** en los canales informales los anuncios resueltos siguen circulando y nadie sabe si siguen vigentes.
 - **Objetivo:** G-03 (claridad del estado); métrica M-03.
-- **Prioridad:** Must. Es el núcleo de G-03 y cierra el recorrido esencial (verificarse → publicar → buscar → contactar → cerrar). Tiene esfuerzo bajo y riesgo bajo.
+- **Prioridad:** Must. Valor: es el núcleo de G-03 y cierra el recorrido esencial (verificarse → publicar → buscar → contactar → cerrar). · Riesgo: bajo, con esfuerzo bajo. · Dependencias: necesita US-006; de ella depende US-011.
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 4 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-006
@@ -174,7 +174,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 
 - **Necesidad:** el estudiante no sabe si su anuncio sigue vigente.
 - **Objetivo:** G-03.
-- **Prioridad:** Must. Es el punto desde el que se edita y se cierra el anuncio, y cumple la experiencia "Transparente" de la misión. Esfuerzo bajo. Riesgo bajo: solo consulta datos que ya crea US-006.
+- **Prioridad:** Must. Valor: es el punto desde el que se edita y se cierra el anuncio, y cumple la experiencia «Transparente» de la misión. · Riesgo: bajo; solo consulta datos que ya crea US-006. · Dependencias: necesita US-006; ninguna depende de ella.
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-006
@@ -201,7 +201,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 
 - **Necesidad:** muchos oferentes olvidan cerrar el anuncio.
 - **Objetivo:** G-03.
-- **Prioridad:** Could. Mejora G-03, pero el cierre manual (US-009) ya cubre lo esencial y en una demo de 6 semanas casi ningún anuncio llega a caducar. Riesgo bajo, aunque introduce una tarea programada que no necesita ninguna otra historia.
+- **Prioridad:** Could. Valor: mejora G-03, pero el cierre manual (US-009) ya cubre lo esencial y en una demo de 6 semanas casi ningún anuncio llega a caducar. · Riesgo: bajo, aunque añade una tarea programada que no necesita ninguna otra historia. · Dependencias: necesita US-009; ninguna depende de ella.
 - **Estimación:** 2 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 4 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-009
