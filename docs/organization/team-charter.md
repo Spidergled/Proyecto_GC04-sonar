@@ -31,19 +31,20 @@ tres tengan una carga similar; el reparto queda anotado en el acta.
 
 ### Reuniones
 
-4. Reunión semanal fija los miércoles (inicio de cada sprint), de 30
-   minutos, presencial o por Discord según disponibilidad, para planificar
-   la semana y revisar brevemente lo cerrado en la anterior. El Scrum
-   Master redacta el acta (asistentes, decisiones y acciones con
-   responsable) y la sube a la Wiki el mismo día.
+4. Reunión semanal fija los miércoles (inicio de cada sprint), de 45 minutos,
+   presencial o por Discord: 30 minutos de Sprint Planning (objetivo del sprint y
+   reparto de tareas) y 15 minutos de refinamiento del backlog, que facilita el
+   Scrum Master. El Scrum Master redacta el acta (asistentes, decisiones y
+   acciones con responsable) y la sube a la Wiki el mismo día.
 5. Daily asíncrono: cada día laborable, antes de las 22:00, cada miembro
    publica en WhatsApp qué hizo, qué hará y si tiene bloqueos, sin
    necesidad de reunión en vivo salvo bloqueo importante.
-6. Retrospectiva del equipo al cierre de cada release (cada 2 semanas), de
-   20-30 minutos, para valorar qué mejorar del proceso; cada acción de
-   mejora tiene responsable y fecha. Además, la sesión semanal de prácticas
-   con el profesor incluye review, retrospectiva y planning; el Scrum
-   Master recoge sus conclusiones en el acta de la Wiki.
+6. Al cierre de cada release (cada 2 semanas, el martes) se hace una Sprint
+   Review de 20 minutos, en la que se muestra el incremento frente a sus
+   criterios de aceptación, y una retrospectiva de 20-30 minutos, de la que
+   salen 1 o 2 acciones de mejora, cada una con responsable y fecha. Además, la
+   sesión semanal de prácticas con el profesor incluye review, retrospectiva y
+   planning; el Scrum Master recoge sus conclusiones en el acta de la Wiki.
 
 ### Horarios, disponibilidad y ausencias
 
@@ -72,8 +73,10 @@ tres tengan una carga similar; el reparto queda anotado en el acta.
     entre las partes implicadas; si no hay acuerdo en 48 horas, decide el
     Tech Lead (temas técnicos) o el Product Owner (temas de producto).
 13. El feedback sobre el trabajo de un compañero se da de forma directa y
-    respetuosa en el canal del equipo, nunca a sus espaldas si afecta al
-    proyecto.
+    respetuosa, en el canal del equipo o en la revisión de la pull request, en un
+    plazo máximo de 48 horas desde que se detecta, indicando qué cambiar y por qué;
+    nunca a sus espaldas. En cada retrospectiva, cada miembro aporta al menos un
+    aspecto a mantener y otro a mejorar.
 
 ### Calidad, trabajo en curso, herramientas y documentación
 
@@ -81,9 +84,10 @@ tres tengan una carga similar; el reparto queda anotado en el acta.
     Projects hasta que se adopte Jira): Por hacer / En curso / Revisión /
     Hecho. El límite de trabajo en curso es de una tarea principal activa
     por persona.
-15. Ninguna tarea se da por terminada sin cumplir los principios de
-    `constitution.md` (trazabilidad, criterios de aceptación, seguridad y
-    datos sintéticos, accesibilidad).
+15. Ningún cambio se integra en `main` sin una pull request revisada y aprobada
+    por un miembro distinto de su autor (0 *push* directos a `main`), y ninguna
+    historia se da por terminada sin cumplir la Definition of Done
+    (`docs/quality/definition-of-done.md`) y los principios de `constitution.md`.
 16. El entorno oficial para compartir documentación e información del
     proyecto es el repositorio de GitHub (código, documentos `.md` y
     Wiki); WhatsApp y Discord se usan para comunicación del día a día, no
@@ -113,3 +117,11 @@ tres tengan una carga similar; el reparto queda anotado en el acta.
     forma directa; si no hay respuesta en 48 horas adicionales, el equipo
     lo registra en la Wiki, redistribuye sus tareas entre los otros dos
     miembros y lo comunica al profesorado por el canal del acuerdo 17.
+
+## Historial de versiones
+
+| Versión | Fecha | Cambio | Decisión |
+|---|---|---|---|
+| 1.0 | 30/09/2026 | Versión inicial. | DEC-002, DEC-003 |
+| 1.1 | 10/10/2026 | Correcciones de la auditoría del Hito 1: señales de alerta (acuerdos 18 y 19), fusión de acuerdos para no superar los 20 y concreción del daily, las ausencias, el tablero y las actas. | DEC-017 |
+| 1.2 | 13/10/2026 | Acuerdos 4 y 6 alineados con la capacidad y con *Proceso de desarrollo* (Wiki); acuerdos 13 y 15 reformulados para que sean medibles. | DEC-019 |
