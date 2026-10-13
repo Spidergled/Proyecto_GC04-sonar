@@ -19,7 +19,7 @@ Un estudiante que busca alojamiento temporal encuentra en un solo sitio las habi
 
 - **Necesidad:** hoy la oferta está dispersa en varios canales.
 - **Objetivo:** G-01.
-- **Prioridad:** Must. Es la base de toda la búsqueda y la primera pantalla del recorrido del demandante.
+- **Prioridad:** Must. Valor: es la base de toda la búsqueda y la primera pantalla del recorrido del demandante. · Riesgo: funcional bajo, pero de rendimiento (NFR-005) con 100 anuncios, por eso se prueba con los datos de US-022. · Dependencias: necesita US-006; de ella dependen US-013, US-014, US-015 y US-016.
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 6 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-006
@@ -47,7 +47,7 @@ Un estudiante que busca alojamiento temporal encuentra en un solo sitio las habi
 
 - **Necesidad:** encontrar una habitación que encaje con las fechas exactas es el principal problema del demandante (ver la misión).
 - **Objetivo:** G-01; métrica M-01.
-- **Prioridad:** Must. Es la diferencia de valor frente a los canales informales. Tiene riesgo funcional medio (definir bien el solapamiento), por lo que se aborda pronto, en R2.
+- **Prioridad:** Must. Valor: es la diferencia frente a los canales informales (G-01, M-01). · Riesgo: funcional medio (definir bien el solapamiento de RN-10), por eso se aborda pronto, en R2. · Dependencias: necesita US-012; de ella depende US-016.
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 8 h-p)
 - **Incertidumbre:** Media (reglas de solapamiento)
 - **Predecesoras:** US-012
@@ -101,7 +101,7 @@ Supongamos tres anuncios disponibles: **A** del 01/02 al 30/06, **B** del 15/03 
 
 - **Necesidad:** la UEx tiene campus en cuatro ciudades, y la cercanía es decisiva.
 - **Objetivo:** G-01.
-- **Prioridad:** Must. Forma parte del alcance S-03 junto con las fechas. Esfuerzo y riesgo bajos.
+- **Prioridad:** Must. Valor: forma parte del alcance S-03 junto con las fechas. · Riesgo: bajo, con esfuerzo bajo; reutiliza la lista de zonas de TD-03. · Dependencias: necesita US-012; ninguna depende de ella.
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 4 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-012
@@ -128,7 +128,7 @@ Supongamos tres anuncios disponibles: **A** del 01/02 al 30/06, **B** del 15/03 
 
 - **Necesidad:** antes de contactar hay que saber qué se ofrece exactamente y si sigue vigente.
 - **Objetivo:** G-03 (métrica M-03), G-01.
-- **Prioridad:** Must. Es donde se materializa la claridad del estado (G-03) y el punto de entrada al contacto (US-017).
+- **Prioridad:** Must. Valor: es donde se materializa la claridad del estado (G-03) y el punto de entrada al contacto. · Riesgo: bajo, aunque concentra las exigencias de privacidad (NFR-002) y de accesibilidad del estado (NFR-004). · Dependencias: necesita US-012; de ella dependen US-017, US-020 y US-024.
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-012
@@ -155,7 +155,7 @@ Supongamos tres anuncios disponibles: **A** del 01/02 al 30/06, **B** del 15/03 
 
 - **Necesidad:** con muchos resultados, comparar a mano es lento.
 - **Objetivo:** G-01.
-- **Prioridad:** Could. Comodidad con valor bajo: con el volumen de la demo los filtros son suficientes.
+- **Prioridad:** Could. Valor: comodidad con valor bajo; con el volumen de la demo los filtros son suficientes. · Riesgo: bajo, siempre que la regla de fechas de US-013 esté cerrada antes. · Dependencias: necesita US-012 y US-013; ninguna depende de ella.
 - **Estimación:** 2 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 3 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-012, US-013

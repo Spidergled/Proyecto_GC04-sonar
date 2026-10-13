@@ -19,7 +19,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 
 - **Necesidad:** hoy no hay forma de saber si quien publica o responde un anuncio es estudiante de la UEx.
 - **Objetivo:** G-02 (confianza institucional).
-- **Prioridad:** Must. Sin cuenta no existe ninguna otra funcionalidad; es la primera pieza del recorrido esencial y la que hace posible G-02.
+- **Prioridad:** Must. Valor: sin cuenta no existe ninguna otra funcionalidad; es la primera pieza del recorrido esencial y la que hace posible G-02. · Riesgo: bajo en sí misma, pero fija el modelo de usuario (TD-01) del que depende todo; un retraso aquí bloquea el proyecto entero. · Dependencias: no tiene predecesoras; de ella dependen US-002, US-003 y US-022.
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 8 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** —
@@ -71,7 +71,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 
 - **Necesidad:** sin verificación, cualquiera podría registrarse con un correo institucional ajeno.
 - **Objetivo:** G-02; métrica M-02.
-- **Prioridad:** Must. Es lo que hace real la confianza institucional (G-02). Riesgo técnico medio por depender del envío de correo, así que conviene abordarlo pronto.
+- **Prioridad:** Must. Valor: hace real la confianza institucional (G-02, M-02). · Riesgo: medio, por depender del envío de correo (TD-02, EXT-02); conviene abordarlo pronto. · Dependencias: necesita US-001; de ella dependen US-005, US-006 y US-017.
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 10 h-p)
 - **Incertidumbre:** Media (envío de correo y caducidad del enlace)
 - **Predecesoras:** US-001
@@ -118,7 +118,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 
 - **Necesidad:** el usuario tiene que identificarse para publicar, contactar o consultar sus datos.
 - **Objetivo:** G-01, G-02.
-- **Prioridad:** Must. Todo el recorrido esencial pasa por aquí y es la base técnica de la autorización.
+- **Prioridad:** Must. Valor: todo el recorrido esencial pasa por aquí y es la base técnica de la autorización. · Riesgo: bajo, aunque un fallo de autenticación comprometería G-02 y NFR-001; por eso va en la primera iteración. · Dependencias: necesita US-001; de ella dependen US-004, US-005, US-006 y US-020.
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 6 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-001
@@ -146,7 +146,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 
 - **Necesidad:** mostrar solo "usuario verificado" genera poca confianza; un perfil mínimo ayuda a decidir.
 - **Objetivo:** G-02, G-01.
-- **Prioridad:** Should. Aporta confianza, pero el recorrido esencial funciona sin él. Su riesgo es bajo y no bloquea a otras historias.
+- **Prioridad:** Should. Valor: aporta confianza, pero el recorrido esencial funciona sin él. · Riesgo: bajo. · Dependencias: necesita US-003; no bloquea a ninguna otra historia.
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-003
@@ -173,7 +173,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 
 - **Necesidad:** sin recuperación, olvidar la contraseña obliga a crear otra cuenta, cosa que impide RN-01 porque el correo ya está registrado.
 - **Objetivo:** G-01.
-- **Prioridad:** Could. En una demo de 6 semanas con cuentas sintéticas el impacto es bajo; se podría resolver de forma manual en la demo.
+- **Prioridad:** Could. Valor: bajo en una demo de 6 semanas con cuentas sintéticas; se podría resolver de forma manual en la demo. · Riesgo: bajo, porque reutiliza el envío de correo de US-002 (TD-02). · Dependencias: necesita US-002 y US-003; ninguna depende de ella.
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja (reutiliza el mecanismo de envío de US-002)
 - **Predecesoras:** US-002, US-003
