@@ -23,7 +23,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 10 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-002, US-003
-- **Plan inicial:** R2 (línea base, DEC-016); la iteración concreta se fija en la planificación del Trabajo 1
+- **Plan inicial:** R2, IT-003 – IT-004 (excepción de DEC-018). Justificación: IT-003 solo tiene 3,95 h-p de capacidad por los parciales de Hugo y Gled, menos que la estimación (5 h-p). Dividir la publicación en partes sin publicar un anuncio completo no aporta valor por separado. La estimación cabe en la capacidad de las dos iteraciones (9,9 h-p). Incluye TD-03 (modelo de anuncio y zonas) (DEC-020). Cuenta como Hecha al final de IT-004.
 
 #### Acceptance criteria
 

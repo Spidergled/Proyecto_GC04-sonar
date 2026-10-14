@@ -51,7 +51,7 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Media (depende de las tecnologías que se aprueben)
 - **Predecesoras:** US-017
-- **Plan inicial:** R3 (línea base, DEC-016); la iteración concreta se fija en la planificación del Trabajo 1
+- **Plan inicial:** R3, IT-006, después de terminar US-017 (planificación inicial del 14/10/2026). El evaluador externo (EXT-03) debe estar localizado antes de IT-005.
 
 #### Acceptance criteria
 
@@ -91,4 +91,4 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 - **Reglas:** ninguna específica.
 - **Restricciones:** solo español e inglés; el contenido escrito por los usuarios no se traduce.
 - **NFR:** NFR-004 (atributo de idioma correcto en la página).
-- **Dependencias:** funcionales US-015 y US-018; técnica: textos de la interfaz separados del código desde el inicio, para que traducir sea barato. Es una recomendación al TL para IT-001.
+- **Dependencias:** funcionales US-015 y US-018; técnica: textos de la interfaz separados del código (TD-06). No se planifica mientras US-024 sea *Won't* (DEC-016).
