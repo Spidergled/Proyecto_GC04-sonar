@@ -85,13 +85,16 @@ Supongamos tres anuncios disponibles: **A** del 01/02 al 30/06, **B** del 15/03 
 
 - La salida buscada coincide con el día de inicio del anuncio (solapamiento de 1 día): el anuncio aparece como parcial.
 - La salida buscada es el día anterior al inicio del anuncio: no se solapa y no aparece.
+- La llegada buscada coincide con el último día del anuncio (anuncio **A**, búsqueda 30/06 – 15/07): comparten 1 día y aparece como "Cobertura parcial: del 30/06 al 30/06".
+- El periodo buscado coincide exactamente con el del anuncio (búsqueda 01/02 – 30/06 sobre **A**): como las fechas son inclusivas, aparece como "Cubre todas tus fechas".
+- El anuncio empieza después de la llegada y termina antes de la salida (búsqueda 01/03 – 31/08 sobre **B**): cobertura parcial con las fechas del propio anuncio, "del 15/03 al 31/07".
 - Llegada y salida el mismo día: se rechaza con "La fecha de salida debe ser posterior a la de llegada".
 - Fechas pasadas: se permiten en la búsqueda, pero casi siempre darán 0 resultados.
 - El anuncio se cierra mientras el usuario mira los resultados: desaparece al refrescar y su detalle muestra "Cerrado".
 
 #### Supuestos
 
-- La cobertura parcial es útil para el demandante, que puede combinar alojamientos o ajustar sus fechas. Esta interpretación la validará el cliente en la Review de R2.
+- La cobertura parcial es útil para el demandante, que puede combinar alojamientos o ajustar sus fechas. Esta interpretación la validará el cliente en la Review de la release en la que entre la historia (está fuera de la línea base por DEC-016).
 
 ---
 

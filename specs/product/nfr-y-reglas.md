@@ -9,7 +9,7 @@ Este documento recoge los requisitos no funcionales (`NFR-XXX`) y las reglas de 
 | ID | Categoría | Requisito | Verificación | Objetivo |
 |---|---|---|---|---|
 | NFR-001 | Seguridad | Las contraseñas se guardan con un algoritmo de hash con sal y nunca en texto plano. Las sesiones caducan tras 2 horas de inactividad. | Inspección de la base de datos de demo; prueba de caducidad de sesión. | G-02 |
-| NFR-002 | Privacidad | El correo y los datos de un usuario no se muestran a otros usuarios. Un anuncio muestra solo la zona, nunca la dirección exacta. | Revisión de pantallas y respuestas de la API con dos usuarios distintos. | G-02 |
+| NFR-002 | Privacidad | Solo son públicos para otros usuarios el **nombre visible**, el distintivo «Verificado UEx» y, si el usuario los ha indicado en su perfil (US-004), su titulación y sus idiomas. Mientras no haya configurado su nombre visible, se muestra «Estudiante verificado». El correo, la contraseña y cualquier otro dato de la cuenta nunca se muestran a otros usuarios. Un anuncio muestra solo la zona, nunca la dirección exacta. | Revisión de pantallas y respuestas de la API con dos usuarios distintos. | G-02 |
 | NFR-003 | Usabilidad | El recorrido esencial (publicar, o buscar y contactar) se completa en menos de 5 minutos sin ayuda. | Prueba con 5 participantes (M-01). | G-01 |
 | NFR-004 | Accesibilidad | Las pantallas principales cumplen los criterios básicos de WCAG 2.1 nivel AA: contraste suficiente, etiquetas en todos los campos, uso completo con teclado y mensajes de error asociados al campo. | Revisión manual y herramienta automática de accesibilidad. | G-01 |
 | NFR-005 | Rendimiento | Una búsqueda con filtros responde en menos de 2 segundos con el conjunto de datos de demo (≥ 100 anuncios). | Medición en el entorno de demo. | G-01 |
@@ -31,5 +31,5 @@ Este documento recoge los requisitos no funcionales (`NFR-XXX`) y las reglas de 
 | RN-07 | Un usuario solo puede tener **un anuncio abierto** a la vez, porque subalquila su propia habitación. |
 | RN-08 | Un anuncio cerrado no aparece en las búsquedas, no admite nuevos contactos y no puede reabrirse; para volver a ofrecer la habitación hay que publicar un anuncio nuevo. |
 | RN-09 | Un usuario no puede contactar con su propio anuncio. |
-| RN-10 | Un anuncio aparece en una búsqueda por fechas si su periodo disponible se **solapa al menos 1 día** con el periodo buscado. Se indica si cubre el periodo buscado **completo** o solo **parcialmente**. |
+| RN-10 | Las fechas de los anuncios y de las búsquedas son **inclusivas**: el día de inicio y el de fin cuentan. Un anuncio aparece en una búsqueda por fechas si su periodo disponible comparte **al menos 1 día** con el periodo buscado. **Cubre el periodo completo** si empieza el día de llegada o antes y termina el día de salida o después. Si no, la **cobertura parcial** es la intersección de los dos periodos: desde la fecha más tardía de las dos de inicio hasta la más temprana de las dos de fin. |
 | RN-11 | Los mensajes de una conversación solo los ven sus dos participantes. |
