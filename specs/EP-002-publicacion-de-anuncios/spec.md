@@ -23,7 +23,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 10 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-002, US-003
-- **Plan inicial:** IT-002 (R1)
+- **Plan inicial:** R2 (línea base, DEC-016); la iteración concreta se fija en la planificación del Trabajo 1
 
 #### Acceptance criteria
 
@@ -76,7 +76,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 6 h-p)
 - **Incertidumbre:** Media (almacenamiento de imágenes)
 - **Predecesoras:** US-006
-- **Plan inicial:** IT-005 (R3)
+- **Plan inicial:** fuera de la línea base (DEC-016)
 
 #### Acceptance criteria
 
@@ -104,7 +104,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-006
-- **Plan inicial:** IT-005 (R3)
+- **Plan inicial:** fuera de la línea base (DEC-016)
 
 #### Acceptance criteria
 
@@ -127,11 +127,11 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 
 - **Necesidad:** en los canales informales los anuncios resueltos siguen circulando y nadie sabe si siguen vigentes.
 - **Objetivo:** G-03 (claridad del estado); métrica M-03.
-- **Prioridad:** Must. Valor: es el núcleo de G-03 y cierra el recorrido esencial (verificarse → publicar → buscar → contactar → cerrar). · Riesgo: bajo, con esfuerzo bajo. · Dependencias: necesita US-006; de ella depende US-011.
+- **Prioridad:** Should. Valor: es el núcleo de G-03 y M-03; sin ella ningún anuncio puede pasar a cerrado. · Riesgo: bajo, con esfuerzo bajo. · Dependencias: necesita US-006; de ella depende US-011. Era Must; baja a Should por capacidad (DEC-016) y es la primera candidata a entrar, porque recupera G-03.
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 4 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-006
-- **Plan inicial:** IT-002 (R1)
+- **Plan inicial:** fuera de la línea base (DEC-016); candidata n.º 1 a entrar si la velocidad real lo permite
 
 #### Acceptance criteria
 
@@ -174,11 +174,11 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 
 - **Necesidad:** el estudiante no sabe si su anuncio sigue vigente.
 - **Objetivo:** G-03.
-- **Prioridad:** Must. Valor: es el punto desde el que se edita y se cierra el anuncio, y cumple la experiencia «Transparente» de la misión. · Riesgo: bajo; solo consulta datos que ya crea US-006. · Dependencias: necesita US-006; ninguna depende de ella.
+- **Prioridad:** Should. Valor: es el punto de gestión del oferente, pero mientras no entren US-008 y US-009 no hay acciones que lanzar desde él. · Riesgo: bajo; solo consulta datos que ya crea US-006. · Dependencias: necesita US-006. Era Must; baja a Should por capacidad (DEC-016). Quinta candidata a entrar.
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-006
-- **Plan inicial:** IT-002 (R1)
+- **Plan inicial:** fuera de la línea base (DEC-016); candidata n.º 5 a entrar si la velocidad real lo permite
 
 #### Acceptance criteria
 
@@ -205,7 +205,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 - **Estimación:** 2 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 4 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-009
-- **Plan inicial:** IT-006 (R3)
+- **Plan inicial:** fuera de la línea base (DEC-016)
 
 #### Acceptance criteria
 

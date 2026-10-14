@@ -23,7 +23,7 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 8 h-p)
 - **Incertidumbre:** Media (modelo de conversación compartido con US-018)
 - **Predecesoras:** US-015, US-002
-- **Plan inicial:** IT-004 (R2)
+- **Plan inicial:** R3 (línea base, DEC-016); la iteración concreta se fija en la planificación del Trabajo 1
 
 #### Acceptance criteria
 
@@ -68,11 +68,11 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 
 - **Necesidad:** un contacto sin respuesta posible no resuelve nada; hace falta ida y vuelta.
 - **Objetivo:** G-01, G-02.
-- **Prioridad:** Must. Valor: sin respuesta no hay recorrido esencial. · Riesgo: medio, por compartir el modelo con US-017 (TD-04) y por el control de acceso a conversaciones ajenas (RN-11); es la historia de más esfuerzo de la épica, así que se empieza pronto, en R2. · Dependencias: necesita US-017; de ella dependen US-019 y US-024 (y US-021, fuera de la línea base).
+- **Prioridad:** Should. Valor: permite responder y mantener la conversación; el contacto inicial (US-017) ya cubre S-04 en su versión mínima. · Riesgo: medio, por el modelo de conversación compartido con US-017 (TD-04) y el control de acceso a conversaciones ajenas (RN-11). · Dependencias: necesita US-017; de ella dependen US-019 y US-024. Era Must; baja a Should por capacidad (DEC-016). Tercera candidata a entrar.
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 10 h-p)
 - **Incertidumbre:** Media
 - **Predecesoras:** US-017
-- **Plan inicial:** IT-004 (R2)
+- **Plan inicial:** fuera de la línea base (DEC-016); candidata n.º 3 a entrar si la velocidad real lo permite
 
 #### Acceptance criteria
 
@@ -100,7 +100,7 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 - **Estimación:** 2 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 4 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-018
-- **Plan inicial:** IT-005 (R3)
+- **Plan inicial:** fuera de la línea base (DEC-016)
 
 #### Acceptance criteria
 
@@ -127,7 +127,7 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 4 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-015, US-003
-- **Plan inicial:** IT-006 (R3)
+- **Plan inicial:** fuera de la línea base (DEC-016)
 
 #### Acceptance criteria
 
