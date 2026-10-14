@@ -23,7 +23,7 @@ Un estudiante que busca alojamiento temporal encuentra en un solo sitio las habi
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 6 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-006
-- **Plan inicial:** R2 (línea base, DEC-016); la iteración concreta se fija en la planificación del Trabajo 1
+- **Plan inicial:** R2, IT-004, después de terminar US-006 (planificación inicial del 14/10/2026).
 
 #### Acceptance criteria
 
@@ -135,7 +135,7 @@ Supongamos tres anuncios disponibles: **A** del 01/02 al 30/06, **B** del 15/03 
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-012
-- **Plan inicial:** R3 (línea base, DEC-016); la iteración concreta se fija en la planificación del Trabajo 1
+- **Plan inicial:** R3, IT-005 (planificación inicial del 14/10/2026).
 
 #### Acceptance criteria
 

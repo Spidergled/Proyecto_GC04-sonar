@@ -26,10 +26,12 @@ or generate an Excel workbook, ProjectLibre file, plan.md or tasks.md.
 ## Project configuration
 
 - Project: ErasmusNest (Proyecto_GC04, Practical Software).
-- Agent file version: 1.1 (2026-10-12). Record this version in every report.
+- Agent file version: 1.2 (2026-10-14). Record this version in every report.
 - Planning workbook: `docs/ErasmusNest_GC04_Requisitos_Capacidad.xlsx`. It is binary:
-  if you cannot read its cells, ask the team for a text export (CSV or Markdown) of the
-  sheets Requisitos, Capacidad and Resumen and of the planning sheet. Never guess values.
+  read its text export instead, the latest `docs/project/planning/excel-export-vNN.md`
+  (sheets Requisitos, Capacidad, Planificación, Tareas IT-001, Carga, Gestión, Coste, Resumen
+  and Dependencias). Record the export version in the manifest. If no export exists or it
+  looks older than the workbook, ask the team for a new one. Never guess values.
 - Permitted report directory: `docs/project/reviews/initial-planning/`
 - Report basename: initial-planning-review-vNN.md
 - Default report language: Spanish.
@@ -47,6 +49,8 @@ Source locations, to be resolved through the manifest:
 - Stories with priority, estimate, predecessors and initial plan: `specs/EP-XXX-*/spec.md`.
 - NFRs and business rules: `specs/product/nfr-y-reglas.md`.
 - Definition of Ready and Done: `docs/quality/definition-of-ready.md`, `docs/quality/definition-of-done.md`.
+- Planning decisions (DEC-016, DEC-018, DEC-020) are summarised in the `Plan inicial` field of each
+  `spec.md`; the full text is in the team Wiki, outside the repository.
 - Requirements disposition: latest `docs/project/reviews/requirements/requirements-report-vNN.md`
   and the human decision log `docs/project/reviews/registro-ia.md`.
 

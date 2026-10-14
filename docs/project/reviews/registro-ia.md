@@ -6,10 +6,12 @@ Registro de los agentes de revisión de la Práctica 1 (semanas 3 y 4) y de lo q
 
 | Agente | Instrucciones | Versión | Herramienta | Modelo | Informes | Límite |
 |---|---|---|---|---|---|---|
-| Requirements Agent | `.github/agents/requirements-reviewer.agent.md` | 1.1 (12/10/2026) | GitHub Copilot en VS Code | *[a completar]* | `docs/project/reviews/requirements/` | No modifica requisitos ni decide el alcance |
-| Planning Agent | `.github/agents/initial-planning-reviewer.agent.md` | 1.1 (12/10/2026) | GitHub Copilot en VS Code | *[a completar]* | `docs/project/reviews/initial-planning/` | No replanifica ni modifica los archivos |
+| Requirements Agent | `.github/agents/requirements-reviewer.agent.md` | 1.2 (14/10/2026) | GitHub Copilot en VS Code | *[a completar]* | `docs/project/reviews/requirements/` | No modifica requisitos ni decide el alcance |
+| Planning Agent | `.github/agents/initial-planning-reviewer.agent.md` | 1.2 (14/10/2026) | GitHub Copilot en VS Code | *[a completar]* | `docs/project/reviews/initial-planning/` | No replanifica ni modifica los archivos |
 
 La v01 del informe de requisitos (10/10/2026, José) se generó con la versión anterior del agente (`e4db02d`); el modelo usado no quedó anotado *[a completar por José]*.
+
+La versión 1.2 de ambos agentes (14/10/2026) les indica que lean el Excel a través de su exportación en texto, `docs/project/planning/excel-export-vNN.md`, porque no pueden abrir el `.xlsx`.
 
 ## 2. Cómo se usa
 
@@ -31,7 +33,7 @@ Decisión: Aceptada, Aceptada con cambios, Rechazada o Pendiente.
 | Requirements · v01 F-05 | Ídem | Las estimaciones de las seis historias detalladas son V0, previas al Planning Poker | Lo dicen las propias specs. Confianza alta. MAJOR, bloqueante | Aceptada | Planning Poker del 10/10, `abc523d` |
 | Requirements · v01 F-06 | Ídem | No se puede comprobar si cada estimación cabe en un sprint ni aplicar DEC-018 | El agente no pudo leer el Excel. Confianza alta en la falta de evidencia. QUESTION | Aceptada | DEC-016 (14/10/2026): ninguna historia supera 5 h-p y la línea base (32 h-p) cabe en cada release (hoja *Resumen* del Excel) |
 | Requirements · v01 F-07 | Ídem | US-024 (inglés) no está en S-01…S-06 y tiene plan en IT-006; US-007, US-011, US-020 y US-004 sin S-XX inequívoco | Alcance de `goals.md` explícito. Confianza media. QUESTION | Aceptada | DEC-016 (14/10/2026): US-024 pasa a Won't; US-004, US-007, US-011 y US-020 quedan fuera de la línea base |
-| Requirements · v01 F-08 | Ídem | Sin orden dentro del sprint (US-006→US-009, US-012→US-013); US-017 no cita US-009; US-023 solo cita US-022 | Basado en los planes iniciales. Confianza media. QUESTION | Pendiente | Se resuelve en la planificación del Excel |
+| Requirements · v01 F-08 | Ídem | Sin orden dentro del sprint (US-006→US-009, US-012→US-013); US-017 no cita US-009; US-023 solo cita US-022 | Basado en los planes iniciales. Confianza media. QUESTION | Aceptada | Resuelto en la planificación inicial (14/10/2026): la hoja *Planificación* comprueba con fórmulas que cada historia empieza cuando sus predecesoras han terminado o en el mismo sprint después de ellas (columna *Orden de predecesoras*, 0 incidencias). US-023 depende de US-017 (DEC-016); US-009 queda fuera de la línea base |
 
 ### Candidatos y preguntas del informe v01 sin número de hallazgo (§7 y §9)
 
@@ -47,3 +49,10 @@ El equipo también tiene que clasificar estas propuestas, aunque el agente no la
 | Requirements · v01 §7 anuncios cerrados | Ídem | ¿Se puede responder en conversaciones de un anuncio cerrado o solo leerlas? | US-009 y US-018 no lo fijan. SCOPE_UNCLEAR | Pendiente | Aplazada por DEC-016: US-009 y US-018 están fuera de la línea base; se decidirá cuando entren · Hugo |
 | Requirements · v01 §8 M-05 | Ídem | M-05 no está trazada a ninguna historia | Solo cubierta en parte por la DoD | Pendiente | Hugo |
 | Requirements · v01 §9 P2 | Ídem | ¿Qué validación observable se aplica a un correo mal formado en US-001? | Pregunta para decisión humana | Aceptada | Corregido el 14/10: caso límite de correo mal formado en US-001 ("Introduce un correo válido") · Hugo |
+
+## 4. Otros usos de IA
+
+| Fecha | Herramienta | Uso | Revisión del equipo |
+|---|---|---|---|
+| 14/10/2026 | Claude (chat de claude.ai) | Escenarios de alcance para DEC-016 a partir de las cifras del Excel | El PO los revisó con el equipo y decidió (DEC-016) |
+| 14/10/2026 | Claude (chat de claude.ai) | Borrador de la primera planificación: reparto de horas por persona e iteración, tareas de IT-001, hojas de carga, gestión y coste, gráficas, exportación en texto del Excel y propuesta DEC-020 | El equipo revisó el reparto por persona, las tarifas por rol y la estimación de TD-01, y los aceptó sin cambios el 14/10/2026. DEC-020 se acepta después de la revisión de los dos agentes · Hugo (PO) |

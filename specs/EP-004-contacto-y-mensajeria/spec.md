@@ -23,7 +23,7 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 8 h-p)
 - **Incertidumbre:** Media (modelo de conversación compartido con US-018)
 - **Predecesoras:** US-015, US-002
-- **Plan inicial:** R3 (línea base, DEC-016); la iteración concreta se fija en la planificación del Trabajo 1
+- **Plan inicial:** R3, IT-005 – IT-006 (excepción de DEC-018). Justificación: tras US-015 (3 h-p), IT-005 (5,95 h-p) no tiene sitio para las 5 h-p completas, y enviar el primer mensaje no se puede dividir sin perder el resultado observable de la historia. La estimación cabe en la capacidad de las dos iteraciones (11,9 h-p). Incluye TD-04 (modelo de conversación, pensado también para US-018) (DEC-020). Cuenta como Hecha al final de IT-006.
 
 #### Acceptance criteria
 
