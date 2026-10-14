@@ -7,7 +7,7 @@ Registro de los agentes de revisión de la Práctica 1 (semanas 3 y 4) y de lo q
 | Agente | Instrucciones | Versión | Herramienta | Modelo | Informes | Límite |
 |---|---|---|---|---|---|---|
 | Requirements Agent | `.github/agents/requirements-reviewer.agent.md` | 1.2 (14/10/2026) | GitHub Copilot en VS Code | Auto (GitHub Copilot, plan gratuito; modelo concreto no visible) en v02 | `docs/project/reviews/requirements/` | No modifica requisitos ni decide el alcance |
-| Planning Agent | `.github/agents/initial-planning-reviewer.agent.md` | 1.2 (14/10/2026) | GitHub Copilot en VS Code | *[a completar]* | `docs/project/reviews/initial-planning/` | No replanifica ni modifica los archivos |
+| Planning Agent | `.github/agents/initial-planning-reviewer.agent.md` | 1.2 (14/10/2026) | GitHub Copilot en VS Code |Auto (GitHub Copilot, plan gratuito; modelo concreto no visible) en v01 | `docs/project/reviews/initial-planning/` | No replanifica ni modifica los archivos |
 
 La v01 del informe de requisitos (10/10/2026, José) se generó con la versión anterior del agente (`e4db02d`); el modelo usado no quedó anotado (No registrado).
 
