@@ -6,8 +6,10 @@ Registro de los agentes de revisión de la Práctica 1 (semanas 3 y 4) y de lo q
 
 | Agente | Instrucciones | Versión | Herramienta | Modelo | Informes | Límite |
 |---|---|---|---|---|---|---|
-| Requirements Agent | `.github/agents/requirements-reviewer.agent.md` | 1.2 (14/10/2026) | GitHub Copilot en VS Code | Auto (GitHub Copilot, plan gratuito; modelo concreto no visible) en v02 | `docs/project/reviews/requirements/` | No modifica requisitos ni decide el alcance |
-| Planning Agent | `.github/agents/initial-planning-reviewer.agent.md` | 1.2 (14/10/2026) | GitHub Copilot en VS Code | Auto (GitHub Copilot, plan gratuito; modelo concreto no visible) en v01 | `docs/project/reviews/initial-planning/` | No replanifica ni modifica los archivos |
+| Requirements Agent | `.github/agents/requirements-reviewer.agent.md` | 1.2 (14/10/2026) | GitHub Copilot en VS Code | Auto (plan GitHub Copilot Student, que solo permite la selección automática; el modelo concreto no se muestra) en v02 | `docs/project/reviews/requirements/` | No modifica requisitos ni decide el alcance |
+| Planning Agent | `.github/agents/initial-planning-reviewer.agent.md` | 1.2 (14/10/2026) | GitHub Copilot en VS Code | Auto (plan GitHub Copilot Student, que solo permite la selección automática; el modelo concreto no se muestra) en v01 | `docs/project/reviews/initial-planning/` | No replanifica ni modifica los archivos |
+
+El plan GitHub Copilot Student no permite elegir el modelo: desde el 24/06/2026 la selección automática (*Auto*) es la única opción en los planes Free y Student. Los tres miembros usan la misma herramienta y el mismo modo (DEC-021 en la Wiki).
 
 La v01 del informe de requisitos (10/10/2026, José) se generó con la versión anterior del agente (`e4db02d`); el modelo usado no quedó anotado (No registrado).
 
@@ -80,7 +82,10 @@ Resultado del agente: READY_WITH_NON_BLOCKING_QUESTIONS, con 0 hallazgos bloquea
 
 | Fecha | Herramienta | Uso | Revisión del equipo |
 |---|---|---|---|
+| 10/10/2026 | Claude (chat de claude.ai) | Auditoría del Hito 1 y del Hito 2 frente a los enunciados; guía y hoja del Planning Poker | El equipo revisó cada observación contra los enunciados: correcciones de DEC-017 y DEC-018 y Planning Poker del 10/10 |
+| 12/10/2026 | Claude (chat de claude.ai) | Borrador de los agentes 1.1 y de este registro | Gled (TL) lo revisó frente a las plantillas del profesor antes de integrarlo (`03ce7e9`) |
 | 14/10/2026 | Claude (chat de claude.ai) | Escenarios de alcance para DEC-016 a partir de las cifras del Excel | El PO los revisó con el equipo y decidió (DEC-016) |
 | 14/10/2026 | Claude (chat de claude.ai) | Borrador de la primera planificación: reparto de horas por persona e iteración, tareas de IT-001, hojas de carga, gestión y coste, gráficas, exportación en texto del Excel y propuesta DEC-020 | El equipo revisó el reparto por persona, las tarifas por rol y la estimación de TD-01, y los aceptó sin cambios el 14/10/2026. DEC-020 se acepta después de la revisión de los dos agentes · Hugo (PO) |
 | 14/10/2026 | Claude (chat de claude.ai) | Propuesta de clasificación de los hallazgos del informe v02 y redacción de las correcciones de R-01 y R-02 | El PO revisó la propuesta y la aceptó sin cambios el 14/10/2026 (§3, informe v02) · Hugo |
 | 14/10/2026 | Claude (chat de claude.ai) | Propuesta de clasificación del informe de planificación v01, cambios del Excel (estado AJUSTADO y presupuesto), exportación v02 y regla de contingencia de DEC-020 | El PO delegó la propuesta y la aceptó el 14/10/2026 (§3, informe de planificación v01) · Hugo |
+| 14/10/2026 | Claude (chat de claude.ai) | Revisión del cierre del Hito 2, del plan de la semana 3 y del estado final del repositorio y la Wiki frente a los enunciados de las semanas 3 y 4 | Gled (TL) comprobó cada punto contra los ficheros: hoja *Leyenda* y DoR (identificadores en ProjectLibre y Jira), modelo del plan Copilot Student, DEC-021, filas de este apartado y enlaces y estados de la Wiki |

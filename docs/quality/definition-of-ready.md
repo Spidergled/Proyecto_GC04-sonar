@@ -6,7 +6,7 @@ No exige saberlo todo, sino lo suficiente para asumir el trabajo con una expecta
 
 ## Identificación y trazabilidad
 
-- [ ] La historia tiene un identificador único y estable (`US-XXX`) que coincide en el repositorio, el Excel, ProjectLibre y Jira.
+- [ ] La historia tiene un identificador único y estable (`US-XXX`) que coincide en el repositorio y el Excel, y que coincidirá en ProjectLibre y Jira cuando se usen.
 - [ ] La historia está asociada a una épica (`EP-XXX`) y está escrita en su `spec.md`.
 - [ ] La historia se puede trazar hasta al menos un objetivo de `goals.md` (`G-XX`) y un elemento de alcance (`S-XX`).
 
