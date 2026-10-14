@@ -31,5 +31,5 @@ Este documento recoge los requisitos no funcionales (`NFR-XXX`) y las reglas de 
 | RN-07 | Un usuario solo puede tener **un anuncio abierto** a la vez, porque subalquila su propia habitación. |
 | RN-08 | Un anuncio cerrado no aparece en las búsquedas, no admite nuevos contactos y no puede reabrirse; para volver a ofrecer la habitación hay que publicar un anuncio nuevo. |
 | RN-09 | Un usuario no puede contactar con su propio anuncio. |
-| RN-10 | Un anuncio aparece en una búsqueda por fechas si su periodo disponible se **solapa al menos 1 día** con el periodo buscado. Se indica si cubre el periodo buscado **completo** o solo **parcialmente**. |
+| RN-10 | Las fechas de los anuncios y de las búsquedas son **inclusivas**: el día de inicio y el de fin cuentan. Un anuncio aparece en una búsqueda por fechas si su periodo disponible comparte **al menos 1 día** con el periodo buscado. **Cubre el periodo completo** si empieza el día de llegada o antes y termina el día de salida o después. Si no, la **cobertura parcial** es la intersección de los dos periodos: desde la fecha más tardía de las dos de inicio hasta la más temprana de las dos de fin. |
 | RN-11 | Los mensajes de una conversación solo los ven sus dos participantes. |
