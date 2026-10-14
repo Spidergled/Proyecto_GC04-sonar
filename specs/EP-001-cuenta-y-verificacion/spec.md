@@ -23,7 +23,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 8 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** —
-- **Plan inicial:** IT-001 (R1)
+- **Plan inicial:** R1 (línea base, DEC-016); la iteración concreta se fija en la planificación del Trabajo 1
 
 #### Acceptance criteria
 
@@ -75,7 +75,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 10 h-p)
 - **Incertidumbre:** Media (envío de correo y caducidad del enlace)
 - **Predecesoras:** US-001
-- **Plan inicial:** IT-001 (R1)
+- **Plan inicial:** R1 (línea base, DEC-016); la iteración concreta se fija en la planificación del Trabajo 1
 
 #### Acceptance criteria
 
@@ -122,7 +122,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 6 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-001
-- **Plan inicial:** IT-001 (R1)
+- **Plan inicial:** R1 (línea base, DEC-016); la iteración concreta se fija en la planificación del Trabajo 1
 
 #### Acceptance criteria
 
@@ -150,7 +150,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-003
-- **Plan inicial:** IT-004 (R2)
+- **Plan inicial:** fuera de la línea base (DEC-016)
 
 #### Acceptance criteria
 
@@ -177,7 +177,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja (reutiliza el mecanismo de envío de US-002)
 - **Predecesoras:** US-002, US-003
-- **Plan inicial:** IT-006 (R3)
+- **Plan inicial:** fuera de la línea base (DEC-016)
 
 #### Acceptance criteria
 

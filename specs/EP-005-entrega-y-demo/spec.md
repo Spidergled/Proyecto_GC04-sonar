@@ -3,13 +3,13 @@
 **Goals:** G-04, G-01
 **Alcance:** S-06 (más la experiencia "Inclusiva" de `mission.md` y el principio 5 de la constitución)
 **Baseline:** requisitos-v0 (Hito 2)
-**Boundary:** incluye el conjunto de datos sintéticos, el guion de instalación y evaluación para un tercero, y la interfaz en español e inglés. **No incluye** el despliegue en producción con usuarios reales, la migración de datos reales (NFR-009) ni una app nativa (EX-03).
+**Boundary:** incluye el conjunto de datos sintéticos y el guion de instalación y evaluación para un tercero. **No incluye** la interfaz en inglés (US-024, Won't por DEC-016), el despliegue en producción con usuarios reales, la migración de datos reales (NFR-009) ni una app nativa (EX-03).
 
 > Las estimaciones son las **consensuadas en el Planning Poker del 10/10/2026**; entre paréntesis queda la referencia V0. Las estimaciones individuales están en el Excel y en la Wiki.
 
 ## Epic outcome
 
-Una persona ajena al equipo, como el profesorado o la Delegación, puede instalar ErasmusNest, cargar datos ficticios realistas y evaluar el incremento sin ayuda del equipo. Además, los estudiantes de intercambio pueden usarlo aunque no dominen el español.
+Una persona ajena al equipo, como el profesorado o la Delegación, puede instalar ErasmusNest, cargar datos ficticios realistas y evaluar el incremento sin ayuda del equipo.
 
 ## Stories
 
@@ -19,11 +19,11 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 
 - **Necesidad:** sin datos, la demo está vacía y no se pueden probar la búsqueda, el rendimiento ni las métricas.
 - **Objetivo:** G-04; habilita las pruebas de M-01 a M-03.
-- **Prioridad:** Must. Valor: lo exigen S-06 y la restricción de datos sintéticos; habilita las pruebas de M-01 a M-03. · Riesgo: bajo, y reduce el riesgo de todas las pruebas porque se usa desde R1. · Dependencias: necesita US-001 y US-006; de ella depende US-023.
+- **Prioridad:** Should. Valor: carga en un paso los datos sintéticos de S-06 y permite medir NFR-005 con ≥ 100 anuncios. · Riesgo: bajo. · Dependencias: necesita US-001 y US-006. Era Must; baja a Should por capacidad (DEC-016): mientras no entre, el guion (US-023) crea a mano un conjunto mínimo de datos sintéticos. Segunda candidata a entrar.
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 6 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-001, US-006
-- **Plan inicial:** IT-002 (R1); se amplía con conversaciones en IT-004
+- **Plan inicial:** fuera de la línea base (DEC-016); candidata n.º 2 a entrar si la velocidad real lo permite
 
 #### Acceptance criteria
 
@@ -47,16 +47,16 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 
 - **Necesidad:** G-04 exige que un tercero pueda instalar y evaluar el incremento.
 - **Objetivo:** G-04; métrica M-04.
-- **Prioridad:** Must. Valor: sin él no se cumplen G-04 ni M-04 y la entrega no se puede evaluar. · Riesgo: medio de integración (depende de las tecnologías aprobadas, EXT-01, y de un evaluador externo, EXT-03); conviene probarlo antes de la última release. · Dependencias: necesita US-022; ninguna depende de ella.
+- **Prioridad:** Must. Valor: sin él no se cumplen G-04 ni M-04 y la entrega no se puede evaluar. · Riesgo: medio de integración (depende de las tecnologías aprobadas, EXT-01, y de un evaluador externo, EXT-03); conviene probarlo antes de la última release. · Dependencias: necesita US-017, porque el guion se valida sobre el incremento completo de la línea base; ninguna depende de ella.
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Media (depende de las tecnologías que se aprueben)
-- **Predecesoras:** US-022
-- **Plan inicial:** IT-005 (R3); primera versión mínima en R1 para las revisiones
+- **Predecesoras:** US-017
+- **Plan inicial:** R3 (línea base, DEC-016); la iteración concreta se fija en la planificación del Trabajo 1
 
 #### Acceptance criteria
 
-- **US-023-AC-01:** el `README.md` del repositorio contiene los requisitos previos, como máximo 10 pasos de instalación y arranque, la carga de datos de demo y las credenciales de prueba.
-- **US-023-AC-02:** incluye un guion de evaluación que recorre los flujos principales: registrarse y verificarse, publicar, buscar, contactar y cerrar el anuncio.
+- **US-023-AC-01:** el `README.md` del repositorio contiene los requisitos previos, como máximo 10 pasos de instalación y arranque, la creación de un conjunto mínimo de datos sintéticos de demo (cuentas y anuncios ficticios) y las credenciales de prueba. Cuando entre US-022, ese paso se sustituirá por su carga en un único paso.
+- **US-023-AC-02:** incluye un guion de evaluación que recorre los flujos principales: registrarse y verificarse, publicar, buscar, ver el detalle y contactar. Cuando entre US-009, se añadirá el cierre del anuncio.
 - **US-023-AC-03:** una persona ajena al equipo lo sigue sin intervenciones no documentadas (M-04), y el resultado queda como evidencia.
 
 #### Reglas, restricciones y NFR
@@ -64,7 +64,7 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 - **Reglas:** ninguna específica.
 - **Restricciones:** depende de las tecnologías aprobadas en la asignatura (SU-07, EXT-01).
 - **NFR:** NFR-008.
-- **Dependencias:** funcional US-022; externa: disponibilidad de un evaluador externo (SU-06).
+- **Dependencias:** funcional US-017 (el guion se valida sobre el incremento completo de la línea base, DEC-016); externa: disponibilidad de un evaluador externo (SU-06).
 
 ---
 
@@ -74,11 +74,11 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 
 - **Necesidad:** parte de los demandantes son estudiantes extranjeros que llegan a la UEx (ver la misión, experiencia "Inclusiva").
 - **Objetivo:** G-01.
-- **Prioridad:** Could. Valor: alto para un tipo de usuario, pero no figura en el alcance S-01…S-06; si se planifica, se registrará la decisión de ampliar el alcance. · Riesgo: medio; afecta a todas las pantallas y solo es barata si los textos se externalizan desde IT-001 (TD-06). · Dependencias: necesita US-015 y US-018; ninguna depende de ella.
+- **Prioridad:** Won't. Valor: alto para estudiantes que no dominan el español, pero no está en el alcance S-01…S-06 y no hay capacidad. · Riesgo: medio; afecta a todas las pantallas. · Dependencias: necesita US-015 y US-018. Pasa de Could a Won't por DEC-016 (tarea 8 del Hito 2); se registra para una versión futura.
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 8 h-p)
 - **Incertidumbre:** Media (afecta a todas las pantallas)
 - **Predecesoras:** US-015, US-018 (pantallas principales terminadas)
-- **Plan inicial:** IT-006 (R3)
+- **Plan inicial:** no planificada (Won't, DEC-016)
 
 #### Acceptance criteria
 

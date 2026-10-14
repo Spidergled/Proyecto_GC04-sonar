@@ -40,6 +40,27 @@ El proyecto incluye:
 - **S-05:** cierre manual de un anuncio cuando deja de estar disponible.
 - **S-06:** un conjunto controlado de usuarios, habitaciones y anuncios completamente ficticios o sintéticos.
 
+## Línea base de la planificación (DEC-016)
+
+Con la capacidad efectiva del equipo (≈35,7 h-p en los 6 sprints), la planificación del Trabajo 1 solo incluye las 8 historias del MVP: **32 h-p, el 90 % de la capacidad**. El alcance S-01…S-06 sigue siendo la dirección del producto, pero en este plazo se cubre así:
+
+| Alcance | En la línea base | Fuera de la línea base (Should, por orden de entrada) |
+|---|---|---|
+| S-01 | US-001, US-002, US-003 | — |
+| S-02 | US-006 | US-010 |
+| S-03 | US-012, US-015 (listado y detalle) | US-013, US-014 (filtros por fechas y zona) |
+| S-04 | US-017 (contacto inicial) | US-018 (conversación completa) |
+| S-05 | — | US-009 (primera candidata) |
+| S-06 | US-023 (conjunto mínimo de datos sintéticos creado con el guion) | US-022 (carga en un único paso) |
+
+Consecuencias de la decisión:
+
+- **G-01, G-02 y G-04** se cubren en la línea base; M-01, M-02 y M-04 se miden en la Review de R3.
+- **G-03 y M-03** quedan aplazados hasta que entre US-009.
+- **NFR-005** (rendimiento con ≥ 100 anuncios) se medirá cuando entre US-022.
+- **US-024** (interfaz en inglés) pasa a *Won't*: no forma parte de S-01…S-06.
+- Las historias fuera de la línea base entran en el orden de la tabla, y solo si la velocidad real deja capacidad libre, siguiendo la *Gestión de cambios*.
+
 ## Exclusiones
 
 Quedan expresamente fuera del proyecto:

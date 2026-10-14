@@ -19,11 +19,11 @@ Un estudiante que busca alojamiento temporal encuentra en un solo sitio las habi
 
 - **Necesidad:** hoy la oferta está dispersa en varios canales.
 - **Objetivo:** G-01.
-- **Prioridad:** Must. Valor: es la base de toda la búsqueda y la primera pantalla del recorrido del demandante. · Riesgo: funcional bajo, pero de rendimiento (NFR-005) con 100 anuncios, por eso se prueba con los datos de US-022. · Dependencias: necesita US-006; de ella dependen US-013, US-014, US-015 y US-016.
+- **Prioridad:** Must. Valor: es la base de toda la búsqueda y la primera pantalla del recorrido del demandante. · Riesgo: funcional bajo; el riesgo de rendimiento (NFR-005, ≥ 100 anuncios) se medirá cuando entre US-022 (DEC-016). · Dependencias: necesita US-006; de ella dependen US-013, US-014, US-015 y US-016.
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 6 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-006
-- **Plan inicial:** IT-003 (R2)
+- **Plan inicial:** R2 (línea base, DEC-016); la iteración concreta se fija en la planificación del Trabajo 1
 
 #### Acceptance criteria
 
@@ -37,7 +37,7 @@ Un estudiante que busca alojamiento temporal encuentra en un solo sitio las habi
 - **Reglas:** RN-08.
 - **Restricciones:** ninguna específica además de las generales del proyecto (solo datos sintéticos, NFR-009).
 - **NFR:** NFR-002 (no se muestra el correo del autor), NFR-005, NFR-006.
-- **Dependencias:** funcional US-006; conviene tener los datos sintéticos de US-022 para probar la paginación y el rendimiento.
+- **Dependencias:** funcional US-006. Mientras US-022 esté fuera de la línea base (DEC-016), la paginación se prueba con el conjunto mínimo de datos del guion (US-023), y la medición de NFR-005 con ≥ 100 anuncios se aplaza hasta que entre US-022.
 
 ---
 
@@ -47,11 +47,11 @@ Un estudiante que busca alojamiento temporal encuentra en un solo sitio las habi
 
 - **Necesidad:** encontrar una habitación que encaje con las fechas exactas es el principal problema del demandante (ver la misión).
 - **Objetivo:** G-01; métrica M-01.
-- **Prioridad:** Must. Valor: es la diferencia frente a los canales informales (G-01, M-01). · Riesgo: funcional medio (definir bien el solapamiento de RN-10), por eso se aborda pronto, en R2. · Dependencias: necesita US-012; de ella depende US-016.
+- **Prioridad:** Should. Valor: es el filtro que diferencia ErasmusNest de los canales informales (S-03, M-01), pero con el volumen de la demo se puede buscar con el listado. · Riesgo: funcional medio (solapamiento de RN-10, hallazgo F-04). · Dependencias: necesita US-012; de ella depende US-016. Era Must; baja a Should por capacidad (DEC-016). Cuarta candidata a entrar.
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 8 h-p)
 - **Incertidumbre:** Media (reglas de solapamiento)
 - **Predecesoras:** US-012
-- **Plan inicial:** IT-003 (R2)
+- **Plan inicial:** fuera de la línea base (DEC-016); candidata n.º 4 a entrar si la velocidad real lo permite
 
 #### Acceptance criteria
 
@@ -101,11 +101,11 @@ Supongamos tres anuncios disponibles: **A** del 01/02 al 30/06, **B** del 15/03 
 
 - **Necesidad:** la UEx tiene campus en cuatro ciudades, y la cercanía es decisiva.
 - **Objetivo:** G-01.
-- **Prioridad:** Must. Valor: forma parte del alcance S-03 junto con las fechas. · Riesgo: bajo, con esfuerzo bajo; reutiliza la lista de zonas de TD-03. · Dependencias: necesita US-012; ninguna depende de ella.
+- **Prioridad:** Should. Valor: completa el filtrado de S-03, pero con el volumen de la demo basta el listado. · Riesgo: bajo; reutiliza la lista de zonas de TD-03. · Dependencias: necesita US-012. Era Must; baja a Should por capacidad (DEC-016). Sexta candidata a entrar.
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 4 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-012
-- **Plan inicial:** IT-003 (R2)
+- **Plan inicial:** fuera de la línea base (DEC-016); candidata n.º 6 a entrar si la velocidad real lo permite
 
 #### Acceptance criteria
 
@@ -132,7 +132,7 @@ Supongamos tres anuncios disponibles: **A** del 01/02 al 30/06, **B** del 15/03 
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-012
-- **Plan inicial:** IT-003 (R2)
+- **Plan inicial:** R3 (línea base, DEC-016); la iteración concreta se fija en la planificación del Trabajo 1
 
 #### Acceptance criteria
 
@@ -159,7 +159,7 @@ Supongamos tres anuncios disponibles: **A** del 01/02 al 30/06, **B** del 15/03 
 - **Estimación:** 2 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 3 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-012, US-013
-- **Plan inicial:** IT-006 (R3)
+- **Plan inicial:** fuera de la línea base (DEC-016)
 
 #### Acceptance criteria
 
