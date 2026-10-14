@@ -37,7 +37,7 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 
 - **Reglas:** RN-02, RN-08, RN-09, RN-11.
 - **Restricciones:** los mensajes de la demo son sintéticos (NFR-009).
-- **NFR:** NFR-002, NFR-004, NFR-007.
+- **NFR:** NFR-002, NFR-004, NFR-007, NFR-009.
 - **Dependencias:**
   - Funcionales: US-015 (punto de entrada) y US-002 (cuenta verificada). US-009 condiciona el comportamiento con anuncios cerrados.
   - Técnicas: modelo de datos de conversación y mensaje, que comparte con US-018. Conviene que la misma persona diseñe ambas historias.

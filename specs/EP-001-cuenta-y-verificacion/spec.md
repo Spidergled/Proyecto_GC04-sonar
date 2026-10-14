@@ -38,7 +38,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 
 - **Reglas:** RN-01, RN-02.
 - **Restricciones:** solo cuentas sintéticas (NFR-009); el dominio institucional es configurable para poder usar un dominio de prueba.
-- **NFR:** NFR-001 (hash de contraseñas), NFR-004 (formulario accesible), NFR-007 (validación en servidor).
+- **NFR:** NFR-001 (hash de contraseñas), NFR-004 (formulario accesible), NFR-007 (validación en servidor), NFR-009 (solo cuentas sintéticas).
 - **Dependencias:**
   - Funcionales: ninguna.
   - Técnicas: modelo de datos de usuario y entorno base del proyecto, preparados por el TL en IT-001.
@@ -138,7 +138,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 
 - **Reglas:** RN-02 (una cuenta no verificada puede entrar, pero con acciones limitadas).
 - **Restricciones:** solo cuentas sintéticas (NFR-009); el mecanismo de sesión depende de las tecnologías aprobadas en la asignatura (SU-07).
-- **NFR:** NFR-001, NFR-004, NFR-007.
+- **NFR:** NFR-001, NFR-004, NFR-007, NFR-009.
 - **Dependencias:** funcional US-001; técnica: mecanismo de sesión o autenticación definido por el TL.
 
 ---

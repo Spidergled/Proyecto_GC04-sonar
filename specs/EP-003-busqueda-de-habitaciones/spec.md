@@ -36,7 +36,7 @@ Un estudiante que busca alojamiento temporal encuentra en un solo sitio las habi
 
 - **Reglas:** RN-08.
 - **Restricciones:** ninguna específica además de las generales del proyecto (solo datos sintéticos, NFR-009).
-- **NFR:** NFR-002 (no se muestra el correo del autor), NFR-005, NFR-006.
+- **NFR:** NFR-002 (no se muestra el correo del autor), NFR-004 (listado, paginación y estado vacío accesibles), NFR-005, NFR-006, NFR-009.
 - **Dependencias:** funcional US-006. Mientras US-022 esté fuera de la línea base (DEC-016), la paginación se prueba con el conjunto mínimo de datos del guion (US-023), y la medición de NFR-005 con ≥ 100 anuncios se aplaza hasta que entre US-022.
 
 ---
@@ -146,8 +146,8 @@ Supongamos tres anuncios disponibles: **A** del 01/02 al 30/06, **B** del 15/03 
 #### Reglas, restricciones y NFR
 
 - **Reglas:** RN-08.
-- **Restricciones:** nunca se muestra la dirección exacta ni el correo del autor (NFR-002).
-- **NFR:** NFR-002, NFR-004.
+- **Restricciones:** nunca se muestra la dirección exacta ni el correo del autor (NFR-002); los usuarios y anuncios que se muestran son sintéticos (NFR-009).
+- **NFR:** NFR-002, NFR-004, NFR-009.
 - **Dependencias:** funcional US-012; el perfil (US-004) y las fotos (US-007) se añaden al detalle cuando estén terminadas.
 
 ---

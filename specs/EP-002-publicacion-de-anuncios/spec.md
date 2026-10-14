@@ -37,7 +37,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 
 - **Reglas:** RN-02, RN-04, RN-05, RN-06, RN-07.
 - **Restricciones:** el anuncio no pide ni muestra la dirección exacta (NFR-002); solo datos sintéticos (NFR-009).
-- **NFR:** NFR-002, NFR-004, NFR-007.
+- **NFR:** NFR-002, NFR-004, NFR-007, NFR-009.
 - **Dependencias:**
   - Funcionales: US-002 (cuenta verificada) y US-003 (sesión).
   - Técnicas: modelo de datos de anuncio y lista de zonas.
