@@ -32,6 +32,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 - **US-001-AC-03:** si el correo ya está registrado, se muestra un mensaje genérico ("Si el correo es válido, recibirás un enlace") que no revela si la cuenta existe.
 - **US-001-AC-04:** un registro válido crea la cuenta en estado **No verificada** y dispara el envío de la verificación (US-002).
 - **US-001-AC-05:** la contraseña debe tener al menos 8 caracteres, con una letra y un número; si no, se indica qué falta.
+- **US-001-AC-06:** si la contraseña y su confirmación no coinciden, el registro se rechaza con el mensaje "Las contraseñas no coinciden", asociado al campo de confirmación, y no se crea la cuenta.
 
 #### Reglas, restricciones y NFR
 
@@ -50,11 +51,13 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 | `ana.garcia@alumnos.unex.es` / `Erasmus2026` | Cuenta creada como **No verificada** y se envía la verificación. |
 | `ana.garcia@gmail.com` / `Erasmus2026` | Rechazado: correo no institucional. |
 | `ana.garcia@alumnos.unex.es` / `erasmus` | Rechazado: la contraseña necesita al menos 8 caracteres y un número. |
+| `ana.garcia@alumnos.unex.es` / `Erasmus2026`, confirmación `Erasmus2025` | Rechazado: "Las contraseñas no coinciden". |
 
 #### Casos límite
 
 - Correo con mayúsculas (`Ana.Garcia@Alumnos.UNEX.es`): se normaliza a minúsculas y se trata como el mismo correo.
 - Espacios al principio o al final del correo: se eliminan antes de validar.
+- Correo mal formado (sin `@`, con espacios internos o con dos `@`): se rechaza con "Introduce un correo válido" antes de comprobar el dominio.
 - Subdominios parecidos (`@alumnos.unex.es.fake.com`): se rechazan, porque la validación comprueba que el correo *termina* exactamente en el dominio configurado.
 - Doble clic en "Registrarse": solo se crea una cuenta.
 
@@ -155,7 +158,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 #### Acceptance criteria
 
 - **US-004-AC-01:** el usuario puede editar su nombre visible (2–40 caracteres), su titulación (lista cerrada) y sus idiomas (uno o varios).
-- **US-004-AC-02:** en anuncios y conversaciones se ven el nombre visible y el distintivo "Verificado UEx", pero nunca el correo.
+- **US-004-AC-02:** en anuncios y conversaciones se ven el nombre visible, la titulación, los idiomas y el distintivo "Verificado UEx", pero nunca el correo (NFR-002).
 - **US-004-AC-03:** si se guarda con un campo obligatorio vacío, se indica qué campo falta.
 
 #### Reglas, restricciones y NFR
