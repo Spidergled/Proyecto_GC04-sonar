@@ -62,8 +62,8 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 #### Reglas, restricciones y NFR
 
 - **Reglas:** ninguna específica.
-- **Restricciones:** depende de las tecnologías aprobadas en la asignatura (SU-07, EXT-01).
-- **NFR:** NFR-008.
+- **Restricciones:** depende de las tecnologías aprobadas en la asignatura (SU-07, EXT-01); el conjunto mínimo de datos y las credenciales de prueba son sintéticos (NFR-009).
+- **NFR:** NFR-008, NFR-009.
 - **Dependencias:** funcional US-017 (el guion se valida sobre el incremento completo de la línea base, DEC-016); externa: disponibilidad de un evaluador externo (SU-06).
 
 ---
