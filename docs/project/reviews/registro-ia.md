@@ -29,8 +29,8 @@ Decisión: Aceptada, Aceptada con cambios, Rechazada o Pendiente.
 | Requirements · v01 F-03 | Ídem | Faltan NFR aplicables: NFR-004 en US-002 y NFR-009 en US-013 | Constitución (principio 5) y NFR-009 globales. Confianza alta. MAJOR, bloqueante | Aceptada | Corregido en `99d8d9a` |
 | Requirements · v01 F-04 | Ídem | RN-10 no fija si las fechas son inclusivas ni cómo se calcula la cobertura parcial en US-013 | Solo hay un caso límite definido. Confianza media. MAJOR, bloqueante | Pendiente | Hugo y Gled (RN-10) |
 | Requirements · v01 F-05 | Ídem | Las estimaciones de las seis historias detalladas son V0, previas al Planning Poker | Lo dicen las propias specs. Confianza alta. MAJOR, bloqueante | Aceptada | Planning Poker del 10/10, `abc523d` |
-| Requirements · v01 F-06 | Ídem | No se puede comprobar si cada estimación cabe en un sprint ni aplicar DEC-018 | El agente no pudo leer el Excel. Confianza alta en la falta de evidencia. QUESTION | Pendiente | Depende de DEC-016 y de las horas reales |
-| Requirements · v01 F-07 | Ídem | US-024 (inglés) no está en S-01…S-06 y tiene plan en IT-006; US-007, US-011, US-020 y US-004 sin S-XX inequívoco | Alcance de `goals.md` explícito. Confianza media. QUESTION | Pendiente | Hugo (US-024: Won't o DEC de ampliación) |
+| Requirements · v01 F-06 | Ídem | No se puede comprobar si cada estimación cabe en un sprint ni aplicar DEC-018 | El agente no pudo leer el Excel. Confianza alta en la falta de evidencia. QUESTION | Aceptada | DEC-016 (14/10/2026): ninguna historia supera 5 h-p y la línea base (32 h-p) cabe en cada release (hoja *Resumen* del Excel) |
+| Requirements · v01 F-07 | Ídem | US-024 (inglés) no está en S-01…S-06 y tiene plan en IT-006; US-007, US-011, US-020 y US-004 sin S-XX inequívoco | Alcance de `goals.md` explícito. Confianza media. QUESTION | Aceptada | DEC-016 (14/10/2026): US-024 pasa a Won't; US-004, US-007, US-011 y US-020 quedan fuera de la línea base |
 | Requirements · v01 F-08 | Ídem | Sin orden dentro del sprint (US-006→US-009, US-012→US-013); US-017 no cita US-009; US-023 solo cita US-022 | Basado en los planes iniciales. Confianza media. QUESTION | Pendiente | Se resuelve en la planificación del Excel |
 
 ### Candidatos y preguntas del informe v01 sin número de hallazgo (§7 y §9)
@@ -39,11 +39,11 @@ El equipo también tiene que clasificar estas propuestas, aunque el agente no la
 
 | Agente e ID | Entrada | Propuesta | Justificación (según el agente) | Decisión | Evidencia o responsable |
 |---|---|---|---|---|---|
-| Requirements · v01 §7 US-007 | Ídem | Fotos: ¿entran en S-02 o son ampliación? | S-02 solo nombra fechas, zona y precio. SCOPE_UNCLEAR | Pendiente | Hugo |
-| Requirements · v01 §7 US-011 | Ídem | Cierre automático: S-05 solo nombra el cierre manual | SCOPE_UNCLEAR | Pendiente | Hugo |
-| Requirements · v01 §7 US-020 | Ídem | Reportes: candidato fuera de alcance | S-01…S-06 no incluyen moderación. OUT_OF_SCOPE candidato | Pendiente | Hugo |
-| Requirements · v01 §7 US-023 | Ídem | Registrar el guion como entregable que habilita G-04 | G-04, M-04 y NFR-008. IN_SCOPE_CANDIDATE | Pendiente | Hugo |
+| Requirements · v01 §7 US-007 | Ídem | Fotos: ¿entran en S-02 o son ampliación? | S-02 solo nombra fechas, zona y precio. SCOPE_UNCLEAR | Aceptada | Fuera de la línea base (DEC-016); el alcance se revisará si llega a entrar |
+| Requirements · v01 §7 US-011 | Ídem | Cierre automático: S-05 solo nombra el cierre manual | SCOPE_UNCLEAR | Aceptada | Fuera de la línea base (DEC-016); el alcance se revisará si llega a entrar |
+| Requirements · v01 §7 US-020 | Ídem | Reportes: candidato fuera de alcance | S-01…S-06 no incluyen moderación. OUT_OF_SCOPE candidato | Aceptada | Fuera de la línea base (DEC-016) |
+| Requirements · v01 §7 US-023 | Ídem | Registrar el guion como entregable que habilita G-04 | G-04, M-04 y NFR-008. IN_SCOPE_CANDIDATE | Aceptada | En la línea base (DEC-016), R3 |
 | Requirements · v01 §7 US-013 | Ídem | ¿Mostrar coberturas parciales o solo anuncios que cubren toda la estancia? | Utilidad pendiente de validar en la Review de R2. IN_SCOPE_CANDIDATE | Pendiente | Hugo (ligado a F-04) |
-| Requirements · v01 §7 anuncios cerrados | Ídem | ¿Se puede responder en conversaciones de un anuncio cerrado o solo leerlas? | US-009 y US-018 no lo fijan. SCOPE_UNCLEAR | Pendiente | Hugo |
+| Requirements · v01 §7 anuncios cerrados | Ídem | ¿Se puede responder en conversaciones de un anuncio cerrado o solo leerlas? | US-009 y US-018 no lo fijan. SCOPE_UNCLEAR | Pendiente | Aplazada por DEC-016: US-009 y US-018 están fuera de la línea base; se decidirá cuando entren · Hugo |
 | Requirements · v01 §8 M-05 | Ídem | M-05 no está trazada a ninguna historia | Solo cubierta en parte por la DoD | Pendiente | Hugo |
 | Requirements · v01 §9 P2 | Ídem | ¿Qué validación observable se aplica a un correo mal formado en US-001? | Pregunta para decisión humana | Pendiente | Hugo (junto con F-02) |
