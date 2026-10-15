@@ -54,8 +54,8 @@ def tree(mode):
         for s,(it,rel) in enumerate(SPR):
             sp=node(f'{it} · {rel}','sum')
             sp['children']+=mgt_tasks(s)[:1]+[us_task(u) for u in US if u[4]==s]+mgt_tasks(s)[1:]
+            sp['children']+=[m for m in milestones() if m['sprint']==s]
             root['children'].append(sp)
-        root['children'].append(node('Hitos de release','sum',children=milestones()))
     else:
         mg=node('Gestión (MGT)','sum')
         for s,(it,rel) in enumerate(SPR):
@@ -63,7 +63,7 @@ def tree(mode):
         us=node('Historias de usuario','sum')
         for ep,name in EPICS.items():
             e=node(f'{ep} {name}','sum'); e['children']=[us_task(u) for u in US if u[2]==ep]; us['children'].append(e)
-        root['children']+= [mg,us,node('Hitos de release','sum',children=milestones())]
+        root['children']+= [mg,us]+milestones()
     return root
 def avail():
     per=[]; prev=dt.datetime(2026,10,1)
