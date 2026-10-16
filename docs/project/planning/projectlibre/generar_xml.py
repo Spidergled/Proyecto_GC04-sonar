@@ -45,9 +45,10 @@ def mgt_tasks(s):
     it=SPR[s][0]
     return [node(f'MGT {it} {n}','task',key=f'MGT-{it}-{i}',sprint=s,asg=a,pred=[],note=nt) for i,(n,a,nt) in enumerate(MGT)]
 def milestones():
+    # Cada hito depende de todas las historias (o tramos) que terminan en su release (corrección del 16/10/2026).
     return [node('Hito R1 · Release 1 entregada','ms',key='R1',sprint=1,pred=[('US-002b','FS'),('US-003','FS')]),
-            node('Hito R2 · Release 2 entregada','ms',key='R2',sprint=3,pred=[('US-012','FS')]),
-            node('Hito R3 · Release 3 entregada (fin del proyecto)','ms',key='R3',sprint=5,pred=[('US-023','FS')])]
+            node('Hito R2 · Release 2 entregada','ms',key='R2',sprint=3,pred=[('US-006b','FS'),('US-012','FS')]),
+            node('Hito R3 · Release 3 entregada (fin del proyecto)','ms',key='R3',sprint=5,pred=[('US-017b','FS'),('US-023','FS')])]
 def tree(mode):
     root=node('ErasmusNest · Practical Software (GC04)','sum')
     if mode=='sprints':
