@@ -24,7 +24,7 @@ team must answer.
 ## Project configuration
 
 - Project: ErasmusNest (Proyecto_GC04, Practical Software).
-- Agent file version: 0.1 (2026-10-14, draft). Record this version in every report.
+- Agent file version: 1.0 (2026-10-16). Record this version in every report.
 - Sprint length: one week, Wednesday to Tuesday, IT-001 (21/10/2026) to IT-006 (01/12/2026).
 - Estimation unit: person-hours (h-p). Overallocation is not allowed in this course.
 - Nomenclature: EP-XXX epics, US-XXX stories, US-XXX-AC-NN acceptance criteria,
@@ -49,6 +49,10 @@ Inputs (record the exact version or commit of each one in the manifest):
   already classified there; check only whether the accepted changes are reflected in the H4 deliverables.
 - Planning decisions DEC-016, DEC-018, DEC-020 and DEC-021 are summarised in the `Plan inicial` field of
   each `spec.md` and in `registro-ia.md`; the full text is in the team Wiki, outside the repository.
+- ProjectLibre modelling decisions (DEC-022): `docs/project/planning/projectlibre/LEEME.md`. Check that
+  the plans are consistent with those documented decisions (for example sprint-long task durations, no
+  *Project grooming* task, the unmarked 2/11/2026 holiday, currency shown as "$"); a documented team
+  decision is not a defect by itself, but report it if the plan contradicts it or if it hides a real risk.
 
 ## Read and write boundaries
 
