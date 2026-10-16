@@ -451,7 +451,9 @@ Lo regula DEC-021 y queda registrado en `docs/project/reviews/registro-ia.md`.
 - **Herramienta:** GitHub Copilot en VS Code, con tres agentes propios en `.github/agents/` hechos a partir de las plantillas del profesor. El modelo está en *Auto*, el único modo que permite el plan Copilot Student; los tres usamos el mismo.
   - **Requirements Agent:** revisa el catálogo. Generó el informe v01 y el v02 en modo RECHECK. No modifica requisitos.
   - **Planning Agent:** revisa capacidad, carga, secuencia, coste y margen. Su informe v01 en modo CONSISTENCY dio READY_WITH_NON_BLOCKING_QUESTIONS, con 0 hallazgos bloqueantes y 3 menores aceptados. Lee el Excel a través de su exportación en texto.
-  - **Project Auditor** (opcional, Hito 4): comprueba las cuatro dimensiones del enunciado, es decir, riesgos, ProjectLibre, viabilidad de la asignación y viabilidad de la secuencia. Gled lo ejecutó el 16/10/2026 sobre la planificación final. Su informe (`docs/project/reviews/audit/audit-report-v01.md`) y la clasificación de cada hallazgo están en `registro-ia.md`, §3.
+  - **Project Auditor** (opcional, Hito 4): comprueba las cuatro dimensiones del enunciado, es decir, riesgos, ProjectLibre, viabilidad de la asignación y viabilidad de la secuencia. Gled lo ejecutó el 16/10/2026 sobre la planificación final. Su informe está en `docs/project/reviews/audit/audit-report-v01.md` y la clasificación en `registro-ia.md`, §3. Resultado: **CONFORME_CON_OBSERVACIONES**, con 0 no conformidades y 2 observaciones menores, ambas aceptadas:
+    - AUD-v01-001: RSK-07 no tenía fecha límite para el buzón de pruebas (EXT-02); se añade el 21/10.
+    - AUD-v01-002: en ProjectLibre, el orden dentro del sprint de los enlaces comienzo-comienzo no se ve; se fijará en el Sprint Planning de IT-004, IT-005 e IT-006.
 - **Cómo se decide:** cada hallazgo se comprueba contra la fuente citada y se clasifica como aceptado, aceptado con cambios, rechazado o pendiente, con su justificación. Ninguna propuesta se aplica sin revisarla.
 - **Asistente conversacional (Claude):** se usó para auditar los hitos frente a los enunciados, preparar los escenarios de DEC-016, hacer el borrador de la planificación, el generador de los XML de ProjectLibre y el registro de riesgos, y redactar este informe. Cada uso consta en el registro (§4) con la revisión del equipo. Las decisiones de alcance, reparto, tarifas y riesgos las tomó el equipo.
 
@@ -464,7 +466,7 @@ Lo regula DEC-021 y queda registrado en `docs/project/reviews/registro-ia.md`.
 | Trabajo sin asignar | 0 h-p |
 | Secuencia y dependencias | Todas respetadas, 0 incidencias. Hitos sobre el camino crítico |
 | Coste | 2.507,64 €, por debajo del tope de referencia de 3.210 € |
-| Revisión externa | Planning Agent sin bloqueantes. Auditor ejecutado y clasificado en `registro-ia.md` |
+| Revisión externa | Planning Agent sin bloqueantes. Auditor: CONFORME_CON_OBSERVACIONES, 0 no conformidades y 2 observaciones aceptadas |
 
 La planificación es **viable** y es la línea base del proyecto: etiqueta `planificacion-v1` en el repositorio y `.pod` con línea base en ProjectLibre. Su precio es un alcance reducido al recorrido esencial y un margen individual muy pequeño en tres semanas, por eso hay una regla de contingencia y un orden de entrada de historias decididos de antemano. La primera retrospectiva (cierre de R1, 03/11) revisará dos cosas: el peso de la gestión (43 % de las horas) y si la velocidad real permite empezar a incorporar US-009.
 
