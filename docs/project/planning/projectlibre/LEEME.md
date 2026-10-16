@@ -1,6 +1,6 @@
 # ProjectLibre del Hito 4 (por sprints y por épicas)
 
-Planificación viable del Hito 3 (DEC-020) trasladada a ProjectLibre, como pide el enunciado de la semana 4. Los XML se generaron el 14/10/2026 con `generar_xml.py` (preparado con IA, ver `docs/project/reviews/registro-ia.md`, §4) a partir del Excel de `main` y se comprobaron contra `docs/project/planning/excel-export-v02.md` (`main` en `91ffe9a`, PR #13): la v02 no cambia el reparto, las tarifas ni el coste. El 15/10/2026 Gled (TL) los abrió en ProjectLibre 1.9.3, los guardó como `.pod`, fijó la línea base y exportó el Gantt en PDF (PR #16). Las decisiones de modelado de abajo se aceptan en DEC-022 (Wiki).
+Planificación viable del Hito 3 (DEC-020) trasladada a ProjectLibre, como pide el enunciado de la semana 4. Los XML se generaron el 14/10/2026 con `generar_xml.py` (preparado con IA, ver `docs/project/reviews/registro-ia.md`, §4) a partir del Excel de `main` y se comprobaron contra `docs/project/planning/excel-export-v02.md` (`main` en `91ffe9a`, PR #13): la v02 no cambia el reparto, las tarifas ni el coste. El 15/10/2026 Gled (TL) los abrió en ProjectLibre 1.9.3, los guardó como `.pod`, fijó la línea base y exportó el Gantt en PDF (PR #16). El 16/10/2026 se corrigieron las predecesoras de los hitos R2 y R3 en el script, en los XML y en los `.pod`, y se volvieron a exportar los PDF (ver *Hitos*). Las decisiones de modelado de abajo se aceptan en DEC-022 (Wiki).
 
 ## Ficheros
 
@@ -25,7 +25,7 @@ Formato MS Project XML (MSPDI). ProjectLibre lo abre con *File → Open*. Despu�
   - *Coordinación del rol*: 0,5 h para Hugo y Gled, y 0,75 h para José.
 - **Historias:** las 8 de la línea base, con las horas por persona de la hoja *Planificación*. Las tres que usan la excepción de DEC-018 se parten en dos tramos, uno por sprint: US-002, US-006 y US-017.
 - **Dependencias:** las de la hoja *Dependencias* que afectan a la línea base. Entre sprints son fin-comienzo (FS). Cuando la predecesora está en el mismo sprint, son comienzo-comienzo (SS). Es el caso de US-001→US-002 (1/2), US-006 (2/2)→US-012, US-015→US-017 (1/2) y US-017 (2/2)→US-023. El orden dentro del sprint lo marcan las tareas TK.
-- **Hitos:** R1 al final de IT-002, R2 al final de IT-004 y R3 (fin del proyecto) al final de IT-006.
+- **Hitos:** R1 al final de IT-002, R2 al final de IT-004 y R3 (fin del proyecto) al final de IT-006. Cada hito depende (FS) de todas las historias o tramos que terminan en su release: R1 de US-002 (2/2) y US-003; R2 de US-006 (2/2) y US-012; R3 de US-017 (2/2) y US-023. En la versión del 15/10, R2 y R3 solo dependían de US-012 y US-023; la corrección del 16/10 no cambia ninguna fecha, hora ni coste.
 - **Restricción:** cada tarea tiene «Comenzar no antes de» el miércoles de su sprint, porque los sprints son timebox fijos.
 
 ## Comprobado
@@ -33,7 +33,7 @@ Formato MS Project XML (MSPDI). ProjectLibre lo abre con *File → Open*. Despu�
 | Comprobación | Resultado |
 |---|---|
 | Horas por persona, historia e iteración frente a la hoja *Planificación* (v02) | Coinciden todas (comprobado con un script contra la exportación) |
-| Dependencias de la línea base frente a la hoja *Dependencias* | Están las 9, sin ninguna de más |
+| Dependencias de la línea base frente a la hoja *Dependencias* | Están las 9, sin ninguna de más. Además, cada hito depende de todas las historias o tramos de su release (corrección del 16/10/2026) |
 | Apertura en ProjectLibre 1.9.3 | Abre bien. US-001 tiene 5 h y 181,30 €, y US-002 (2/2) tiene 3,2 h y 117 €, igual que en el Excel |
 | Trabajo total | 70,76 h = 32 h-p de desarrollo + 38,76 h de gestión (igual que la hoja *Gestión*) |
 | Coste por persona | Hugo 802,20 €, Gled 872,80 €, José 832,64 € (igual que la hoja *Coste*) |
