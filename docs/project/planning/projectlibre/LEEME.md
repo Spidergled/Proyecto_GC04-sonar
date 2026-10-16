@@ -1,6 +1,6 @@
-# Borrador · ProjectLibre del H4 (por sprints y por épicas)
+# ProjectLibre del Hito 4 (por sprints y por épicas)
 
-Generado el 14/10/2026 a partir del Excel de `main` y de su exportación. Revisado esa misma noche contra `docs/project/planning/excel-export-v02.md` (`main` en `91ffe9a`, PR #13): la v02 no cambia el reparto, las tarifas ni el coste. Es un borrador: el equipo decide si lo adopta. No se ha tocado el repositorio.
+Planificación viable del Hito 3 (DEC-020) trasladada a ProjectLibre, como pide el enunciado de la semana 4. Los XML se generaron el 14/10/2026 con `generar_xml.py` (preparado con IA, ver `docs/project/reviews/registro-ia.md`, §4) a partir del Excel de `main` y se comprobaron contra `docs/project/planning/excel-export-v02.md` (`main` en `91ffe9a`, PR #13): la v02 no cambia el reparto, las tarifas ni el coste. El 15/10/2026 Gled (TL) los abrió en ProjectLibre 1.9.3, los guardó como `.pod`, fijó la línea base y exportó el Gantt en PDF (PR #16). Las decisiones de modelado de abajo se aceptan en DEC-022 (Wiki).
 
 ## Ficheros
 
@@ -8,8 +8,11 @@ Generado el 14/10/2026 a partir del Excel de `main` y de su exportación. Revisa
 |---|---|
 | `ErasmusNest_GC04_por_sprints.xml` | Planificación ordenada por sprints: IT-001…IT-006, cada uno con sus tareas MGT y sus historias, y los hitos de release |
 | `ErasmusNest_GC04_por_epicas.xml` | Copia con la misma información en dos ramas: *Gestión (MGT)* por sprint e *Historias de usuario* por épica (EP-001…EP-005) |
+| `ErasmusNest_GC04_por_sprints.pod` y `ErasmusNest_GC04_por_epicas.pod` | Proyectos de ProjectLibre guardados desde los XML, con la línea base fijada |
+| `ErasmusNest_GC04_gantt_sprints.pdf` y `ErasmusNest_GC04_gantt_epicas.pdf` | Diagramas de Gantt exportados desde ProjectLibre |
+| `generar_xml.py` | Script que genera los dos XML a partir de las cifras del Excel |
 
-Formato MS Project XML (MSPDI). ProjectLibre lo abre con *File → Open*. Después hay que guardarlo como `.pod` (*Save as*) y fijar la línea base (*Save Baseline*). Lo he probado abriéndolo en ProjectLibre 1.9.3: se importan las tareas, los recursos, las asignaciones y las dependencias.
+Formato MS Project XML (MSPDI). ProjectLibre lo abre con *File → Open*. Después hay que guardarlo como `.pod` (*Save as*) y fijar la línea base (*Save Baseline*). Se ha probado en ProjectLibre 1.9.3: se importan las tareas, los recursos, las asignaciones y las dependencias.
 
 ## Qué contiene
 
@@ -38,11 +41,11 @@ Formato MS Project XML (MSPDI). ProjectLibre lo abre con *File → Open*. Despu�
 | Carga máxima por persona y semana | 4,72 h (José en IT-001), por debajo de las 5 h. No hay sobreasignación |
 | Las dos versiones | Mismas tareas, horas, fechas y coste; solo cambia la agrupación |
 
-## Decisiones de modelado para que las valide el equipo
+## Decisiones de modelado (DEC-022)
 
 1. **Todas las tareas duran el sprint completo (5 días).** Las horas reales son pocas (entre 0,3 y 2,4 h por persona y tarea), y con 5 h a la semana la capacidad de cada persona ronda 1 h al día. Si las ceremonias durasen 1 día, el miércoles ya superaría esa hora y ProjectLibre marcaría una sobreasignación que en realidad no existe, porque la capacidad del equipo es semanal. Repartiendo las horas por igual en el sprint, ProjectLibre compara la carga semanal con las 5 h, que es lo que también hace el Excel.
 2. **Ausencias:** no van en el calendario de cada recurso, porque son de horas sueltas (por ejemplo, el parcial de Gled del 6/11, 1,5 h). Ya están descontadas en la capacidad efectiva del Excel y la carga asignada las respeta.
-3. **Sin «Project grooming»:** el ejemplo del PDF lo incluye, pero el Excel no tiene horas para esa tarea. Añadirlo cambiaría el coste, así que lo decide el equipo.
-4. **Nivel de detalle:** el plan llega hasta las historias, como el ejemplo del PDF. Las tareas TK-001…TK-007 de IT-001 podrían colgar de US-001 y US-002 si queréis que IT-001 esté más detallado.
-5. **Festivo del 2/11:** la capacidad del Excel son 5 h por persona y semana, y el festivo no la reduce porque el equipo no trabaja en jornada laboral. Por eso no se marca como no laborable. Si el equipo decide que sí la reduce, IT-002 pierde 1 h por persona: Hugo pasaría de 2,34 a 1,34 h-p con 2,1 asignadas y José de 2,41 a 1,41 h-p con 2,2 asignadas, y el plan dejaría de ser viable. Además, he probado a meter el festivo en el XML y **ProjectLibre 1.9.3 no lo importa bien**: deja IT-002 con 3 días y menos horas. Si se quiere marcar, hay que hacerlo a mano en ProjectLibre (*File → Calendar*) y ajustar las tareas de IT-002 a 4 días. Propuesta: dejarlo como está y explicarlo en el informe y en la DEC del H4.
-6. **Moneda:** ProjectLibre muestra los importes con «$» aunque el XML indique euros. Los números son correctos; se cambia en las opciones de ProjectLibre o se aclara en el informe.
+3. **Sin «Project grooming»:** el ejemplo del PDF lo incluye, pero el Excel no tiene horas para esa tarea. No se añade, para que ProjectLibre y el Excel tengan el mismo trabajo y el mismo coste. Las tareas de gestión de cada sprint sí están.
+4. **Nivel de detalle:** el plan llega hasta las historias, como el ejemplo del PDF. Las tareas TK-001…TK-007 de IT-001 están en la hoja *Tareas IT-001* del Excel; las demás iteraciones se detallan en su Sprint Planning.
+5. **Festivo del 2/11:** la capacidad del Excel son 5 h por persona y semana, y el festivo no la reduce porque el equipo no trabaja en jornada laboral. Por eso no se marca como no laborable. Si el equipo decide que sí la reduce, IT-002 pierde 1 h por persona: Hugo pasaría de 2,34 a 1,34 h-p con 2,1 asignadas y José de 2,41 a 1,41 h-p con 2,2 asignadas, y el plan dejaría de ser viable. Además, se probó a meter el festivo en el XML y **ProjectLibre 1.9.3 no lo importa bien**: deja IT-002 con 3 días y menos horas. Si se quiere marcar, hay que hacerlo a mano en ProjectLibre (*File → Calendar*) y ajustar las tareas de IT-002 a 4 días. Se deja como está y se explica en el informe del Trabajo 1.
+6. **Moneda:** ProjectLibre muestra los importes con «$» aunque el XML indique euros. Los números son correctos y se aclara en el informe.
