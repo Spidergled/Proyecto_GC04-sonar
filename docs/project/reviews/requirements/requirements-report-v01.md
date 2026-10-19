@@ -47,11 +47,11 @@ La recomendación se limita a US-001, US-002, US-006, US-009, US-013 y US-017, y
 | Dimensión | Elementos inspeccionados | Resultado | Hallazgos |
 |---|---|---|---|
 | Claridad y verificabilidad | Seis historias detalladas; resto US-003…US-024 (salvo US-021); NFR/RN y goals | Parcial: contradicción entre privacidad y perfil visible; faltan decisiones de validación y límites de fechas. | F-01, F-02, F-04 |
-| Cobertura y alcance | G-01…G-04, S-01…S-06, EX-01…EX-05 y objetivos/épicas/historias | Parcial: varias capacidades del catálogo no tienen correspondencia inequívoca con S-01…S-06; hay candidatos para decisión humana. | F-07; §7 |
-| Elementos de especificación ausentes | Casos positivos/negativos, NFR, reglas, datos sintéticos y errores | Parcial: trazabilidad incompleta de NFR y algunos comportamientos/estados no definidos. | F-02, F-03, F-04; §6 |
-| Tamaño y granularidad | Todas las historias planificadas del catálogo, sin descomponer tareas | No se detecta una historia detallada que por sí sola sea inequívocamente demasiado grande; varias historias son outcomes verticales identificables. La capacidad real no se puede comprobar. | F-06; §8 |
-| Criterios de aceptación y DoR | US-001, US-002, US-006, US-009, US-013 y US-017 frente a cada criterio del DoR | El número y la forma general de criterios están presentes, pero fallan o no se pueden acreditar varios controles DoR. | F-02, F-03, F-05, F-06; §6 |
-| Dependencias y supuestos | Predecesoras, plan inicial, reglas, supuestos y enlaces entre US | Varias relaciones están declaradas; orden de dependencias dentro de iteraciones y algunas relaciones de flujo no se acreditan. | F-08; §8 |
+| Cobertura y alcance | G-01…G-04, S-01…S-06, EX-01…EX-05 y objetivos/épicas/historias | Parcial: varias capacidades del catálogo no tienen correspondencia inequívoca con S-01…S-06; hay candidatos para decisión humana. | F-07; apartado 7 |
+| Elementos de especificación ausentes | Casos positivos/negativos, NFR, reglas, datos sintéticos y errores | Parcial: trazabilidad incompleta de NFR y algunos comportamientos/estados no definidos. | F-02, F-03, F-04; apartado 6 |
+| Tamaño y granularidad | Todas las historias planificadas del catálogo, sin descomponer tareas | No se detecta una historia detallada que por sí sola sea inequívocamente demasiado grande; varias historias son outcomes verticales identificables. La capacidad real no se puede comprobar. | F-06; apartado 8 |
+| Criterios de aceptación y DoR | US-001, US-002, US-006, US-009, US-013 y US-017 frente a cada criterio del DoR | El número y la forma general de criterios están presentes, pero fallan o no se pueden acreditar varios controles DoR. | F-02, F-03, F-05, F-06; apartado 6 |
+| Dependencias y supuestos | Predecesoras, plan inicial, reglas, supuestos y enlaces entre US | Varias relaciones están declaradas; orden de dependencias dentro de iteraciones y algunas relaciones de flujo no se acreditan. | F-08; apartado 8 |
 
 ### Correspondencia de objetivos y límites generales
 
@@ -59,7 +59,7 @@ La recomendación se limita a US-001, US-002, US-006, US-009, US-013 y US-017, y
 - **G-02:** US-001/002 y las restricciones de US-006/017 materializan verificación institucional antes de publicar/contactar. US-004 añade perfil visible, cuya compatibilidad con NFR-002 está en conflicto (F-01).
 - **G-03:** US-009/010 y US-012/015 cubren cierre/estado; US-011 amplía el cierre manual de S-05 con automatización, pendiente de aclaración de alcance.
 - **G-04:** US-022/023 se relacionan con datos y evaluación de demo, pero la relación de US-023 con el alcance S-01…S-06 no está explicitada.
-- **S-01…S-06:** las épicas EP-001…EP-005 declaran referencias de alcance, pero algunas historias introducen capacidades no nombradas expresamente por esos elementos; véase §7.
+- **S-01…S-06:** las épicas EP-001…EP-005 declaran referencias de alcance, pero algunas historias introducen capacidades no nombradas expresamente por esos elementos; véase el apartado 7.
 - **EX-01…EX-05:** ninguna historia planificada revisada declara explícitamente pagos, contratos, app nativa, verificación de identidad adicional o integración universitaria real. US-020 (reportes), US-007 (fotos) y US-024 (inglés) son ampliaciones/candidatos a confirmar, no se clasifican como violaciones confirmadas de una exclusión.
 
 ### Revisión mínima del resto del catálogo
@@ -69,22 +69,22 @@ El vínculo G/S indicado procede de la épica que contiene la historia; “sin S
 | Historia | Trazabilidad declarada y observación mínima de claridad/granularidad/dependencia |
 |---|---|
 | US-003 | EP-001: G-01/G-02, S-01. Login/cierre de sesión es un outcome acotado; depende de US-001 y establece límite de 2 h alineado con NFR-001. El acceso de cuentas no verificadas queda acotado por RN-02. |
-| US-004 | EP-001: G-01/G-02, S-01. Perfil es outcome vertical, pero titulación/idiomas son atributos adicionales no descritos en S-01 y los campos visibles chocan con NFR-002 (F-01 y candidato §7). Depende de US-003. |
+| US-004 | EP-001: G-01/G-02, S-01. Perfil es outcome vertical, pero titulación/idiomas son atributos adicionales no descritos en S-01 y los campos visibles chocan con NFR-002 (F-01 y candidato del apartado 7). Depende de US-003. |
 | US-005 | EP-001: G-01, S-01. Recuperación es un flujo independiente y acotado; depende de US-002/US-003 y del correo de prueba. Caducidad/uso único son verificables; no define un límite de frecuencia, cuya necesidad queda a decisión del equipo. |
-| US-007 | EP-002: G-01, vínculo S-02 por confirmar. Subida y visualización de fotos son outcome acotado; depende de US-006 y el detalle US-015, con riesgo de almacenamiento declarado. Límites de formato/tamaño/alt son explícitos (§7). |
+| US-007 | EP-002: G-01, vínculo S-02 por confirmar. Subida y visualización de fotos son outcome acotado; depende de US-006 y el detalle US-015, con riesgo de almacenamiento declarado. Límites de formato/tamaño/alt son explícitos (apartado 7). |
 | US-008 | EP-002: G-03, S-02. Edición es outcome acotado; depende de US-006. Remite validación a US-006, pero no explicita si todos los campos editables coinciden ni cómo interactúa edición con cierre concurrente. |
 | US-010 | EP-002: G-03, S-05. Lista de anuncios/estado es outcome inspectable; depende de US-006 y añade acciones según US-009/US-008/US-018 estén disponibles. El plan de añadir accesos incrementalmente está explicado. |
-| US-011 | EP-002: G-03, S-05 ambiguo. Cierre automático es una capacidad independiente, de alcance no inequívoco frente al cierre “manual” de S-05; depende de US-009 y de un mecanismo temporal que se deja como opción técnica (§7). |
+| US-011 | EP-002: G-03, S-05 ambiguo. Cierre automático es una capacidad independiente, de alcance no inequívoco frente al cierre “manual” de S-05; depende de US-009 y de un mecanismo temporal que se deja como opción técnica (apartado 7). |
 | US-012 | EP-003: G-01, S-03. Listado con paginación es un outcome acotado y base de US-013/014/015; depende de US-006. US-022 se recomienda para datos/rendimiento, pero no figura como predecesora formal. |
 | US-014 | EP-003: G-01, S-03. Filtro por zona es outcome pequeño; depende de US-012 y comparte catálogo de zonas con US-006. No se aclara en AC el operador al seleccionar varias zonas, aunque la lista cerrada está enlazada a RN-06. |
-| US-015 | EP-003: G-01/G-03, S-03. Detalle y estado constituyen outcome vertical; depende de US-012 y se amplía con US-004/US-007. No se especifica completamente acceso directo a un anuncio cerrado y su transición respecto a lista de disponibles (§7). |
+| US-015 | EP-003: G-01/G-03, S-03. Detalle y estado constituyen outcome vertical; depende de US-012 y se amplía con US-004/US-007. No se especifica completamente acceso directo a un anuncio cerrado y su transición respecto a lista de disponibles (apartado 7). |
 | US-016 | EP-003: G-01, S-03. Ordenar por precio/fecha es una capacidad acotada; depende de US-012/US-013 y define precedencia frente a cobertura completa. |
-| US-018 | EP-004: G-01/G-02, S-04. Lectura/respuesta en conversación es outcome vertical; depende de US-017 y comparte modelo. En anuncio cerrado queda claro que se puede leer, pero no si responder está permitido (§7). |
+| US-018 | EP-004: G-01/G-02, S-04. Lectura/respuesta en conversación es outcome vertical; depende de US-017 y comparte modelo. En anuncio cerrado queda claro que se puede leer, pero no si responder está permitido (apartado 7). |
 | US-019 | EP-004: G-01, S-04. Indicador de no leídos es incremento acotado sobre US-018; el criterio cuenta conversaciones y no mensajes, pero no concreta cuándo se refresca el indicador. |
-| US-020 | EP-004: G-02; vínculo S-04 discutible, OUT_OF_SCOPE candidato (§7). Reportar es outcome acotado; depende de US-015/US-003. Los criterios guardan el reporte, pero la revisión/gestión queda fuera, sin responsable definido. |
+| US-020 | EP-004: G-02; vínculo S-04 discutible, OUT_OF_SCOPE candidato (apartado 7). Reportar es outcome acotado; depende de US-015/US-003. Los criterios guardan el reporte, pero la revisión/gestión queda fuera, sin responsable definido. |
 | US-022 | EP-005: G-04, S-06. Carga reproducible de datos sintéticos es outcome claro y habilitador de pruebas; depende de US-001/US-006 y se amplía con US-017. Los umbrales de 20 usuarios/100 anuncios y cuentas de demo están en AC, pero su aceptación como necesidad del baseline debe ser decisión del equipo, no derivarse de S-06. |
-| US-023 | EP-005: G-04; S-XX no explícito, candidato IN_SCOPE (§7). Guion de instalación/evaluación tiene valor verificable por M-04/NFR-008; depende de US-022, pero su guion recorre más historias que las declaradas como predecesoras (F-08). |
-| US-024 | EP-005: G-01; S-XX no explícito, SCOPE_UNCLEAR (§7). La traducción es transversal y amplia, y sus AC son de alto nivel (“flujos principales”); declara dependencias US-015/US-018, insuficientes para representar todos los textos/error que pide traducir si se acepta. Además, estado y plan IT-006 requieren aclaración (F-07). |
+| US-023 | EP-005: G-04; S-XX no explícito, candidato IN_SCOPE (apartado 7). Guion de instalación/evaluación tiene valor verificable por M-04/NFR-008; depende de US-022, pero su guion recorre más historias que las declaradas como predecesoras (F-08). |
+| US-024 | EP-005: G-01; S-XX no explícito, SCOPE_UNCLEAR (apartado 7). La traducción es transversal y amplia, y sus AC son de alto nivel (“flujos principales”); declara dependencias US-015/US-018, insuficientes para representar todos los textos/error que pide traducir si se acepta. Además, estado y plan IT-006 requieren aclaración (F-07). |
 
 ## 5. Hallazgos
 
@@ -183,7 +183,7 @@ El vínculo G/S indicado procede de la épica que contiene la historia; “sin S
 
 ## 6. Matriz DoR de historias detalladas
 
-**Leyenda:** MET, NOT_MET, NOT_ASSESSABLE y NOT_APPLICABLE tienen el significado definido por la instrucción de revisión. Cada celda MET cita historia/épica, criterio o sección que ofrece evidencia. `NR` identifica la limitación de fuentes en §2. **US-001** = EP-001/US-001; **US-002** = EP-001/US-002; **US-006** = EP-002/US-006; **US-009** = EP-002/US-009; **US-013** = EP-003/US-013; **US-017** = EP-004/US-017.
+**Leyenda:** MET, NOT_MET, NOT_ASSESSABLE y NOT_APPLICABLE tienen el significado definido por la instrucción de revisión. Cada celda MET cita historia/épica, criterio o sección que ofrece evidencia. `NR` identifica la limitación de fuentes en el apartado 2. **US-001** = EP-001/US-001; **US-002** = EP-001/US-002; **US-006** = EP-002/US-006; **US-009** = EP-002/US-009; **US-013** = EP-003/US-013; **US-017** = EP-004/US-017.
 
 | Criterio real del DoR | US-001 | US-002 | US-006 | US-009 | US-013 | US-017 |
 |---|---|---|---|---|---|---|
@@ -253,7 +253,7 @@ No son defectos confirmados por sí solos. Se indican para decisión humana y no
 - SU-02 excluye cierre económico/legal en la plataforma y es consistente con EX-01/EX-02; US-017 contempla intercambio voluntario de otros datos, lo que merece comprobarse frente a NFR-002 y la restricción de datos sintéticos en demos.
 - SU-03 exime a la plataforma de verificar permiso del propietario; se refleja en EP-002.
 - SU-06 y SU-07 condicionan participantes/tecnología; no hay evidencia para comprobarlos en los documentos revisados.
-- Los enlaces G-XX/EP-XXX/US-XXX existen para las historias detalladas por la cabecera de épica e historia. No todas las historias enumeran el S-XX directamente, pero las épicas declaran S-01…S-06; las nuevas capacidades identificadas en §7 requieren decisión, no inferencia.
+- Los enlaces G-XX/EP-XXX/US-XXX existen para las historias detalladas por la cabecera de épica e historia. No todas las historias enumeran el S-XX directamente, pero las épicas declaran S-01…S-06; las nuevas capacidades identificadas en el apartado 7 requieren decisión, no inferencia.
 - M-01, M-02 y M-03 se conectan con flujos de US-006/009/013/017 y US-002; US-023 enlaza con M-04. M-05 no aparece trazado a una historia concreta en las especificaciones revisadas; se cubre parcialmente en DoD/criterios transversales. Recomendación: decidir dónde registrar evidencia de seguimiento de M-05, sin crear una nueva funcionalidad por inferencia.
 - No se observó estimación final consensuada en el material de requisitos; las cifras disponibles son expresamente provisionales (F-05). No se formulan estimaciones alternativas.
 

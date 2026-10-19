@@ -49,7 +49,7 @@ Este resultado expresa preparación para revisar una hipótesis, no aprobación 
 - **Categoría:** trazabilidad y baseline.
 - **Severidad:** MINOR.
 - **Bloqueante:** NO.
-- **Fuente/ID:** commit declarado `45e3489`; `requirements-report-v02.md` §1 registra `86e995f`.
+- **Fuente/ID:** commit declarado `45e3489`; `requirements-report-v02.md` apartado 1 registra `86e995f`.
 - **Evidencia observada:** ambos commits aparecen asociados a la revisión de requisitos/planning, pero no se aporta una relación entre ellos ni verificación Git.
 - **Impacto:** una relectura posterior podría comparar fuentes de snapshots distintos y atribuir al plan una corrección o decisión que no estuviera en el commit revisado.
 - **Acción recomendada:** documentar si `45e3489` contiene las correcciones aceptadas de R-01/R-02 y si `86e995f` es el commit de requisitos anterior, derivado o independiente.

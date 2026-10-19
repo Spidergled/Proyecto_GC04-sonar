@@ -47,11 +47,11 @@ La excepción DEC-018 está documentada y satisface los límites comprobables pa
 | Dimensión | IDs inspeccionados | Resultado | Hallazgos / límites |
 |---|---|---|---|
 | Claridad y consistencia | Detalle: US-001, 002, 003, 006, 009, 012, 013, 015, 017, 023; catálogo: US-003…024 excepto 021 | Correcciones previas comprobadas; queda pendiente aclarar respuestas en conversaciones de anuncios cerrados cuando US-009/018 entren en línea base. | R-01, R-02; pregunta Q-02; crosswalk F-01…F-08. |
-| Cobertura y alcance | G-01…G-04, S-01…S-06, EX-01…EX-05; historias del catálogo indicadas | DEC-016 delimita explícitamente la línea base y las historias diferidas/Won't. No se identifica ampliación no decidida dentro de la línea base revisada. | Catálogo §7; pregunta de aplazamiento Q-02. |
+| Cobertura y alcance | G-01…G-04, S-01…S-06, EX-01…EX-05; historias del catálogo indicadas | DEC-016 delimita explícitamente la línea base y las historias diferidas/Won't. No se identifica ampliación no decidida dentro de la línea base revisada. | Catálogo del apartado 7; pregunta de aplazamiento Q-02. |
 | Elementos de especificación ausentes | Criterios positivos/negativos, reglas, NFR, restricciones, límites y estados de las diez historias detalladas | Los cambios anteriores se encuentran en las fuentes. Referencias a NFR-004/NFR-009 aún incompletas en historias de línea base. | R-01, R-02. |
-| Tamaño y granularidad | Historias del catálogo; en especial las diez detalladas y asignación por iteración de la línea base | No se observa outcome excesivamente agrupado en las historias detalladas. La distribución de capacidad y las excepciones comprobables satisfacen el DoR exportado; US-009/013 están diferidas. | Matriz DoR §6; exportación v01. |
-| Criterios de aceptación y DoR | Diez historias detalladas frente a cada criterio actual del DoR | Dos fallos de trazabilidad NFR confirmados; los demás controles documentales son MET o quedan NOT_ASSESSABLE/NOT_APPLICABLE como se indica. | R-01, R-02; §6. |
-| Dependencias y supuestos | Predecesoras, orden exportado, DEC-016, relaciones de catálogo | Orden exportado: 0 predecesoras mal ordenadas. US-023 ya declara US-017; sin ciclos observados. Dependencias del flujo de conversación cerrada siguen aplazadas, no bloquean la línea base. | Crosswalk F-08; Q-02; §8. |
+| Tamaño y granularidad | Historias del catálogo; en especial las diez detalladas y asignación por iteración de la línea base | No se observa outcome excesivamente agrupado en las historias detalladas. La distribución de capacidad y las excepciones comprobables satisfacen el DoR exportado; US-009/013 están diferidas. | Matriz DoR apartado 6; exportación v01. |
+| Criterios de aceptación y DoR | Diez historias detalladas frente a cada criterio actual del DoR | Dos fallos de trazabilidad NFR confirmados; los demás controles documentales son MET o quedan NOT_ASSESSABLE/NOT_APPLICABLE como se indica. | R-01, R-02; apartado 6. |
+| Dependencias y supuestos | Predecesoras, orden exportado, DEC-016, relaciones de catálogo | Orden exportado: 0 predecesoras mal ordenadas. US-023 ya declara US-017; sin ciclos observados. Dependencias del flujo de conversación cerrada siguen aplazadas, no bloquean la línea base. | Crosswalk F-08; Q-02; apartado 8. |
 
 ## 5. Hallazgos
 
@@ -145,7 +145,7 @@ Estos elementos no son defectos adicionales confirmados; se separan de R-01/R-02
 
 | Elemento | Clasificación/estado | Base y pregunta humana |
 |---|---|---|
-| US-007 fotos; US-011 cierre automático; US-020 reportes; US-004 perfil | Fuera de la línea base por DEC-016; permanecen en catálogo según decisiones humanas | Registro de decisiones §3 registra aceptación de excluirlos de la línea base. Si se propone incorporarlos, ¿se revisará su alcance/plan según Gestión de cambios de `goals.md`? |
+| US-007 fotos; US-011 cierre automático; US-020 reportes; US-004 perfil | Fuera de la línea base por DEC-016; permanecen en catálogo según decisiones humanas | Registro de decisiones, apartado 3 registra aceptación de excluirlos de la línea base. Si se propone incorporarlos, ¿se revisará su alcance/plan según Gestión de cambios de `goals.md`? |
 | US-024 interfaz inglesa | OUT_OF_SCOPE para el plan actual; Won't por DEC-016 | EP-005 lo excluye y `goals.md` dice que no forma parte de S-01…S-06. No se recomienda reabrir sin cambio de alcance humano. |
 | US-023 guion de evaluación | IN_SCOPE, confirmado e incluido en línea base R3 | G-04/M-04, NFR-008 y S-06; decisión DEC-016, dependencia US-017. La cabecera de EP-005 declara S-06. |
 | US-013 coberturas parciales | IN_SCOPE_CANDIDATE aceptado con validación del cliente aún prevista | RN-10 define intersección y US-013 tiene casos límite; el supuesto dice que el cliente validará cuando se incorpore. ¿Se registrará el resultado al entrar en una release? Está fuera de línea base por DEC-016. |
@@ -187,9 +187,9 @@ No se propone nueva funcionalidad ni se atribuye una necesidad nueva a stakehold
 | v01 F-06 capacidad/DEC-018 | Aceptado por DEC-016; exportación v01 acredita capacidades, cargas, tres excepciones y cero incumplimientos de tamaño. Los specs justifican explícitamente US-002/006/017. | RESOLVED |
 | v01 F-07 trazabilidad/extensiones de alcance | Aceptado; DEC-016 pone US-004/007/011/020 fuera de línea base y US-024 Won't; US-023 está en línea base. `goals.md` refleja la línea base. | RESOLVED |
 | v01 F-08 orden/dependencias | Aceptado; exportación informa cero predecesoras mal ordenadas; US-023 lista US-017. US-009 sigue fuera de línea base; se considera condición de estado, no predecesora confirmada de US-017. | RESOLVED |
-| v01 §7 conversación tras cierre | DEC-016 aplaza la decisión porque US-009/US-018 están fuera de línea base; US-018 permanece fuera de la línea base actual. | DEFERRED |
-| v01 §8 M-05 | Registro mantiene la cuestión pendiente; `goals.md` y DoD definen el resultado, no el artefacto de evidencia. | OPEN |
-| v01 §9 validación de correo mal formado | Aceptado; US-001 incluye caso límite y mensaje “Introduce un correo válido”. | RESOLVED |
+| v01 apartado 7 conversación tras cierre | DEC-016 aplaza la decisión porque US-009/US-018 están fuera de línea base; US-018 permanece fuera de la línea base actual. | DEFERRED |
+| v01 apartado 8 M-05 | Registro mantiene la cuestión pendiente; `goals.md` y DoD definen el resultado, no el artefacto de evidencia. | OPEN |
+| v01 apartado 9 validación de correo mal formado | Aceptado; US-001 incluye caso límite y mensaje “Introduce un correo válido”. | RESOLVED |
 
 Los hallazgos nuevos de este informe conservan IDs nuevos R-01/R-02; no se reutilizan IDs del informe previo.
 
