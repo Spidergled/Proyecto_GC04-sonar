@@ -2,7 +2,7 @@
 
 Fuente: `docs/ErasmusNest_GC04_Requisitos_Capacidad.xlsx`. Generada automáticamente a partir de los valores calculados del libro para que los agentes puedan leerlos (el `.xlsx` es binario). Si el Excel cambia, hay que generar una exportación nueva con otro número de versión. Unidades: h-p = horas-persona; capacidades en h-p por persona e iteración (1 iteración = 1 semana, de miércoles a martes). Los números se muestran con 2 decimales; el Excel calcula con todos (por ejemplo, la capacidad semanal de Gled es 2,1975 h-p). El redondeo no cambia ninguna comprobación; la tabla «Holgura mínima por persona» de la hoja Carga se muestra con 3 decimales.
 
-**Cambios respecto a la v01** (tras el informe `initial-planning-review-v01.md`): estado AJUSTADO (holgura menor de 0,1 h-p) en las hojas Planificación y Carga, con su recuento en las comprobaciones globales y la holgura mínima por persona (IPR-v01-002); presupuesto no declarado y margen frente al tope de referencia en la hoja Coste (§8 del informe). El reparto, las estimaciones, la capacidad y el coste no cambian.
+**Cambios respecto a la v01** (tras el informe `initial-planning-review-v01.md`): estado AJUSTADO (holgura menor de 0,1 h-p) en las hojas Planificación y Carga, con su recuento en las comprobaciones globales y la holgura mínima por persona (IPR-v01-002); presupuesto no declarado y margen frente al tope de referencia en la hoja Coste (apartado 8 del informe). El reparto, las estimaciones, la capacidad y el coste no cambian.
 
 ## Hoja Requisitos (columnas de planificación)
 
@@ -216,7 +216,7 @@ Total IT-001: 6.8 h-p · 241.3 €. Cuadre con Planificación: OK, OK, OK, OK, O
 | Presupuesto del cliente | No declarado (proyecto académico); tope de referencia = cota superior |
 | Margen frente al tope de referencia (€) | 702.36 |
 
-Nota: el coste es una proyección de la planificación, no coste incurrido (IPR-v01, §8).
+Nota: el coste es una proyección de la planificación, no coste incurrido (IPR-v01, apartado 8).
 
 ## Hoja Resumen
 

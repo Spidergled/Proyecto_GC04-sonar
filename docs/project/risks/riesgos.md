@@ -1,6 +1,6 @@
 # Registro de riesgos · ErasmusNest
 
-Versión 1.1 (16/10/2026), del Hito 4. Se preparó con IA (Claude) el 14/10/2026 a partir de `main` (`91ffe9a`): `excel-export-v02.md` (hojas *Carga*, *Gestión*, *Dependencias* y *Coste*), DEC-016/018/020/021 y el informe `initial-planning-review-v01.md` (ver `docs/project/reviews/registro-ia.md`, §4). El equipo revisó la probabilidad, el impacto y el responsable de cada riesgo; los responsables de los riesgos externos son los mismos que en la página *Dependencias entre requisitos* de la Wiki. Se acepta en DEC-022. La versión 1.1 añade a RSK-07 la fecha límite de EXT-02, por el hallazgo AUD-v01-001 del agente auditor.
+Versión 1.1 (16/10/2026), del Hito 4. Se preparó con IA (Claude) el 14/10/2026 a partir de `main` (`91ffe9a`): `excel-export-v02.md` (hojas *Carga*, *Gestión*, *Dependencias* y *Coste*), DEC-016/018/020/021 y el informe `initial-planning-review-v01.md` (ver `docs/project/reviews/registro-ia.md`, apartado 4). El equipo revisó la probabilidad, el impacto y el responsable de cada riesgo; los responsables de los riesgos externos son los mismos que en la página *Dependencias entre requisitos* de la Wiki. Se acepta en DEC-022. La versión 1.1 añade a RSK-07 la fecha límite de EXT-02, por el hallazgo AUD-v01-001 del agente auditor.
 
 Formato pedido por el enunciado: situación, evento, consecuencia y tratamiento. Probabilidad e impacto: Baja / Media / Alta. Tratamiento: evitar, mitigar, transferir o aceptar.
 
