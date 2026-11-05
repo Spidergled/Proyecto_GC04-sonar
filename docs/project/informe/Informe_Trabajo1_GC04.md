@@ -1,21 +1,22 @@
 # Trabajo 1 · Planificación del proyecto ErasmusNest
 
 **Asignatura:** Gestión de Proyectos Software (UEx, 2026/27) · **Grupo:** GC04 · **Empresa:** Practical Software\
-**Equipo:** Hugo (Product Owner), Gled (Tech Lead) y José (Scrum Master) · **Fecha:** 16/10/2026\
-**Repositorio:** <https://github.com/UniExtremadura/Proyecto_GC04> (etiqueta `planificacion-v1`) · **Wiki:** <https://github.com/UniExtremadura/Proyecto_GC04/wiki>
+**Equipo:** Hugo (Product Owner), Gled (Tech Lead) y José (Scrum Master) · **Fecha:** 16/10/2026 · **Versión 2 (reevaluación):** 05/11/2026\
+**Repositorio:** <https://github.com/UniExtremadura/Proyecto_GC04> (etiqueta `entrega-trabajo1-v2`; la entrega original es `planificacion-v1`) · **Wiki:** <https://github.com/UniExtremadura/Proyecto_GC04/wiki>
 
 ## Resumen
 
 Practical Software planifica **ErasmusNest**, una plataforma web para que los estudiantes de la UEx que se van de movilidad subalquilen su habitación a otros estudiantes verificados. El cliente es la Delegación de Estudiantes UEx.
 
-El catálogo tiene **24 historias en 5 épicas**. Estimado en Planning Poker, suma **84 h-p**, mientras que la capacidad efectiva del equipo en las 6 iteraciones es de **35,72 h-p**. Por eso el PO fijó una **línea base de 8 historias *Must*** (DEC-016), que forman el recorrido esencial: verificarse, publicar, buscar y contactar. Esa línea base suma **32 h-p, el 90 % de la capacidad**.
+El catálogo tiene **24 historias en 5 épicas** y, estimado en Planning Poker, suma **84 h-p**. Esta versión 2 rehace la planificación tras la evaluación del profesor (apartado *Mejoras tras la evaluación*). Con las horas reales del equipo (7, 7 y 9 h a la semana), la capacidad efectiva en las 6 iteraciones es de **77,32 h-p**. La línea base pasa a ser de **18 historias *Must* y *Should*** (DEC-025), **69 h-p, el 89 % de la capacidad**, con 3 historias por iteración.
 
-La planificación por persona e iteración no tiene sobreasignaciones, respeta todas las dependencias y deja un margen de 3,72 h-p. Se ha trasladado a ProjectLibre en dos vistas, por sprints y por épicas. El coste planificado es de **2.507,64 €**: 1.130,70 € de desarrollo y 1.376,94 € de gestión. La planificación es **viable**, con dos puntos que se vigilan de forma explícita: la holgura mínima por persona en IT-001, IT-003 e IT-005, y un camino crítico que atraviesa las tres releases.
+La planificación por persona e iteración no tiene sobreasignaciones, respeta todas las dependencias por fechas y deja un margen de 8,32 h-p. Cada historia tiene su fecha de inicio y de fin, y las reuniones están en su día y hora. Se ha trasladado a ProjectLibre en dos vistas, por sprints y por épicas. El coste planificado es de **4.368,32 €**: 2.405,20 € de desarrollo, 1.326,80 € de gestión y **636,32 € de reserva de imprevistos**. La planificación es **viable**, sin celdas persona × iteración ajustadas (la holgura mínima es de 0,21 h-p).
 
-Este informe sigue los 15 puntos de «Planificación Práctica 1». El detalle está en el repositorio y en la Wiki, que es donde se justifica cada decisión (DEC-001…DEC-022).
+Este informe sigue los 15 puntos de «Planificación Práctica 1». El detalle está en el repositorio y en la Wiki, que es donde se justifica cada decisión (DEC-001…DEC-025).
 
 | Punto del enunciado | Apartado |
 |---|---|
+| Cambios de la versión 2 | Mejoras tras la evaluación |
 | Empresa · Equipo · Team charter · Idea | 1 · 2 · 3 · 4 |
 | Modelo de proceso · Proceso | 5 · 6 |
 | Requisitos · Relaciones · Granularidad | 7 · 8 · 9 |
@@ -23,6 +24,18 @@ Este informe sigue los 15 puntos de «Planificación Práctica 1». El detalle e
 | Estimación de requisitos · Estimación del proyecto | 12 · 13 |
 | Planificación · Coste | 14 · 15 |
 | Además: riesgos, uso de la IA y viabilidad | 16 · 17 · 18 |
+
+## Mejoras tras la evaluación
+
+La primera versión (16/10/2026) obtuvo un 8,5. El profesor valoró los requisitos, la DoR y la DoD, el Excel de capacidad, coste y viabilidad, y la Wiki. Señaló cinco puntos de mejora, que esta versión corrige. El detalle está en la página *Mejoras tras la evaluación* de la Wiki y en **DEC-025**.
+
+| Comentario del profesor | Qué hemos cambiado | Dónde |
+|---|---|---|
+| Las tareas de gestión duran el sprint entero y la review y la retrospectiva se reparten cada semana. ProjectLibre no muestra cuándo se reúne el equipo | Cada reunión está en su día y hora: Sprint Planning y refinamiento los miércoles de 16:00 a 16:45, y review y retrospectiva (50 min) los martes 03/11, 17/11 y 01/12 de 17:00 a 17:50. Ya no se prorratean: la review y la retro solo restan capacidad en IT-002, IT-004 e IT-006 | Apartados 6, 10 y 14.2 · Excel, hoja *Capacidad* (fila 23 y tabla de fechas) · ProjectLibre v3 |
+| Lo mismo ocurre con las historias de usuario | Cada historia tiene fecha de inicio y de fin dentro de su sprint (de 2 a 5 días) y ninguna dura el sprint entero. El Excel comprueba que las predecesoras terminan antes y que las fechas caen dentro de su iteración | Apartado 14.1 · Excel, hoja *Planificación* (columnas *Inicio* y *Fin*) · ProjectLibre v3 |
+| El coste suma desarrollo y gestión, pero no pone precio a la reserva de imprevistos | Fila nueva «Reserva de imprevistos»: 17,48 h × tarifa de cada rol = **636,32 €**. El coste total con reserva es de **4.368,32 €**, igual en el Excel y en ProjectLibre, que tiene una tarea de reserva en cada sprint | Apartados 14.3 y 15 · Excel, hoja *Coste* · riesgos RSK-01 y RSK-09 |
+| Dejad constancia de qué cambiasteis vosotros con respecto a la IA y por qué | Columna nueva «Qué cambió el equipo y por qué» en el registro de hallazgos y de usos de IA, y apartado nuevo con los cambios del equipo sobre las propuestas de la IA | Apartado 17 · `registro-ia.md`, apartados 3, 4 y 5 |
+| La carga por historia y sprint es muy baja: solo una o dos historias por sprint | Capacidad con las horas reales (antes se contaban solo las horas fuera de clase) y línea base de 18 historias *Must* y *Should*, **3 por sprint**, sin historias repartidas en dos iteraciones | Apartados 10, 11, 13 y 14 · DEC-025 |
 
 ## 1. Empresa
 
@@ -108,19 +121,21 @@ La adaptación consiste en sprints de una semana (las releases de dos semanas si
 
 | Release | Sprints | Fechas | Objetivo |
 |---|---|---|---|
-| R1 | IT-001, IT-002 | 21/10 – 03/11 | Cuentas verificadas: registro, verificación e inicio de sesión |
-| R2 | IT-003, IT-004 | 04/11 – 17/11 | Publicar y listar anuncios (release ligera por los parciales de IT-003) |
-| R3 | IT-005, IT-006 | 18/11 – 01/12 | Ver el detalle, contactar y guion de instalación. En su Review se miden M-01, M-02 y M-04 |
+| R1 | IT-001, IT-002 | 21/10 – 03/11 | Cuentas verificadas (registro, verificación, sesión y perfil) y primera publicación de anuncios, con su cierre |
+| R2 | IT-003, IT-004 | 04/11 – 17/11 | Gestionar los anuncios (fotos, mis anuncios) y buscar: listado, filtros por fechas y zona, y detalle. En su Review se valida con el cliente la cobertura parcial de US-013 |
+| R3 | IT-005, IT-006 | 18/11 – 01/12 | Contactar y conversar, editar anuncios, datos sintéticos y guion de instalación. En su Review se miden M-01, M-02, M-03 y M-04 |
 
 **Ceremonias:**
 
 | Ceremonia | Cuándo | Duración |
 |---|---|---|
-| Sprint Planning | Miércoles | 30 min |
-| Refinamiento | Miércoles | 15 min (PO y TL, facilitado por el SM) |
-| Daily asíncrona | WhatsApp | ≈5 min al día |
-| Sprint Review | Martes de cierre de release | 20 min, con el cliente |
-| Retrospectiva | Cierre de release | 20–30 min |
+| Sprint Planning | Todos los miércoles, 16:00–16:30 (Discord) | 30 min |
+| Refinamiento | Miércoles, 16:30–16:45, a continuación de la planning | 15 min (PO y TL, facilitado por el SM) |
+| Daily asíncrona | WhatsApp, antes de las 22:00 | ≈5 min al día |
+| Sprint Review | Martes 03/11, 17/11 y 01/12, 17:00–17:25 (cierre de cada release) | 25 min, con el cliente |
+| Retrospectiva | Los mismos martes, 17:25–17:50 | 25 min |
+
+La review y la retrospectiva se celebran cada dos semanas, al cerrar cada release (acuerdo 6). Por eso solo restan capacidad en IT-002, IT-004 e IT-006, y en esas iteraciones las historias terminan como tarde el lunes.
 
 **Artefactos:**
 
@@ -143,7 +158,7 @@ El límite de trabajo en curso es de una tarea por persona.
 - prioridad justificada y estimación consensuada;
 - incertidumbre indicada;
 - predecesoras resueltas;
-- que **quepa en un sprint**, o como excepción en dos iteraciones consecutivas (DEC-018).
+- que **quepa en un sprint**, o como excepción en dos iteraciones consecutivas (DEC-018). En la versión 2 ninguna historia necesita la excepción.
 
 **Definition of Done** (`docs/quality/definition-of-done.md`). Una historia está hecha cuando:
 
@@ -167,13 +182,15 @@ Toda decisión queda en el *Registro de decisiones* de la Wiki y toda reunión e
 
 El catálogo tiene **24 historias de usuario agrupadas en 5 épicas**. Cada épica nace de un elemento de alcance y contribuye al menos a un objetivo, así que no hay épicas huérfanas (DEC-012). Cada historia está especificada en el `spec.md` de su épica.
 
-| Épica | Alcance · Objetivos | Historias | En la línea base |
+| Épica | Alcance · Objetivos | Historias | En la línea base (DEC-025) |
 |---|---|---|---|
-| EP-001 Cuenta y verificación institucional | S-01 · G-02, G-01 | US-001…US-005 | US-001, US-002, US-003 |
-| EP-002 Publicación y gestión de anuncios | S-02, S-05 · G-01, G-03 | US-006…US-011 | US-006 |
-| EP-003 Búsqueda y consulta de habitaciones | S-03 · G-01, G-03 | US-012…US-016 | US-012, US-015 |
-| EP-004 Contacto y mensajería | S-04 · G-01, G-02 | US-017…US-021 | US-017 |
-| EP-005 Entrega, datos de demo e inclusión | S-06 · G-04, G-01 | US-022…US-024 | US-023 |
+| EP-001 Cuenta y verificación institucional | S-01 · G-02, G-01 | US-001…US-005 | US-001, US-002, US-003, US-004 |
+| EP-002 Publicación y gestión de anuncios | S-02, S-05 · G-01, G-03 | US-006…US-011 | US-006, US-007, US-008, US-009, US-010 |
+| EP-003 Búsqueda y consulta de habitaciones | S-03 · G-01, G-03 | US-012…US-016 | US-012, US-013, US-014, US-015 |
+| EP-004 Contacto y mensajería | S-04 · G-01, G-02 | US-017…US-021 | US-017, US-018, US-019 |
+| EP-005 Entrega, datos de demo e inclusión | S-06 · G-04, G-01 | US-022…US-024 | US-022, US-023 |
+
+Fuera de la línea base quedan las 4 *Could* (US-005, US-011, US-016 y US-020) y las 2 *Won't* (US-021 y US-024).
 
 **Muestra detallada.** Seis historias tienen especificación completa: US-001, US-002, US-006, US-009, US-013 y US-017, marcadas con ⭐. Son las de **más riesgo o más reglas**: verificación, publicación, cierre, solapamiento de fechas y contacto. Cada una incluye necesidad, objetivo, historia, prioridad justificada, estimación, incertidumbre, predecesoras, criterios de aceptación (`US-XXX-AC-NN`), reglas, restricciones, NFR, ejemplos, casos límite y supuestos.
 
@@ -196,43 +213,43 @@ Todos los hallazgos se clasificaron y los aceptados se corrigieron. El catálogo
 Hemos identificado tres tipos de dependencia (DEC-014), que están en la hoja *Dependencias* del Excel, en el campo *Predecesoras* de cada historia y en la Wiki con un diagrama de todo el catálogo:
 
 - **30 funcionales:** una historia necesita que otra esté terminada.
-- **Técnicas (TD-01…TD-06):** piezas compartidas que conviene construir una sola vez. TD-01…TD-04 son tareas dentro de la estimación de su primera historia; TD-05 y TD-06 no se planifican porque sus historias quedan fuera de la línea base (DEC-020).
+- **Técnicas (TD-01…TD-06):** piezas compartidas que conviene construir una sola vez. TD-01…TD-05 son tareas dentro de la estimación de su primera historia (DEC-020): TD-01 en US-001, TD-02 en US-002, TD-03 en US-006 (reutilizada en US-014), TD-04 en US-017 (reutilizada en US-018) y TD-05 en US-007. TD-06 no se planifica porque US-024 es *Won't*.
 - **Externas (EXT-01…EXT-04):** dependen de algo que el equipo no controla. Cada una tiene un responsable y una fecha límite:
   - EXT-01 (tecnologías aprobadas) y EXT-02 (buzón de pruebas): Gled, antes del 21/10;
   - EXT-03 (evaluador externo): José, antes del 18/11.
 
-Dependencias funcionales de la línea base. El camino crítico va en rojo:
+Dependencias funcionales de la línea base, por release (en verde las *Must* y en amarillo las *Should*). La cadena más larga va en rojo:
 
-![Dependencias de la línea base y camino crítico](img/dependencias.png)
+![Dependencias de la línea base y cadena más larga](img/dependencias.png)
 
-El **camino crítico** es US-001 → US-002 → US-006 → US-012 → US-015 → US-017 → US-023. Son siete historias encadenadas que recorren las tres releases. US-003 se hace en paralelo en R1 y también es predecesora de US-006.
+La **cadena de dependencias más larga** es US-001 → US-002 → US-006 → US-012 → US-015 → US-017 → US-018 → US-019, que termina el 30/11, el día antes del cierre de R3. Son ocho historias que recorren las tres releases. US-023 depende de US-017 y termina el mismo día, así que también condiciona el fin del proyecto. Las demás *Should* cuelgan de esta cadena y tienen margen dentro de su sprint.
 
 ## 9. Granularidad
 
 La descomposición tiene cuatro niveles: épica (`EP-XXX`) → historia (`US-XXX`) → tarea (`TK-XXX`) → subtarea (`ST-XXXX`).
 
 - **Historias pequeñas.** Ninguna historia estimada supera las 5 h-p, salvo US-021, que es *Won't* y no se estimó en el Planning Poker. Por ejemplo, la búsqueda se dividió en listar, filtrar por fechas, filtrar por zona, ver el detalle y ordenar, como en el ejemplo de la asignatura de *Comprar vuelo*.
-- **Regla de tamaño (DoR).** Cada historia debe caber en la capacidad efectiva de su sprint. Con las ausencias, esa capacidad baja a 3,95 h-p en IT-003 y a 5,95 h-p de IT-004 a IT-006, y ninguna persona puede hacer sola más de 2,41 h-p a la semana. Por eso, **US-002, US-006 y US-017** usan la excepción de DEC-018 y ocupan dos iteraciones consecutivas. Dividirlas llevaría el catálogo a 27 requisitos, por encima del máximo de 25, y sus partes por separado no tendrían un resultado observable. La justificación está en el *Plan inicial* de su `spec.md`.
-- **Tareas.** IT-001 está detallada a nivel de tarea: TK-001…TK-007, de entre 0,5 y 1,5 h-p, con responsable, criterios y coste (hoja *Tareas IT-001*). Las demás iteraciones se detallan en su Sprint Planning, y las subtareas `ST-XXXX` se crearán en Jira.
+- **Regla de tamaño (DoR).** Cada historia debe caber en la capacidad efectiva de su sprint, que va de 11,87 a 14,91 h-p según las ausencias y si hay review. Las 18 historias de la línea base caben en un solo sprint, así que ya **no se usa la excepción de DEC-018**. En la versión 1, US-002, US-006 y US-017 ocupaban dos iteraciones porque la capacidad era de 3,95 a 6,95 h-p.
+- **Tareas.** IT-001 está detallada a nivel de tarea: TK-001…TK-013, de entre 0,4 y 1,5 h-p, con responsable, criterios y coste (hoja *Tareas IT-001*). Las demás iteraciones se detallan en su Sprint Planning, y las subtareas `ST-XXXX` se crearán en Jira.
 
 ## 10. Esfuerzo del equipo (capacidad)
 
-El método está en DEC-015 y en la hoja *Capacidad* del Excel:
+El método está en DEC-015 y en la hoja *Capacidad* del Excel. En la versión 2 la review y la retrospectiva ya no se prorratean: se restan enteras en la iteración en que se celebran.
 
-`Efectiva (semana) = (Nominal − Ceremonias − Coordinación del rol) × (1 − % imprevistos)`
+`Efectiva (IT) = (Nominal − Ceremonias semanales − Coordinación del rol − Review y retro de esa IT) × (1 − % imprevistos) − Ausencias con fecha de esa IT`
 
-`Efectiva (IT) = Efectiva (semana) − Ausencias con fecha de esa IT`
+- **Horas nominales reales.** En la versión 1 cada miembro declaró 5 h a la semana, que eran solo sus horas de trabajo autónomo. No contaban la sesión de prácticas de GPS (2 h a la semana), que el equipo dedica al proyecto. Con ella, Hugo y Gled dedican 7 h y José 9 h, porque solo cursa dos asignaturas más.
+- **Ceremonias semanales:** 1,15 h por persona (planning 0,5 h, daily 0,4 h y refinamiento 0,25 h).
+- **Review y retrospectiva:** 50 min por persona, solo en IT-002, IT-004 e IT-006.
+- **Coordinación propia del rol:** 0,5 h a la semana para los tres. La del SM baja de 0,75 a 0,5 h, porque con las reuniones en día y hora fijos ya no hay que convocarlas cada semana.
+- **% de imprevistos:** no se aplica un factor común. Cada miembro justifica el suyo, que solo recoge lo que no se puede fechar.
 
-- **Ceremonias:** 1,57 h por semana y persona (planning 0,5 h, daily 0,4 h, refinamiento 0,25 h y review más retro 0,42 h).
-- **Coordinación propia del rol:** PO 0,5 h, TL 0,5 h y SM 0,75 h.
-- **% de imprevistos:** no se aplica un factor común. Cada miembro justifica el suyo, y solo recoge lo que no se puede fechar.
-
-| Miembro | Nominal (h/sem) | Gestión (h/sem) | % imprevistos y motivo | Efectiva (h-p/sem) |
+| Miembro | Nominal (h/sem) | Gestión (h/sem, sin review / con review) | % imprevistos y motivo | Efectiva (h-p/sem, sin review / con review) |
 |---|---|---|---|---|
-| Hugo (PO) | 5 | 2,07 | 20 %: otras 5 asignaturas con entregas cortas sin fecha | 2,34 |
-| Gled (TL) | 5 | 2,07 | 25 %: misma carga y además los bloqueos técnicos imprevisibles del equipo | 2,20 |
-| José (SM) | 5 | 2,32 | 10 %: solo 2 asignaturas más, la disponibilidad más estable | 2,41 |
-| **Equipo** | **15** | **6,46** | | **6,95** |
+| Hugo (PO) | 7 | 1,65 / 2,48 | 20 %: otras 5 asignaturas con entregas cortas sin fecha | 4,28 / 3,61 |
+| Gled (TL) | 7 | 1,65 / 2,48 | 25 %: misma carga y además los bloqueos técnicos imprevisibles del equipo | 4,01 / 3,39 |
+| José (SM) | 9 | 1,65 / 2,48 | 10 %: solo 2 asignaturas más, la disponibilidad más estable | 6,62 / 5,87 |
+| **Equipo** | **23** | **4,95 / 7,45** | | **14,91 / 12,87** |
 
 Ausencias declaradas el 13/10/2026, que se restan en su iteración:
 
@@ -246,19 +263,22 @@ Ausencias declaradas el 13/10/2026, que se restan en su iteración:
 
 | | IT-001 | IT-002 | IT-003 | IT-004 | IT-005 | IT-006 | Total |
 |---|---|---|---|---|---|---|---|
-| Hugo | 2,34 | 2,34 | 0,84 | 2,34 | 1,34 | 2,34 | 11,56 |
-| Gled | 2,20 | 2,20 | 0,70 | 2,20 | 2,20 | 1,20 | 10,69 |
-| José | 2,41 | 2,41 | 2,41 | 1,41 | 2,41 | 2,41 | 13,47 |
-| **Equipo (h-p)** | **6,95** | **6,95** | **3,95** | **5,95** | **5,95** | **5,95** | **35,72** |
+| Review y retro | — | 03/11 | — | 17/11 | — | 01/12 | |
+| Hugo | 4,28 | 3,61 | 2,78 | 3,61 | 3,28 | 3,61 | 21,18 |
+| Gled | 4,01 | 3,39 | 2,51 | 3,39 | 4,01 | 2,39 | 19,70 |
+| José | 6,62 | 5,87 | 6,62 | 4,87 | 6,62 | 5,87 | 36,44 |
+| **Equipo (h-p)** | **14,91** | **12,87** | **11,91** | **11,87** | **13,91** | **11,87** | **77,32** |
 
-Las 90 h nominales del proyecto (5 h × 3 personas × 6 semanas) se reparten así:
+Las 138 h nominales del proyecto (23 h × 6 semanas) se reparten así:
 
 | Concepto | Horas | % |
 |---|---|---|
-| Gestión (ceremonias y coordinación) | 38,76 h | 43 % |
-| Reserva de imprevistos | 9,52 h | 11 % |
-| Ausencias | 6 h | 7 % |
-| Capacidad efectiva para desarrollo | 35,72 h-p | 40 % |
+| Gestión (ceremonias y coordinación) | 37,2 h | 27 % |
+| Reserva de imprevistos | 17,48 h | 13 % |
+| Ausencias | 6 h | 4 % |
+| Capacidad efectiva para desarrollo | 77,32 h-p | 56 % |
+
+La gestión baja del 43 % de la versión 1 al 27 %, porque las ceremonias son casi las mismas horas y ahora se reparten sobre una dedicación mayor.
 
 ## 11. Priorización
 
@@ -268,14 +288,16 @@ Usamos **MoSCoW** con una escala de 0 a 10 (DEC-013). Cada historia se justifica
 - **Riesgo:** lo que tiene incertidumbre se adelanta.
 - **Dependencias:** una historia de la que dependen otras sube de prioridad.
 
-| MoSCoW | Escala | Criterio | Historias | h-p |
-|---|---|---|---|---|
-| Must | 8–10 | Sin ella no existe el recorrido esencial de G-01, no se cumple G-02 o no se puede evaluar el incremento (G-04) | 8 | 32 |
-| Should | 5–7 | Mejora claramente un objetivo, pero el recorrido funciona sin ella | 10 | 37 |
-| Could | 2–4 | Comodidad o valor para un grupo concreto | 4 | 10 |
-| Won't | 0–1 | Fuera del alcance o del plazo de este proyecto (US-021 y US-024) | 2 | — |
+| MoSCoW | Escala | Criterio | Historias | h-p | Línea base |
+|---|---|---|---|---|---|
+| Must | 8–10 | Sin ella no existe el recorrido esencial de G-01, no se cumple G-02 o no se puede evaluar el incremento (G-04) | 8 | 32 | Sí |
+| Should | 5–7 | Mejora claramente un objetivo, pero el recorrido funciona sin ella | 10 | 37 | Sí (DEC-025) |
+| Could | 2–4 | Comodidad o valor para un grupo concreto | 4 | 10 | No |
+| Won't | 0–1 | Fuera del alcance o del plazo de este proyecto (US-021 y US-024) | 2 | — | No |
 
-Esta distribución es el resultado de **DEC-016**. Antes había 14 historias *Must* (56 h-p), que no cabían en la capacidad. El PO bajó seis a *Should*, con un orden de entrada fijado por si sobra capacidad: US-009, US-022, US-018, US-013, US-010 y US-014. También pasó US-024 (interfaz en inglés) a *Won't*, porque no formaba parte del alcance S-01…S-06.
+Esta distribución es el resultado de **DEC-016**. Antes había 14 historias *Must* (56 h-p). El PO bajó seis a *Should*, con un orden de entrada fijado: US-009, US-022, US-018, US-013, US-010 y US-014. También pasó US-024 (interfaz en inglés) a *Won't*, porque no formaba parte del alcance S-01…S-06.
+
+En la versión 2, con la capacidad real, **DEC-025** amplía la línea base a todas las *Should*. El orden de la planificación sigue las dependencias y la prioridad: US-009 (prioridad 7, la primera candidata) entra en R1 justo después de US-006, y US-022 (7) en IT-005, antes del guion de instalación.
 
 ## 12. Estimación de requisitos
 
@@ -286,7 +308,7 @@ La unidad es la **hora-persona (h-p)**, para comparar directamente con la capaci
 3. Si la carta mayor es más del doble que la menor, quienes votaron la más alta y la más baja explican sus motivos y se vuelve a votar.
 4. El consenso es siempre una carta de la baraja. Si se duda entre dos, se elige la mayor (DEC-018).
 
-| Historia (línea base) | Hugo | Gled | José | Consenso | Motivo |
+| Historia *Must* | Hugo | Gled | José | Consenso | Motivo |
 |---|---|---|---|---|---|
 | US-001 | 8 | 5 | 5 | **5** | Entorno sintético, sin servicios reales |
 | US-002 | 5 | 5 | 8 | **5** | El token se simula en la base de datos |
@@ -297,110 +319,140 @@ La unidad es la **hora-persona (h-p)**, para comparar directamente con la capaci
 | US-017 | 3 → 5 | 8 → 5 | 5 → 5 | **5** | Se revotó: la persistencia de la conversación es estándar |
 | US-023 | 2 | 3 | 3 | **3** | Guion reproducible en el README |
 
-Se estimaron las 23 historias planificables; US-021 (*Won't*) no se estimó. Solo US-017 necesitó una segunda votación. Las estimaciones individuales y consensuadas de todo el catálogo están en el Excel (hoja *Requisitos*) y en la Wiki (*Requisitos y priorización*).
+| Historia *Should* | US-004 | US-007 | US-008 | US-009 | US-010 | US-013 | US-014 | US-018 | US-019 | US-022 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Hugo | 3 | 3 | 3 | 2 | 2 | 5 | 2 | 5 | 2 | 5 |
+| Gled | 3 | 5 | 3 | 3 | 3 | 8 | 3 | 5 | 3 | 5 |
+| José | 3 | 5 | 3 | 3 | 3 | 5 | 3 | 8 | 2 | 8 |
+| **Consenso** | **3** | **5** | **3** | **3** | **3** | **5** | **3** | **5** | **2** | **5** |
+
+Se estimaron las 23 historias planificables; US-021 (*Won't*) no se estimó. Solo US-017 necesitó una segunda votación. Las estimaciones no han cambiado en la versión 2. Todas están en el Excel (hoja *Requisitos*) y en la Wiki (*Requisitos y priorización*).
 
 ## 13. Estimación del proyecto
 
 | Concepto | h-p |
 |---|---|
 | Catálogo V0 (estimación de referencia, antes del Planning Poker) | 139 |
-| Catálogo consensuado (23 historias) | 84 (Must 56 · Should 13 · Could 15) |
-| Capacidad efectiva del equipo (6 IT) | 35,72 |
-| **Línea base planificada (DEC-016)** | **32**, el 90 % de la capacidad |
-| Margen del proyecto | 3,72, el 10 % |
+| Catálogo consensuado (23 historias) | 84 (Must 32 · Should 37 · Could 10 · Won't 5) |
+| Capacidad efectiva del equipo (6 IT) | 77,32 |
+| **Línea base planificada (DEC-025)** | **69**, el 89 % de la capacidad |
+| Margen del proyecto | 8,32, el 11 % |
 
-Ni siquiera las historias *Must* de entonces (56 h-p) cabían en la capacidad. Aplicamos la **regla de ajuste** del equipo:
+El catálogo completo (84 h-p) no cabe en la capacidad, así que se aplica la **regla de ajuste** del equipo:
 
-1. Confirmar la disponibilidad real y las ausencias (13/10).
-2. Confirmar las estimaciones con Planning Poker (10/10).
+1. Confirmar la disponibilidad real y las ausencias. En la versión 2 se revisó con las horas reales, incluida la sesión de prácticas que se dedica al proyecto (apartado 10).
+2. Confirmar las estimaciones con Planning Poker (10/10). No se han tocado.
 3. Recortar alcance, primero *Could*, luego *Should* y, si hace falta, redefinir qué es *Must*.
 
-Nunca se infla la capacidad ni se rebajan estimaciones para que cuadren. El PO eligió el escenario «verificarse, publicar, buscar y contactar», que cubre G-01, G-02 y G-04. G-03 y M-03 quedan aplazados hasta que entre US-009 (cerrar el anuncio), la primera candidata si la velocidad real deja capacidad libre.
+Con la capacidad real basta con dejar fuera las *Could* y las *Won't*. La capacidad no se ha subido para que cuadre: sale de las horas que el equipo dedica de verdad, y las estimaciones son las mismas. Con las *Should* dentro se cubren los cuatro objetivos. **G-03 y M-03**, que DEC-016 dejaba aplazados, entran con US-009 (cerrar el anuncio, R1) y US-010 (ver mis anuncios y su estado, R2). **NFR-005** (rendimiento con al menos 100 anuncios) se mide con US-022 en IT-005.
 
-**Esfuerzo total planificado:** 32 h-p de desarrollo + 38,76 h de gestión = **70,76 h**. Es el trabajo total del proyecto en ProjectLibre.
+**Esfuerzo total planificado:** 69 h-p de desarrollo + 37,2 h de gestión + 17,48 h de reserva = **123,68 h**. Es el trabajo total del proyecto en ProjectLibre.
 
 ## 14. Planificación
 
-### 14.1 Por release, iteración y persona (DEC-020)
+### 14.1 Por release, iteración y persona (DEC-025)
 
 | IT | Release | Historias | Carga (h-p) | Capacidad | Holgura | Ocupación |
 |---|---|---|---|---|---|---|
-| IT-001 | R1 | US-001, US-002 (1/2) | 6,8 | 6,95 | 0,15 | 98 % |
-| IT-002 | R1 | US-002 (2/2), US-003 | 6,2 | 6,95 | 0,75 | 89 % |
-| IT-003 | R2 | US-006 (1/2) | 3,8 | 3,95 | 0,15 | 96 % |
-| IT-004 | R2 | US-006 (2/2), US-012 | 4,2 | 5,95 | 1,75 | 71 % |
-| IT-005 | R3 | US-015, US-017 (1/2) | 5,8 | 5,95 | 0,15 | 97 % |
-| IT-006 | R3 | US-017 (2/2), US-023 | 5,2 | 5,95 | 0,75 | 87 % |
-| **Total** | | **8 historias** | **32** | **35,72** | **3,72** | **90 %** |
+| IT-001 | R1 | US-001, US-002, US-003 | 13 | 14,91 | 1,91 | 87 % |
+| IT-002 | R1 | US-004, US-006, US-009 | 11 | 12,87 | 1,87 | 85 % |
+| IT-003 | R2 | US-012, US-007, US-010 | 11 | 11,91 | 0,91 | 92 % |
+| IT-004 | R2 | US-013, US-014, US-015 | 11 | 11,87 | 0,87 | 93 % |
+| IT-005 | R3 | US-017, US-008, US-022 | 13 | 13,91 | 0,91 | 93 % |
+| IT-006 | R3 | US-018, US-019, US-023 | 10 | 11,87 | 1,87 | 84 % |
+| **Total** | | **18 historias** | **69** | **77,32** | **8,32** | **89 %** |
 
 ![Carga frente a capacidad por iteración](img/carga.png)
 
+Cada historia tiene su fecha de inicio y de fin, y las horas de cada persona (hoja *Planificación*, en tramos de 0,1 h). El responsable es quien coordina la historia:
+
+| Historia | MoSCoW | IT | Inicio – fin | Hugo | Gled | José | Responsable |
+|---|---|---|---|---|---|---|---|
+| US-001 Registrar cuenta | Must | IT-001 | mié 21/10 – vie 23/10 | 1,5 | 2,1 | 1,4 | Gled |
+| US-002 Verificar cuenta | Must | IT-001 | sáb 24/10 – mar 27/10 | 1,2 | 1,5 | 2,3 | Gled |
+| US-003 Iniciar y cerrar sesión | Must | IT-001 | sáb 24/10 – mar 27/10 | 1,1 | — | 1,9 | Hugo |
+| US-004 Perfil básico | Should | IT-002 | mié 28/10 – vie 30/10 | 1,0 | 0,4 | 1,6 | Hugo |
+| US-006 Publicar anuncio | Must | IT-002 | mié 28/10 – sáb 31/10 | 1,2 | 1,8 | 2,0 | José |
+| US-009 Cerrar anuncio | Should | IT-002 | dom 01/11 – lun 02/11 | 1,0 | 0,8 | 1,2 | José |
+| US-012 Listar anuncios | Must | IT-003 | mié 04/11 – vie 06/11 | 0,9 | 0,6 | 1,5 | Hugo |
+| US-007 Fotos del anuncio | Should | IT-003 | mié 04/11 – dom 08/11 | 0,7 | 1,4 | 2,9 | Gled |
+| US-010 Mis anuncios | Should | IT-003 | sáb 07/11 – mar 10/11 | 0,8 | 0,2 | 2,0 | José |
+| US-013 Filtro por fechas | Should | IT-004 | mié 11/11 – sáb 14/11 | 1,3 | 1,6 | 2,1 | Gled |
+| US-014 Filtro por zona | Should | IT-004 | mié 11/11 – vie 13/11 | 1,0 | 0,6 | 1,4 | Hugo |
+| US-015 Ver detalle | Must | IT-004 | sáb 14/11 – lun 16/11 | 1,0 | 0,9 | 1,1 | José |
+| US-017 Contactar | Must | IT-005 | mié 18/11 – sáb 21/11 | 0,9 | 2,0 | 2,1 | Gled |
+| US-008 Editar anuncio | Should | IT-005 | mié 18/11 – vie 20/11 | 1,0 | 0,4 | 1,6 | Hugo |
+| US-022 Datos sintéticos | Should | IT-005 | sáb 21/11 – mar 24/11 | 1,0 | 1,3 | 2,7 | José |
+| US-018 Conversación | Should | IT-006 | mié 25/11 – vie 27/11 | 1,0 | 1,4 | 2,6 | Gled |
+| US-023 Guion de instalación | Must | IT-006 | jue 26/11 – lun 30/11 | 1,7 | — | 1,3 | Hugo |
+| US-019 Aviso de mensajes | Should | IT-006 | sáb 28/11 – lun 30/11 | 0,5 | 0,6 | 0,9 | José |
+
 | Persona | Asignado (h-p) | Capacidad (h-p) | Ocupación | Holgura mínima en una IT |
 |---|---|---|---|---|
-| Hugo (PO) | 10,5 | 11,56 | 91 % | 0,044 (IT-001, IT-003 e IT-005) |
-| Gled (TL) | 9,4 | 10,69 | 88 % | 0,0975 (IT-001, IT-003, IT-005 e IT-006) |
-| José (SM) | 12,1 | 13,47 | 90 % | 0,012 (IT-001, IT-003 e IT-005) |
+| Hugo (PO) | 18,8 | 21,18 | 89 % | 0,31 (IT-004) |
+| Gled (TL) | 17,6 | 19,70 | 89 % | 0,29 (IT-004) |
+| José (SM) | 32,6 | 36,44 | 89 % | 0,21 (IT-003 e IT-005) |
 
-Las horas de cada persona en cada historia e iteración están en la hoja *Planificación*, en tramos de 0,1 h. Cada historia tiene un responsable, que es quien más horas le dedica. Las comprobaciones con fórmulas de esa hoja dan este resultado:
+Las comprobaciones con fórmulas de la hoja *Planificación* dan este resultado:
 
-- 0 celdas en sobrecarga;
+- 0 celdas persona × iteración en sobrecarga y 0 ajustadas (holgura menor de 0,1 h-p);
 - 0 h-p sin asignar;
-- 0 historias que incumplen la regla de tamaño;
-- 0 predecesoras mal ordenadas;
-- 3 excepciones de DEC-018 justificadas.
+- 0 historias que incumplen la regla de tamaño y 0 excepciones de DEC-018;
+- 0 historias que empiezan antes de que terminen sus predecesoras;
+- 0 historias con fechas fuera de su iteración (en las iteraciones con review, todas terminan como tarde el lunes);
+- 3 historias en cada iteración.
 
-El Excel marca como **AJUSTADO** las 10 celdas persona × iteración con menos de 0,1 h-p de holgura. No son sobrecargas. Repartir de otra forma tampoco crea margen, porque en IT-001, IT-003 e IT-005 la holgura de todo el equipo es de 0,15 h-p. Para eso DEC-020 fija una **regla de contingencia**:
+La **regla de contingencia** de DEC-020 se mantiene:
 
 1. En cada Sprint Planning, el SM revisa la carga de cada persona con los valores sin redondear.
 2. Si alguien pierde capacidad, sus horas pasan a otro miembro con holgura en la misma iteración.
-3. Si no la hay, la parte pendiente pasa a la siguiente iteración de su release. La holgura es de 0,91 h-p en R1, 1,91 en R2 y 0,91 en R3.
-4. Si tampoco cabe, no entra ninguna historia *Should*.
+3. Si no la hay, la parte pendiente pasa a la siguiente iteración de su release. La holgura es de 3,77 h-p en R1, 1,77 en R2 y 2,77 en R3.
+4. Si tampoco cabe, sale la *Should* de menor prioridad de esa release.
 
-**Carga semanal total frente a las 5 h nominales.** Esta tabla suma el desarrollo y la gestión, y la compara con lo que queda de las 5 h tras las ausencias. Nadie supera su disponibilidad en ninguna semana:
+**Carga semanal total frente a las horas disponibles.** Esta tabla suma el desarrollo y la gestión de cada semana, y la compara con las horas reales que quedan tras las ausencias (entre paréntesis). Nadie supera su disponibilidad en ninguna semana:
 
 | h/semana | IT-001 | IT-002 | IT-003 | IT-004 | IT-005 | IT-006 |
 |---|---|---|---|---|---|---|
-| Hugo (disponible) | 4,37 (5) | 4,17 (5) | 2,87 (3,5) | 4,07 (5) | 3,37 (4) | 4,07 (5) |
-| Gled (disponible) | 4,17 (5) | 3,97 (5) | 2,67 (3,5) | 3,67 (5) | 4,17 (5) | 3,17 (4) |
-| José (disponible) | **4,72** (5) | 4,52 (5) | **4,72** (5) | 2,92 (4) | **4,72** (5) | 4,42 (5) |
+| Hugo | 5,45 (7) | 5,68 (7) | 4,05 (5,5) | 5,78 (7) | 4,55 (6) | 5,68 (7) |
+| Gled | 5,25 (7) | 5,48 (7) | 3,85 (5,5) | 5,58 (7) | 5,35 (7) | 4,48 (6) |
+| José | 7,25 (9) | 7,28 (9) | **8,05** (9) | 7,08 (8) | **8,05** (9) | 7,28 (9) |
+
+La diferencia con las horas disponibles es la reserva de imprevistos de cada persona más su holgura.
 
 ### 14.2 ProjectLibre
 
-La planificación viable está en ProjectLibre, en `docs/project/planning/projectlibre/`. Hay dos proyectos guardados como `.pod` con su línea base, junto con su XML (la fuente) y el Gantt exportado en PDF:
+La planificación está en ProjectLibre, en `docs/project/planning/projectlibre/` (versión 3, PR #27). Hay dos proyectos guardados como `.pod` con su línea base, junto con su XML (la fuente, generado por `generar_xml.py`) y el Gantt exportado en PDF con las columnas *Trabajo* y *Coste*:
 
-- **Por sprints** (`ErasmusNest_GC04_por_sprints.pod`): IT-001…IT-006. Cada sprint tiene sus tareas de gestión (MGT) y sus historias, y los hitos R1, R2 y R3 cierran cada release.
+- **Por sprints** (`ErasmusNest_GC04_por_sprints.pod`): IT-001…IT-006. Cada sprint tiene sus reuniones, su gestión, su reserva de imprevistos y sus historias, y los hitos R1, R2 y R3 cierran cada release.
 - **Por épicas** (`ErasmusNest_GC04_por_epicas.pod`): una copia con dos ramas, *Gestión (MGT)* por sprint e *Historias de usuario* por EP-001…EP-005, como en el ejemplo del enunciado.
 
 | Elemento | Cómo está definido |
 |---|---|
-| Calendario | Lunes a viernes, 8:00–12:00 y 13:00–17:00. Sprints de miércoles a martes, del 21/10 al 01/12/2026 |
-| Recursos | Hugo 35 €/h, Gled 40 €/h y José 32 €/h. Capacidad máxima del 12,5 %, que son 5 h a la semana sobre una jornada de 40 h |
-| Tareas de gestión | Por sprint y persona: planning y refinamiento 0,75 h, daily 0,4 h, review y retro 0,42 h, y coordinación del rol 0,5 h (0,75 h el SM). En total, 6,46 h por sprint |
-| Historias | Las 8 de la línea base con sus IDs oficiales. US-002, US-006 y US-017 están en dos tramos, uno por sprint |
-| Asignaciones | Horas por persona, historia e iteración iguales a la hoja *Planificación* |
-| Dependencias | Las 9 de la línea base: fin-comienzo entre sprints y comienzo-comienzo dentro del mismo sprint. Cada hito depende de todas las historias o tramos que terminan en su release |
+| Calendario | De lunes a domingo, de 16:00 a 20:00. Sprints de miércoles a martes, del 21/10 al 01/12/2026 |
+| Recursos | Hugo 35 €/h, Gled 40 €/h y José 32 €/h, al 100 % |
+| Reuniones | En su día y hora: Sprint Planning y refinamiento cada miércoles (45 min) y review y retrospectiva el martes de IT-002, IT-004 e IT-006 (50 min) |
+| Gestión continua | Daily asíncrona y coordinación del rol, repartidas en el sprint porque no son reuniones |
+| Reserva de imprevistos | Una tarea con coste en cada sprint, con las horas del % de imprevistos de cada persona |
+| Historias | Las 18 de la línea base, con las horas por persona y las fechas de la hoja *Planificación* |
+| Dependencias | Todas fin-comienzo: Sprint Planning → historias → review y retro → hito de release, y entre historias las de la hoja *Dependencias* |
 | Hitos | R1 el 03/11, R2 el 17/11 y R3 (fin del proyecto) el 01/12/2026 |
-| Totales | 70,76 h de trabajo y 2.507,64 € de coste, igual que el Excel |
+| Coste | 4.368,32 €, con 636,32 € de reserva, igual que el Excel |
 
-Decisiones de modelado (DEC-022, detalladas en el `LEEME.md` de la carpeta):
-
-1. **Cada tarea dura el sprint completo.** Con 5 h a la semana, una tarea de un día marcaría sobreasignaciones que no existen. Así, ProjectLibre compara la carga semanal con la capacidad semanal, igual que el Excel.
-2. **Sin *Project grooming*.** El Excel no le asigna horas, y añadirla cambiaría el coste aprobado.
-3. **El festivo del 02/11 no se marca como no laborable.** La capacidad de 5 h a la semana no depende de la jornada laboral, y ProjectLibre 1.9.3 no importa bien la excepción desde el XML.
-4. **Moneda.** ProjectLibre muestra «$», pero los importes son euros.
+**Calendario.** Hay historias con fechas en fin de semana, así que el calendario del proyecto va de lunes a domingo, de 16:00 a 20:00. Esa franja solo indica cuándo puede trabajar el equipo: el límite de horas de cada persona por semana (7, 7 y 9 h) lo controla el Excel, y ProjectLibre no lo supera en ninguna semana. El detalle está en el [`LEEME.md` de la carpeta de ProjectLibre](https://github.com/UniExtremadura/Proyecto_GC04/blob/main/docs/project/planning/projectlibre/LEEME.md): decisiones de modelado 1 y 7 y tabla *Comprobado*, con el cuadre de horas y coste frente al Excel.
 
 ### 14.3 Hitos, camino crítico y reservas
 
-- **Hitos:** R1 (cuentas verificadas), R2 (publicar y listar) y R3 (contacto y guion; fin del proyecto). Los tres están sobre el camino crítico del apartado 8.
-- **Holguras:** 3,72 h-p de margen total, el 10 %. R2 es la release con más holgura (1,91 h-p), a propósito, porque en IT-003 coinciden dos parciales.
+- **Hitos:** R1 (cuentas verificadas y primera publicación, 03/11), R2 (gestión de anuncios y búsqueda, 17/11) y R3 (contacto, datos y guion; fin del proyecto, 01/12). Cada hito va después de la review de su release.
+- **Camino crítico:** la cadena US-001 → US-002 → US-006 → US-012 → US-015 → US-017 → US-018 → US-019 y el guion US-023 terminan el 30/11, un día antes de R3 (apartado 8).
+- **Holguras:** 8,32 h-p de margen total, el 11 %. R1 tiene la mayor holgura (3,77 h-p) y R2 la menor (1,77 h-p), porque en ella caen los tres parciales.
 - **Reservas:**
-  - 9,52 h de reserva de imprevistos, dentro del % individual;
-  - el margen de 3,72 h-p, que solo se usa con decisión del PO;
-  - el orden de entrada de las *Should*, si sobra capacidad.
+  - **17,48 h de reserva de imprevistos, con un coste de 636,32 €** (apartado 15). En ProjectLibre es una tarea de cada sprint;
+  - el margen de 8,32 h-p, que solo se usa con decisión del PO;
+  - las *Could* (US-005, US-020, US-011 y US-016, por prioridad), si sobra capacidad.
 
 ## 15. Coste
 
-El coste es la suma de las horas asignadas por la tarifa justificada de cada rol. Se aplica a las horas de desarrollo y a las de gestión. Las tarifas las acordó el equipo el 14/10/2026 (DEC-020):
+El coste es la suma de las horas por la tarifa justificada de cada rol. Se aplica a las horas de desarrollo, a las de gestión y, desde la versión 2, a la reserva de imprevistos. Las tarifas las acordó el equipo el 14/10/2026 (DEC-020):
 
 | Rol | Tarifa | Justificación |
 |---|---|---|
@@ -408,41 +460,53 @@ El coste es la suma de las horas asignadas por la tarifa justificada de cada rol
 | Product Owner | 35 €/h | Gestiona el valor y el backlog, y acepta las historias |
 | Scrum Master | 32 €/h | La más baja: facilita el proceso, sin responsabilidad técnica ni de producto |
 
-| Persona | Desarrollo (h-p) | Coste desarrollo | Gestión (h) | Coste gestión | **Total** |
-|---|---|---|---|---|---|
-| Hugo (PO) | 10,5 | 367,50 € | 12,42 | 434,70 € | **802,20 €** |
-| Gled (TL) | 9,4 | 376,00 € | 12,42 | 496,80 € | **872,80 €** |
-| José (SM) | 12,1 | 387,20 € | 13,92 | 445,44 € | **832,64 €** |
-| **Equipo** | **32** | **1.130,70 €** | **38,76** | **1.376,94 €** | **2.507,64 €** |
+| Persona | Desarrollo (h-p) | Coste desarrollo | Gestión (h) | Coste gestión | Reserva (h) | Coste reserva | **Total** |
+|---|---|---|---|---|---|---|---|
+| Hugo (PO) | 18,8 | 658,00 € | 12,4 | 434,00 € | 5,92 | 207,20 € | **1.299,20 €** |
+| Gled (TL) | 17,6 | 704,00 € | 12,4 | 496,00 € | 7,40 | 296,00 € | **1.496,00 €** |
+| José (SM) | 32,6 | 1.043,20 € | 12,4 | 396,80 € | 4,16 | 133,12 € | **1.573,12 €** |
+| **Equipo** | **69** | **2.405,20 €** | **37,2** | **1.326,80 €** | **17,48** | **636,32 €** | **4.368,32 €** |
+
+La reserva de cada persona son las horas de su % de imprevistos (apartado 10) por su tarifa. Es presupuesto planificado: solo se gasta si ocurre un imprevisto (RSK-01 y RSK-09).
 
 | Iteración | IT-001 | IT-002 | IT-003 | IT-004 | IT-005 | IT-006 | **Total** |
 |---|---|---|---|---|---|---|---|
-| Desarrollo | 241,30 € | 219,90 € | 128,80 € | 153,20 € | 206,30 € | 181,20 € | 1.130,70 € |
-| Gestión | 229,49 € | 229,49 € | 229,49 € | 229,49 € | 229,49 € | 229,49 € | 1.376,94 € |
-| **Total** | 470,79 € | 449,39 € | 358,29 € | 382,69 € | 435,79 € | 410,69 € | **2.507,64 €** |
-| Acumulado | 470,79 € | 920,18 € | 1.278,47 € | 1.661,16 € | 2.096,95 € | 2.507,64 € | |
+| Desarrollo | 456,20 € | 385,60 € | 376,80 € | 386,70 € | 454,30 € | 345,60 € | 2.405,20 € |
+| Gestión | 176,55 € | 265,72 € | 176,55 € | 265,72 € | 176,55 € | 265,72 € | 1.326,80 € |
+| Reserva | 114,47 € | 97,64 € | 114,47 € | 97,64 € | 114,47 € | 97,64 € | 636,32 € |
+| **Total** | 747,22 € | 748,95 € | 667,82 € | 750,05 € | 745,32 € | 708,95 € | **4.368,32 €** |
+| Acumulado | 747,22 € | 1.496,17 € | 2.163,99 € | 2.914,05 € | 3.659,37 € | 4.368,32 € | |
+
+La gestión es mayor en las iteraciones pares porque en ellas se celebran la review y la retrospectiva, y la reserva es menor porque se calcula sobre las horas que quedan.
 
 | Épica (desarrollo) | EP-001 | EP-002 | EP-003 | EP-004 | EP-005 |
 |---|---|---|---|---|---|
-| Historias | US-001, 002, 003 | US-006 | US-012, 015 | US-017 | US-023 |
-| Coste | 461,20 € | 174,80 € | 211,00 € | 181,70 € | 102,00 € |
+| Historias | US-001…US-004 | US-006…US-010 | US-012…US-015 | US-017…US-019 | US-022, US-023 |
+| Coste | 558,40 € | 658,90 € | 490,20 € | 423,20 € | 274,50 € |
 
-El coste por historia y por tarea de IT-001 está en la hoja *Coste* y en la hoja *Tareas IT-001* (241,30 €, que cuadra con IT-001). El total coincide en el Excel y en ProjectLibre. El cliente no fija presupuesto, porque es un proyecto académico. Como tope de referencia se usa la dedicación nominal completa (90 h × tarifa = 3.210 €), lo que deja **702,36 € de margen**. El coste es una proyección de la planificación, no un coste incurrido.
+| Total | Importe |
+|---|---|
+| Desarrollo + gestión | 3.732,00 € |
+| Reserva de imprevistos | 636,32 € |
+| **Coste total planificado** | **4.368,32 €** |
+
+El coste por historia y por tarea de IT-001 está en la hoja *Coste* y en la hoja *Tareas IT-001* (456,20 €, que cuadra con IT-001). El total coincide en el Excel y en ProjectLibre. El cliente no fija presupuesto, porque es un proyecto académico. Como tope de referencia se usa la dedicación nominal completa (138 h × tarifa = 4.878 €), lo que deja **509,68 € de margen**. El coste es una proyección de la planificación, no un coste incurrido.
 
 ## 16. Riesgos
 
-El registro (`docs/project/risks/riesgos.md`) tiene 12 riesgos. Cada uno incluye situación, evento, consecuencia, probabilidad, impacto, tratamiento y responsable. Los más importantes son estos:
+El registro (`docs/project/risks/riesgos.md`) tiene 12 riesgos. Cada uno incluye situación, evento, consecuencia, probabilidad, impacto, tratamiento y responsable. En la versión 2 se han actualizado con las cifras de la nueva planificación. Los más importantes son estos:
 
 | ID | Riesgo | P · I | Tratamiento |
 |---|---|---|---|
-| RSK-01 | 10 celdas AJUSTADAS: un imprevisto provoca una sobreasignación | Alta · Alto | Mitigar con la regla de contingencia de DEC-020 (José) |
-| RSK-02 | IT-003 solo tiene 3,95 h-p y en ella empieza US-006 | Media · Alto | Mitigar: US-006 en dos sprints y TD-03 preparada con la holgura de IT-002 (Gled) |
-| RSK-03 | La cadena casi lineal hace que todo esté en el camino crítico | Media · Alto | Mitigar con el margen del 10 %, revisión al cierre de cada IT y orden de recorte acordado (Hugo) |
+| RSK-01 | La holgura por persona e iteración es pequeña (mínimo 0,21 h-p, José en IT-003 e IT-005): un imprevisto provoca una sobreasignación | Media · Alto | Mitigar con la regla de contingencia de DEC-020 y la reserva de imprevistos: 17,48 h, 636,32 € (José) |
+| RSK-03 | La cadena de ocho historias US-001 → … → US-019 recorre las tres releases y termina un día antes de R3 | Media · Alto | Mitigar con el margen del 11 %, revisión al cierre de cada IT y recorte de *Should* por prioridad (Hugo) |
+| RSK-05 | Historias con incertidumbre Media (US-002, US-007, US-013, US-017, US-018 y US-023) | Media · Medio | Mitigar: refinar y reestimar antes del sprint; usar el margen solo con decisión del PO (Hugo) |
 | RSK-06 | EXT-01: las tecnologías aprobadas se retrasan o cambian | Media · Alto | Evitar: confirmarlas antes del 21/10 (Gled) |
 | RSK-08 | EXT-03: el evaluador externo no está disponible en IT-006 | Media · Medio | Mitigar: localizarlo antes de IT-005 (José) |
+| RSK-09 | Ausencias no previstas (enfermedad, exámenes sin fecha) | Media · Medio | Aceptar con la reserva de imprevistos: 10–25 % individual, 17,48 h y 636,32 € presupuestados (cada miembro) |
 | RSK-11 | Se fusiona una versión antigua del Excel, que es binario | Media · Alto | Evitar: un solo responsable y una exportación en texto en cada cambio (Gled) |
 
-Los demás cubren el peso de la gestión (43 %), estimaciones con incertidumbre Media, el buzón de pruebas, ausencias no previstas, la reproducibilidad de los agentes y el plazo de esta entrega. El registro se revisa en cada Sprint Planning.
+Los demás cubren el peso de la gestión (27 %), el buzón de pruebas, la reproducibilidad de los agentes y el plazo de las entregas. El registro se revisa en cada Sprint Planning.
 
 ## 17. Uso de la IA
 
@@ -450,38 +514,45 @@ Lo regula DEC-021 y queda registrado en `docs/project/reviews/registro-ia.md`.
 
 - **Herramienta:** GitHub Copilot en VS Code, con tres agentes propios en `.github/agents/` hechos a partir de las plantillas del profesor. El modelo está en *Auto*, el único modo que permite el plan Copilot Student; los tres usamos el mismo.
   - **Requirements Agent:** revisa el catálogo. Generó el informe v01 y el v02 en modo RECHECK. No modifica requisitos.
-  - **Planning Agent:** revisa capacidad, carga, secuencia, coste y margen. Su informe v01 en modo CONSISTENCY dio READY_WITH_NON_BLOCKING_QUESTIONS, con 0 hallazgos bloqueantes y 3 menores aceptados. Lee el Excel a través de su exportación en texto.
-  - **Project Auditor** (opcional, Hito 4): comprueba las cuatro dimensiones del enunciado, es decir, riesgos, ProjectLibre, viabilidad de la asignación y viabilidad de la secuencia. Gled lo ejecutó el 16/10/2026 sobre la planificación final. Su informe está en `docs/project/reviews/audit/audit-report-v01.md` y la clasificación en `registro-ia.md`, apartado 3. Resultado: **CONFORME_CON_OBSERVACIONES**, con 0 no conformidades y 2 observaciones menores, ambas aceptadas:
-    - AUD-v01-001: RSK-07 no tenía fecha límite para el buzón de pruebas (EXT-02); se añade el 21/10.
-    - AUD-v01-002: en ProjectLibre, el orden dentro del sprint de los enlaces comienzo-comienzo no se ve; se fijará en el Sprint Planning de IT-004, IT-005 e IT-006.
+  - **Planning Agent:** revisa capacidad, carga, secuencia, coste y margen. Su informe v01 en modo CONSISTENCY dio READY_WITH_NON_BLOCKING_QUESTIONS, con 0 hallazgos bloqueantes y 3 menores aceptados. Lee el Excel a través de su exportación en texto (ahora `excel-export-v03.md`).
+  - **Project Auditor** (opcional, Hito 4): comprueba riesgos, ProjectLibre, viabilidad de la asignación y viabilidad de la secuencia. Gled lo ejecutó el 16/10/2026 sobre la planificación de la versión 1. Resultado: **CONFORME_CON_OBSERVACIONES**, con 0 no conformidades y 2 observaciones menores, ambas aceptadas (AUD-v01-001 y AUD-v01-002). La segunda, sobre el orden dentro del sprint de los enlaces comienzo-comienzo, ya no aplica: en la versión 2 todas las dependencias son fin-comienzo y cada historia tiene sus fechas.
 - **Cómo se decide:** cada hallazgo se comprueba contra la fuente citada y se clasifica como aceptado, aceptado con cambios, rechazado o pendiente, con su justificación. Ninguna propuesta se aplica sin revisarla.
-- **Asistente conversacional (Claude):** se usó para auditar los hitos frente a los enunciados, preparar los escenarios de DEC-016, hacer el borrador de la planificación, el generador de los XML de ProjectLibre y el registro de riesgos, y redactar este informe. Cada uso consta en el registro (apartado 4) con la revisión del equipo. Las decisiones de alcance, reparto, tarifas y riesgos las tomó el equipo.
+- **Asistente conversacional (Claude):** se usó para auditar los hitos frente a los enunciados, preparar los escenarios de DEC-016, hacer el borrador de la planificación y de su revisión v03, el generador de los XML de ProjectLibre y el registro de riesgos, y redactar este informe. Las decisiones de alcance, reparto, tarifas y riesgos las tomó el equipo.
+
+**Qué cambió el equipo respecto a la IA y por qué.** El registro tiene ahora una columna con lo que el equipo cambió en cada propuesta y su motivo (apartados 3 y 4) y un apartado 5 que los resume. Algunos ejemplos:
+
+- **R-02 (Requirements v02), aceptada con cambios:** el agente pedía citar NFR-009 en US-015 y US-023. El equipo lo añadió también en US-001, US-003, US-006, US-012 y US-017, para que las 8 historias de entonces lo citaran igual.
+- **IPR-v01-002 (Planning v01), aceptada con cambios:** en lugar de repartir de nuevo las horas, el equipo comprobó que no ganaba margen y añadió el estado AJUSTADO y la regla de contingencia de DEC-020.
+- **Registro de riesgos:** Gled cambió los responsables de RSK-07 y RSK-08 propuestos por la IA para que coincidieran con la página *Dependencias entre requisitos* de la Wiki.
+- **ProjectLibre v3:** el borrador del script usaba un calendario de lunes a viernes. Gled lo cambió a lunes a domingo, de 16:00 a 20:00, porque el reparto del Excel tiene historias con fechas en fin de semana (apartado 14.2).
+- **Excel v03:** el equipo revisó en su reunión las horas, el reparto de historias y las fechas que propuso la IA (acta en la Wiki); lo que cambió consta en el apartado 4 del registro.
 
 ## 18. Viabilidad y conclusiones
 
 | Criterio | Resultado |
 |---|---|
-| Carga frente a capacidad (equipo) | 32 frente a 35,72 h-p (90 %). Viable |
-| Sobreasignaciones (persona × semana) | 0, contando gestión y ausencias (máximo 4,72 de 5 h) |
+| Carga frente a capacidad (equipo) | 69 frente a 77,32 h-p (89 %). Viable |
+| Historias por sprint | 3 en cada uno de los 6 sprints, sin historias repartidas en dos iteraciones |
+| Sobreasignaciones (persona × semana) | 0, contando gestión y ausencias (máximo 8,05 de 9 h, José) |
 | Trabajo sin asignar | 0 h-p |
-| Secuencia y dependencias | Todas respetadas, 0 incidencias. Hitos sobre el camino crítico |
-| Coste | 2.507,64 €, por debajo del tope de referencia de 3.210 € |
-| Revisión externa | Planning Agent sin bloqueantes. Auditor: CONFORME_CON_OBSERVACIONES, 0 no conformidades y 2 observaciones aceptadas |
+| Secuencia y dependencias | Todas respetadas por fechas, 0 incidencias. Reuniones en su día y hora |
+| Coste | 4.368,32 € con la reserva de imprevistos (636,32 €), por debajo del tope de referencia de 4.878 € |
+| Revisión externa | Planning Agent sin bloqueantes. Auditor: CONFORME_CON_OBSERVACIONES, 0 no conformidades y 2 observaciones aceptadas (sobre la versión 1) |
 
-La planificación es **viable** y es la línea base del proyecto: etiqueta `planificacion-v1` en el repositorio y `.pod` con línea base en ProjectLibre. Su precio es un alcance reducido al recorrido esencial y un margen individual muy pequeño en tres semanas, por eso hay una regla de contingencia y un orden de entrada de historias decididos de antemano. La primera retrospectiva (cierre de R1, 03/11) revisará dos cosas: el peso de la gestión (43 % de las horas) y si la velocidad real permite empezar a incorporar US-009.
+La planificación es **viable** y es la línea base del proyecto: etiqueta `entrega-trabajo1-v2` en el repositorio y `.pod` con línea base en ProjectLibre. Frente a la versión 1, cubre los cuatro objetivos con 18 historias en lugar de 8, sin celdas ajustadas y con una reserva de imprevistos presupuestada. Su punto débil es que la cadena más larga termina un día antes de R3, por eso se mantienen la regla de contingencia y el recorte de *Should* por prioridad decididos de antemano. La primera retrospectiva (cierre de R1, 03/11) revisará si la velocidad real confirma las horas declaradas.
 
 ## Anexo A · Entregables y dónde están
 
 | Entregable | Ubicación |
 |---|---|
-| Wiki: proceso, hitos 1–4, decisiones DEC-001…DEC-022, actas, capacidad, requisitos y dependencias | <https://github.com/UniExtremadura/Proyecto_GC04/wiki> |
-| Excel: requisitos, prioridad, estimación, capacidad, planificación, carga, gestión y coste | `docs/ErasmusNest_GC04_Requisitos_Capacidad.xlsx` (exportación en texto `docs/project/planning/excel-export-v02.md`) |
-| ProjectLibre por sprints y por épicas (`.pod` con línea base, XML y Gantt en PDF) | `docs/project/planning/projectlibre/` |
+| Wiki: proceso, hitos 1–4, decisiones DEC-001…DEC-025, actas, capacidad, requisitos, dependencias y *Mejoras tras la evaluación* | <https://github.com/UniExtremadura/Proyecto_GC04/wiki> |
+| Excel: requisitos, prioridad, estimación, capacidad, planificación con fechas, carga, gestión y coste con reserva | `docs/ErasmusNest_GC04_Requisitos_Capacidad.xlsx` (exportación en texto `docs/project/planning/excel-export-v03.md`) |
+| ProjectLibre por sprints y por épicas (`.pod` con línea base, XML, Gantt en PDF y `LEEME.md`) | `docs/project/planning/projectlibre/` |
 | Especificación: constitución, misión, objetivos, NFR y reglas, épicas e historias, DoR y DoD | `.specify/memory/`, `specs/`, `docs/quality/` |
 | Organización: empresa y team charter | `docs/organization/` |
 | Riesgos | `docs/project/risks/riesgos.md` |
 | Agentes, sus informes y registro de uso de IA | `.github/agents/`, `docs/project/reviews/` |
-| Versiones | Etiquetas `requisitos-v0` (catálogo aceptado, 14/10/2026) y `planificacion-v1` (esta entrega, 16/10/2026) |
+| Versiones | Etiquetas `requisitos-v0` (catálogo aceptado, 14/10/2026), `planificacion-v1` (entrega original, 16/10/2026) y `entrega-trabajo1-v2` (esta versión) |
 
 ## Anexo B · Decisiones principales
 
@@ -492,10 +563,11 @@ La planificación es **viable** y es la línea base del proyecto: etiqueta `plan
 | DEC-011 | Scrum adaptado: sprints de 1 semana y releases de 2 |
 | DEC-012 · DEC-013 · DEC-014 | Construcción del catálogo, criterio MoSCoW y tipos de dependencia |
 | DEC-015 | Capacidad con descuentos por rol y % de imprevistos individual |
-| DEC-016 | Línea base del MVP: 8 historias *Must*, 32 h-p, 90 % de la capacidad |
+| DEC-016 | Línea base del MVP: 8 historias *Must*, 32 h-p (ampliada por DEC-025) |
 | DEC-018 | Regla de tamaño de la DoR (excepción de dos iteraciones) y consenso siempre en una carta |
 | DEC-020 | Primera planificación por persona e iteración, regla de contingencia y tarifas por rol |
 | DEC-021 | Uso de la IA: agentes de Copilot, modo *Auto* y registro |
-| DEC-022 | ProjectLibre por sprints y por épicas, registro de riesgos y agente auditor |
+| DEC-022 | ProjectLibre por sprints y por épicas, registro de riesgos y agente auditor (su decisión 1 la sustituye DEC-025) |
+| DEC-025 | Mejoras tras la evaluación: horas reales, ceremonias en su día y hora, línea base *Must* + *Should* (18 historias), historias con fechas y reserva de imprevistos con coste |
 
 La lista completa, con contexto, justificación y quién decidió, está en la página *Registro de decisiones* de la Wiki.
