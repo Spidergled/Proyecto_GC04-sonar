@@ -23,7 +23,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 10 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-002, US-003
-- **Plan inicial:** R2, IT-003 – IT-004 (excepción de DEC-018). Justificación: IT-003 solo tiene 3,95 h-p de capacidad por los parciales de Hugo y Gled, menos que la estimación (5 h-p). Dividir la publicación en partes sin publicar un anuncio completo no aporta valor por separado. La estimación cabe en la capacidad de las dos iteraciones (9,9 h-p). Incluye TD-03 (modelo de anuncio y zonas) (DEC-020). Cuenta como Hecha al final de IT-004.
+- **Plan inicial:** R1, IT-002, del 28/10 al 31/10/2026 (planificación v03, DEC-025, hoja *Planificación* del Excel). Incluye TD-03 (modelo de anuncio y zonas) (DEC-020). En la planificación v1 ocupaba IT-003 – IT-004 con la excepción de DEC-018; con la capacidad real se adelanta a R1 y cabe entera en un sprint.
 
 #### Acceptance criteria
 
@@ -76,7 +76,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 6 h-p)
 - **Incertidumbre:** Media (almacenamiento de imágenes)
 - **Predecesoras:** US-006
-- **Plan inicial:** fuera de la línea base (DEC-016)
+- **Plan inicial:** R2, IT-003, del 04/11 al 08/11/2026 (planificación v03, DEC-025, hoja *Planificación* del Excel). Entra en la línea base con DEC-025. Incluye TD-05 (almacenamiento de ficheros) (DEC-020).
 
 #### Acceptance criteria
 
@@ -104,7 +104,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-006
-- **Plan inicial:** fuera de la línea base (DEC-016)
+- **Plan inicial:** R3, IT-005, del 18/11 al 20/11/2026 (planificación v03, DEC-025, hoja *Planificación* del Excel). Entra en la línea base con DEC-025.
 
 #### Acceptance criteria
 
@@ -131,7 +131,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 4 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-006
-- **Plan inicial:** fuera de la línea base (DEC-016); candidata n.º 1 a entrar si la velocidad real lo permite
+- **Plan inicial:** R1, IT-002, del 01/11 al 02/11/2026 (planificación v03, DEC-025, hoja *Planificación* del Excel). Era la candidata n.º 1 de DEC-016; entra en la línea base con DEC-025, justo después de US-006, y recupera G-03.
 
 #### Acceptance criteria
 
@@ -178,7 +178,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-006
-- **Plan inicial:** fuera de la línea base (DEC-016); candidata n.º 5 a entrar si la velocidad real lo permite
+- **Plan inicial:** R2, IT-003, del 07/11 al 10/11/2026 (planificación v03, DEC-025, hoja *Planificación* del Excel). Era la candidata n.º 5 de DEC-016; entra en la línea base con DEC-025.
 
 #### Acceptance criteria
 
@@ -205,7 +205,7 @@ Un estudiante que se va de movilidad puede ofrecer su habitación de forma clara
 - **Estimación:** 2 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 4 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-009
-- **Plan inicial:** fuera de la línea base (DEC-016)
+- **Plan inicial:** fuera de la línea base: es *Could* y DEC-025 solo incluye *Must* y *Should*. Entraría si sobra capacidad.
 
 #### Acceptance criteria
 

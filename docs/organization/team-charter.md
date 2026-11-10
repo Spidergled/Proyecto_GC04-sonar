@@ -31,20 +31,21 @@ tres tengan una carga similar; el reparto queda anotado en el acta.
 
 ### Reuniones
 
-4. Reunión semanal fija los miércoles (inicio de cada sprint), de 45 minutos,
-   presencial o por Discord: 30 minutos de Sprint Planning (objetivo del sprint y
-   reparto de tareas) y 15 minutos de refinamiento del backlog, que facilita el
-   Scrum Master. El Scrum Master redacta el acta (asistentes, decisiones y
-   acciones con responsable) y la sube a la Wiki el mismo día.
+4. Reunión semanal fija los miércoles (inicio de cada sprint), de 16:00 a
+   16:45, presencial o por Discord: 30 minutos de Sprint Planning (objetivo
+   del sprint y reparto de tareas) y 15 minutos de refinamiento del backlog,
+   que facilita el Scrum Master. El Scrum Master redacta el acta (asistentes,
+   decisiones y acciones con responsable) y la sube a la Wiki el mismo día.
 5. Daily asíncrono: cada día laborable, antes de las 22:00, cada miembro
    publica en WhatsApp qué hizo, qué hará y si tiene bloqueos, sin
    necesidad de reunión en vivo salvo bloqueo importante.
-6. Al cierre de cada release (cada 2 semanas, el martes) se hace una Sprint
-   Review de 20 minutos, en la que se muestra el incremento frente a sus
-   criterios de aceptación, y una retrospectiva de 20-30 minutos, de la que
-   salen 1 o 2 acciones de mejora, cada una con responsable y fecha. Además, la
-   sesión semanal de prácticas con el profesor incluye review, retrospectiva y
-   planning; el Scrum Master recoge sus conclusiones en el acta de la Wiki.
+6. Al cierre de cada release (cada 2 semanas, el martes de IT-002, IT-004 e
+   IT-006) se hace, de 17:00 a 17:50, una Sprint Review de 25 minutos, en la
+   que se muestra el incremento frente a sus criterios de aceptación, y una
+   retrospectiva de 25 minutos, de la que salen 1 o 2 acciones de mejora,
+   cada una con responsable y fecha. Además, la sesión semanal de prácticas
+   con el profesor incluye review, retrospectiva y planning; el Scrum Master
+   recoge sus conclusiones en el acta de la Wiki.
 
 ### Horarios, disponibilidad y ausencias
 
@@ -125,3 +126,4 @@ tres tengan una carga similar; el reparto queda anotado en el acta.
 | 1.0 | 30/09/2026 | Versión inicial. | DEC-002, DEC-003 |
 | 1.1 | 10/10/2026 | Correcciones de la auditoría del Hito 1: señales de alerta (acuerdos 18 y 19), fusión de acuerdos para no superar los 20 y concreción del daily, las ausencias, el tablero y las actas. | DEC-017 |
 | 1.2 | 13/10/2026 | Acuerdos 4 y 6 alineados con la capacidad y con *Proceso de desarrollo* (Wiki); acuerdos 13 y 15 reformulados para que sean medibles. | DEC-019 |
+| 1.3 | 05/11/2026 | Acuerdos 4 y 6 con día y hora fijos (planning los miércoles de 16:00 a 16:45; review y retro de 25 min cada una los martes de 17:00 a 17:50 al cerrar cada release), igual que el Excel v03 y ProjectLibre. | DEC-025 |

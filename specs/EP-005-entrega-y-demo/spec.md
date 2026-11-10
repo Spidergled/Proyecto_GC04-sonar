@@ -19,11 +19,11 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 
 - **Necesidad:** sin datos, la demo está vacía y no se pueden probar la búsqueda, el rendimiento ni las métricas.
 - **Objetivo:** G-04; habilita las pruebas de M-01 a M-03.
-- **Prioridad:** Should. Valor: carga en un paso los datos sintéticos de S-06 y permite medir NFR-005 con ≥ 100 anuncios. · Riesgo: bajo. · Dependencias: necesita US-001 y US-006. Era Must; baja a Should por capacidad (DEC-016): mientras no entre, el guion (US-023) crea a mano un conjunto mínimo de datos sintéticos. Segunda candidata a entrar.
+- **Prioridad:** Should. Valor: carga en un paso los datos sintéticos de S-06 y permite medir NFR-005 con ≥ 100 anuncios. · Riesgo: bajo. · Dependencias: necesita US-001 y US-006. Era Must; baja a Should por capacidad (DEC-016) y era la segunda candidata a entrar. Entra con DEC-025 en IT-005, antes del guion (US-023), que ya puede usarla.
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 6 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-001, US-006
-- **Plan inicial:** fuera de la línea base (DEC-016); candidata n.º 2 a entrar si la velocidad real lo permite
+- **Plan inicial:** R3, IT-005, del 21/11 al 24/11/2026 (planificación v03, DEC-025, hoja *Planificación* del Excel). Era la candidata n.º 2 de DEC-016; entra en la línea base con DEC-025. Permite medir NFR-005 con ≥ 100 anuncios.
 
 #### Acceptance criteria
 
@@ -51,7 +51,7 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Media (depende de las tecnologías que se aprueben)
 - **Predecesoras:** US-017
-- **Plan inicial:** R3, IT-006, después de terminar US-017 (planificación inicial del 14/10/2026). El evaluador externo (EXT-03) debe estar localizado antes de IT-005.
+- **Plan inicial:** R3, IT-006, del 26/11 al 30/11/2026 (planificación v03, DEC-025, hoja *Planificación* del Excel). Empieza al terminar US-017 y acaba el lunes, antes de la review de R3. El evaluador externo (EXT-03) debe estar localizado antes de IT-005.
 
 #### Acceptance criteria
 
@@ -64,7 +64,7 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 - **Reglas:** ninguna específica.
 - **Restricciones:** depende de las tecnologías aprobadas en la asignatura (SU-07, EXT-01); el conjunto mínimo de datos y las credenciales de prueba son sintéticos (NFR-009).
 - **NFR:** NFR-008, NFR-009.
-- **Dependencias:** funcional US-017 (el guion se valida sobre el incremento completo de la línea base, DEC-016); externa: disponibilidad de un evaluador externo (SU-06).
+- **Dependencias:** funcional US-017 (el guion se valida sobre el incremento completo de la línea base, DEC-016 y DEC-025); externa: disponibilidad de un evaluador externo (SU-06).
 
 ---
 
@@ -78,7 +78,7 @@ Una persona ajena al equipo, como el profesorado o la Delegación, puede instala
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 8 h-p)
 - **Incertidumbre:** Media (afecta a todas las pantallas)
 - **Predecesoras:** US-015, US-018 (pantallas principales terminadas)
-- **Plan inicial:** no planificada (Won't, DEC-016)
+- **Plan inicial:** no planificada: es *Won't* (DEC-016), fuera de la línea base de DEC-025.
 
 #### Acceptance criteria
 

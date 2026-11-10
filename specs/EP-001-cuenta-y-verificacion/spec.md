@@ -23,7 +23,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 8 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** —
-- **Plan inicial:** R1, IT-001 (planificación inicial del 14/10/2026, hoja *Planificación* del Excel). Incluye TD-01 (entorno base y modelo de usuario) como tareas TK-001 y TK-002 de IT-001 (DEC-020).
+- **Plan inicial:** R1, IT-001, del 21/10 al 23/10/2026 (planificación v03, DEC-025, hoja *Planificación* del Excel). Incluye TD-01 (entorno base y modelo de usuario) como tareas TK-001 y TK-002 de IT-001 (DEC-020).
 
 #### Acceptance criteria
 
@@ -78,7 +78,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 10 h-p)
 - **Incertidumbre:** Media (envío de correo y caducidad del enlace)
 - **Predecesoras:** US-001
-- **Plan inicial:** R1, IT-001 – IT-002 (excepción de DEC-018). Justificación: con US-001 (5 h-p) y US-003 (3 h-p), R1 no se puede repartir en historias enteras por iteración (6,95 h-p cada una), y dividir US-002 separaría el envío del enlace de su uso, sin valor por separado. Su estimación (5 h-p) cabe en la capacidad de las dos iteraciones (13,9 h-p). Empieza en IT-001 porque es la historia de R1 con más incertidumbre; incluye TD-02 (envío de correo) en IT-002 (DEC-020). Cuenta como Hecha al final de IT-002.
+- **Plan inicial:** R1, IT-001, del 24/10 al 27/10/2026 (planificación v03, DEC-025, hoja *Planificación* del Excel). Va en IT-001 porque es la historia de R1 con más incertidumbre. Incluye TD-02 (envío de correo) como tarea TK-008 (DEC-020). En la planificación v1 ocupaba IT-001 – IT-002 con la excepción de DEC-018; con la capacidad real ya no hace falta.
 
 #### Acceptance criteria
 
@@ -125,7 +125,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 6 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-001
-- **Plan inicial:** R1, IT-002, después de US-001 (planificación inicial del 14/10/2026).
+- **Plan inicial:** R1, IT-001, del 24/10 al 27/10/2026 (planificación v03, DEC-025, hoja *Planificación* del Excel). Empieza al terminar US-001, en paralelo con US-002 (en la v1 estaba en IT-002).
 
 #### Acceptance criteria
 
@@ -153,7 +153,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-003
-- **Plan inicial:** fuera de la línea base (DEC-016)
+- **Plan inicial:** R1, IT-002, del 28/10 al 30/10/2026 (planificación v03, DEC-025, hoja *Planificación* del Excel). Entra en la línea base con DEC-025 (antes fuera por DEC-016).
 
 #### Acceptance criteria
 
@@ -180,7 +180,7 @@ Solo los estudiantes que demuestran pertenecer a la UEx mediante su correo insti
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja (reutiliza el mecanismo de envío de US-002)
 - **Predecesoras:** US-002, US-003
-- **Plan inicial:** fuera de la línea base (DEC-016)
+- **Plan inicial:** fuera de la línea base: es *Could* y DEC-025 solo incluye *Must* y *Should*. Entraría si sobra capacidad.
 
 #### Acceptance criteria
 

@@ -40,5 +40,6 @@ DevOps/QA: compartido entre los tres (ver `docs/organization/team-charter.md`).
 |---|---|
 | `requisitos-v0` | Catálogo de requisitos aceptado al cierre del Hito 2 (14/10/2026) |
 | `planificacion-v1` | Planificación entregada en el Trabajo 1 (16/10/2026): línea base DEC-016, planificación DEC-020, ProjectLibre con línea base, riesgos, auditoría e informe |
+| `entrega-trabajo1-v2` | Trabajo 1 reenviado para la reevaluación: mejoras tras la evaluación (DEC-025), Excel v03 con 18 historias y reserva de imprevistos, ProjectLibre v3, riesgos 2.0, registro de IA e informe v2 |
 
 La memoria de la práctica y la justificación de las decisiones están en la Wiki del repositorio.

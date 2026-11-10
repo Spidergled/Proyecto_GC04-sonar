@@ -23,7 +23,7 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 8 h-p)
 - **Incertidumbre:** Media (modelo de conversación compartido con US-018)
 - **Predecesoras:** US-015, US-002
-- **Plan inicial:** R3, IT-005 – IT-006 (excepción de DEC-018). Justificación: tras US-015 (3 h-p), IT-005 (5,95 h-p) no tiene sitio para las 5 h-p completas, y enviar el primer mensaje no se puede dividir sin perder el resultado observable de la historia. La estimación cabe en la capacidad de las dos iteraciones (11,9 h-p). Incluye TD-04 (modelo de conversación, pensado también para US-018) (DEC-020). Cuenta como Hecha al final de IT-006.
+- **Plan inicial:** R3, IT-005, del 18/11 al 21/11/2026 (planificación v03, DEC-025, hoja *Planificación* del Excel). Incluye TD-04 (modelo de conversación, pensado también para US-018) (DEC-020). En la planificación v1 ocupaba IT-005 – IT-006 con la excepción de DEC-018; con la capacidad real cabe entera en un sprint.
 
 #### Acceptance criteria
 
@@ -72,7 +72,7 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 10 h-p)
 - **Incertidumbre:** Media
 - **Predecesoras:** US-017
-- **Plan inicial:** fuera de la línea base (DEC-016); candidata n.º 3 a entrar si la velocidad real lo permite
+- **Plan inicial:** R3, IT-006, del 25/11 al 27/11/2026 (planificación v03, DEC-025, hoja *Planificación* del Excel). Era la candidata n.º 3 de DEC-016; entra en la línea base con DEC-025. Reutiliza TD-04.
 
 #### Acceptance criteria
 
@@ -100,7 +100,7 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 - **Estimación:** 2 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 4 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-018
-- **Plan inicial:** fuera de la línea base (DEC-016)
+- **Plan inicial:** R3, IT-006, del 28/11 al 30/11/2026 (planificación v03, DEC-025, hoja *Planificación* del Excel). Entra en la línea base con DEC-025; termina el lunes, antes de la review de R3.
 
 #### Acceptance criteria
 
@@ -127,7 +127,7 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 4 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-015, US-003
-- **Plan inicial:** fuera de la línea base (DEC-016)
+- **Plan inicial:** fuera de la línea base: es *Could* y DEC-025 solo incluye *Must* y *Should*. Entraría si sobra capacidad.
 
 #### Acceptance criteria
 
@@ -154,7 +154,7 @@ El demandante y el oferente pueden hablar dentro de la plataforma, sin exponer s
 - **Estimación:** 8 h-p (solo orientativa; no se planifica)
 - **Incertidumbre:** Alta
 - **Predecesoras:** US-018
-- **Plan inicial:** no planificada (fuera de la línea base)
+- **Plan inicial:** no planificada: es *Won't* (fuera de la línea base de DEC-025).
 
 #### Acceptance criteria (borrador)
 

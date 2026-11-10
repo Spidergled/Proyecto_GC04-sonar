@@ -19,11 +19,11 @@ Un estudiante que busca alojamiento temporal encuentra en un solo sitio las habi
 
 - **Necesidad:** hoy la oferta está dispersa en varios canales.
 - **Objetivo:** G-01.
-- **Prioridad:** Must. Valor: es la base de toda la búsqueda y la primera pantalla del recorrido del demandante. · Riesgo: funcional bajo; el riesgo de rendimiento (NFR-005, ≥ 100 anuncios) se medirá cuando entre US-022 (DEC-016). · Dependencias: necesita US-006; de ella dependen US-013, US-014, US-015 y US-016.
+- **Prioridad:** Must. Valor: es la base de toda la búsqueda y la primera pantalla del recorrido del demandante. · Riesgo: funcional bajo; el riesgo de rendimiento (NFR-005, ≥ 100 anuncios) se mide con US-022 en IT-005 (DEC-025). · Dependencias: necesita US-006; de ella dependen US-013, US-014, US-015 y US-016.
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 6 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-006
-- **Plan inicial:** R2, IT-004, después de terminar US-006 (planificación inicial del 14/10/2026).
+- **Plan inicial:** R2, IT-003, del 04/11 al 06/11/2026 (planificación v03, DEC-025, hoja *Planificación* del Excel). Empieza con US-006 ya terminada en IT-002 (en la v1 estaba en IT-004).
 
 #### Acceptance criteria
 
@@ -37,7 +37,7 @@ Un estudiante que busca alojamiento temporal encuentra en un solo sitio las habi
 - **Reglas:** RN-08.
 - **Restricciones:** ninguna específica además de las generales del proyecto (solo datos sintéticos, NFR-009).
 - **NFR:** NFR-002 (no se muestra el correo del autor), NFR-004 (listado, paginación y estado vacío accesibles), NFR-005, NFR-006, NFR-009.
-- **Dependencias:** funcional US-006. Mientras US-022 esté fuera de la línea base (DEC-016), la paginación se prueba con el conjunto mínimo de datos del guion (US-023), y la medición de NFR-005 con ≥ 100 anuncios se aplaza hasta que entre US-022.
+- **Dependencias:** funcional US-006. En IT-003 la paginación se prueba con datos sintéticos creados a mano; la medición de NFR-005 con ≥ 100 anuncios se hace cuando US-022 cargue el conjunto completo (IT-005, DEC-025).
 
 ---
 
@@ -51,7 +51,7 @@ Un estudiante que busca alojamiento temporal encuentra en un solo sitio las habi
 - **Estimación:** 5 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 8 h-p)
 - **Incertidumbre:** Media (reglas de solapamiento)
 - **Predecesoras:** US-012
-- **Plan inicial:** fuera de la línea base (DEC-016); candidata n.º 4 a entrar si la velocidad real lo permite
+- **Plan inicial:** R2, IT-004, del 11/11 al 14/11/2026 (planificación v03, DEC-025, hoja *Planificación* del Excel). Era la candidata n.º 4 de DEC-016; entra en la línea base con DEC-025.
 
 #### Acceptance criteria
 
@@ -94,7 +94,7 @@ Supongamos tres anuncios disponibles: **A** del 01/02 al 30/06, **B** del 15/03 
 
 #### Supuestos
 
-- La cobertura parcial es útil para el demandante, que puede combinar alojamientos o ajustar sus fechas. Esta interpretación la validará el cliente en la Review de la release en la que entre la historia (está fuera de la línea base por DEC-016).
+- La cobertura parcial es útil para el demandante, que puede combinar alojamientos o ajustar sus fechas. Esta interpretación la validará el cliente en la Review de R2 (17/11/2026), la release en la que entra la historia (DEC-025).
 
 ---
 
@@ -108,7 +108,7 @@ Supongamos tres anuncios disponibles: **A** del 01/02 al 30/06, **B** del 15/03 
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 4 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-012
-- **Plan inicial:** fuera de la línea base (DEC-016); candidata n.º 6 a entrar si la velocidad real lo permite
+- **Plan inicial:** R2, IT-004, del 11/11 al 13/11/2026 (planificación v03, DEC-025, hoja *Planificación* del Excel). Era la candidata n.º 6 de DEC-016; entra en la línea base con DEC-025. Reutiliza la lista de zonas de TD-03.
 
 #### Acceptance criteria
 
@@ -135,7 +135,7 @@ Supongamos tres anuncios disponibles: **A** del 01/02 al 30/06, **B** del 15/03 
 - **Estimación:** 3 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 5 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-012
-- **Plan inicial:** R3, IT-005 (planificación inicial del 14/10/2026).
+- **Plan inicial:** R2, IT-004, del 14/11 al 16/11/2026 (planificación v03, DEC-025, hoja *Planificación* del Excel). Termina el lunes, antes de la review de R2 (en la v1 estaba en R3, IT-005).
 
 #### Acceptance criteria
 
@@ -162,7 +162,7 @@ Supongamos tres anuncios disponibles: **A** del 01/02 al 30/06, **B** del 15/03 
 - **Estimación:** 2 h-p (consensuada en el Planning Poker del 10/10/2026; V0: 3 h-p)
 - **Incertidumbre:** Baja
 - **Predecesoras:** US-012, US-013
-- **Plan inicial:** fuera de la línea base (DEC-016)
+- **Plan inicial:** fuera de la línea base: es *Could* y DEC-025 solo incluye *Must* y *Should*. Entraría si sobra capacidad.
 
 #### Acceptance criteria
 
