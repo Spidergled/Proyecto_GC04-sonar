@@ -40,26 +40,25 @@ El proyecto incluye:
 - **S-05:** cierre manual de un anuncio cuando deja de estar disponible.
 - **S-06:** un conjunto controlado de usuarios, habitaciones y anuncios completamente ficticios o sintéticos.
 
-## Línea base de la planificación (DEC-016)
+## Línea base de la planificación (DEC-016, ampliada por DEC-025)
 
-Con la capacidad efectiva del equipo (≈35,7 h-p en los 6 sprints), la planificación del Trabajo 1 solo incluye las 8 historias del MVP: **32 h-p, el 90 % de la capacidad**. El alcance S-01…S-06 sigue siendo la dirección del producto, pero en este plazo se cubre así:
+En la entrega original del Trabajo 1 (16/10/2026), con una capacidad de ≈35,7 h-p, DEC-016 limitó la línea base a las 8 historias *Must* del MVP (32 h-p). Tras la evaluación del profesor, la capacidad se recalculó con las horas reales del equipo (7, 7 y 9 h a la semana): **77,32 h-p** en los 6 sprints. Con ella, **DEC-025** amplía la línea base a las 8 *Must* y las 10 *Should*: **18 historias, 69 h-p, el 89 % de la capacidad**, 3 por sprint (hoja *Planificación* del Excel, `excel-export-v03.md`). El alcance S-01…S-06 queda cubierto así:
 
-| Alcance | En la línea base | Fuera de la línea base (Should, por orden de entrada) |
+| Alcance | En la línea base (DEC-025) | Fuera de la línea base |
 |---|---|---|
-| S-01 | US-001, US-002, US-003 | — |
-| S-02 | US-006 | US-010 |
-| S-03 | US-012, US-015 (listado y detalle) | US-013, US-014 (filtros por fechas y zona) |
-| S-04 | US-017 (contacto inicial) | US-018 (conversación completa) |
-| S-05 | — | US-009 (primera candidata) |
-| S-06 | US-023 (conjunto mínimo de datos sintéticos creado con el guion) | US-022 (carga en un único paso) |
+| S-01 | US-001, US-002, US-003, US-004 | US-005 (*Could*) |
+| S-02 | US-006, US-007, US-008, US-010 | — |
+| S-03 | US-012, US-013, US-014, US-015 | US-016 (*Could*) |
+| S-04 | US-017, US-018, US-019 | US-020 (*Could*), US-021 (*Won't*) |
+| S-05 | US-009 | US-011 (*Could*) |
+| S-06 | US-022, US-023 | — |
 
 Consecuencias de la decisión:
 
-- **G-01, G-02 y G-04** se cubren en la línea base; M-01, M-02 y M-04 se miden en la Review de R3.
-- **G-03 y M-03** quedan aplazados hasta que entre US-009.
-- **NFR-005** (rendimiento con ≥ 100 anuncios) se medirá cuando entre US-022.
-- **US-024** (interfaz en inglés) pasa a *Won't*: no forma parte de S-01…S-06.
-- Las historias fuera de la línea base entran en el orden de la tabla, y solo si la velocidad real deja capacidad libre, siguiendo la *Gestión de cambios*.
+- **G-01, G-02, G-03 y G-04** se cubren en la línea base. G-03 y M-03, que DEC-016 dejaba aplazados, entran con US-009 (cerrar el anuncio, R1) y US-010 (ver mis anuncios y su estado, R2). M-01, M-02, M-03 y M-04 se miden en la Review de R3.
+- **NFR-005** (rendimiento con ≥ 100 anuncios) se mide con US-022 en IT-005.
+- **US-024** (interfaz en inglés) sigue siendo *Won't* (DEC-016): no forma parte de S-01…S-06.
+- Las *Could* (US-005, US-011, US-016 y US-020) quedan fuera y solo entran, por prioridad, si la velocidad real deja capacidad libre, siguiendo la *Gestión de cambios*. Si falta capacidad, primero sale la *Should* de menor prioridad de la release afectada (regla de contingencia de DEC-020).
 
 ## Exclusiones
 

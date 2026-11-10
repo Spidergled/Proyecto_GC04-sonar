@@ -31,11 +31,11 @@ La primera versión (16/10/2026) obtuvo un 8,5. El profesor valoró los requisit
 
 | Comentario del profesor | Qué hemos cambiado | Dónde |
 |---|---|---|
-| Las tareas de gestión duran el sprint entero y la review y la retrospectiva se reparten cada semana. ProjectLibre no muestra cuándo se reúne el equipo | Cada reunión está en su día y hora: Sprint Planning y refinamiento los miércoles de 16:00 a 16:45, y review y retrospectiva (50 min) los martes 03/11, 17/11 y 01/12 de 17:00 a 17:50. Ya no se prorratean: la review y la retro solo restan capacidad en IT-002, IT-004 e IT-006 | Apartados 6, 10 y 14.2 · Excel, hoja *Capacidad* (fila 23 y tabla de fechas) · ProjectLibre v3 |
+| Las tareas de gestión duran el sprint entero y la review y la retrospectiva se reparten cada semana. ProjectLibre no muestra cuándo se reúne el equipo | Cada reunión está en su día y hora: Sprint Planning y refinamiento los miércoles de 16:00 a 16:45, y review y retrospectiva (50 min) los martes 03/11, 17/11 y 01/12 de 17:00 a 17:50. Ya no se prorratean: la review y la retro solo restan capacidad en IT-002, IT-004 e IT-006 | Apartados 3, 6, 10 y 14.2 · Excel, hoja *Capacidad* (fila 23 y tabla de fechas) · ProjectLibre v3 · team charter 1.3 (acuerdos 4 y 6) |
 | Lo mismo ocurre con las historias de usuario | Cada historia tiene fecha de inicio y de fin dentro de su sprint (de 2 a 5 días) y ninguna dura el sprint entero. El Excel comprueba que las predecesoras terminan antes y que las fechas caen dentro de su iteración | Apartado 14.1 · Excel, hoja *Planificación* (columnas *Inicio* y *Fin*) · ProjectLibre v3 |
 | El coste suma desarrollo y gestión, pero no pone precio a la reserva de imprevistos | Fila nueva «Reserva de imprevistos»: 17,48 h × tarifa de cada rol = **636,32 €**. El coste total con reserva es de **4.368,32 €**, igual en el Excel y en ProjectLibre, que tiene una tarea de reserva en cada sprint | Apartados 14.3 y 15 · Excel, hoja *Coste* · riesgos RSK-01 y RSK-09 |
 | Dejad constancia de qué cambiasteis vosotros con respecto a la IA y por qué | Columna nueva «Qué cambió el equipo y por qué» en el registro de hallazgos y de usos de IA, y apartado nuevo con los cambios del equipo sobre las propuestas de la IA | Apartado 17 · `registro-ia.md`, apartados 3, 4 y 5 |
-| La carga por historia y sprint es muy baja: solo una o dos historias por sprint | Capacidad con las horas reales (antes se contaban solo las horas fuera de clase) y línea base de 18 historias *Must* y *Should*, **3 por sprint**, sin historias repartidas en dos iteraciones | Apartados 10, 11, 13 y 14 · DEC-025 |
+| La carga por historia y sprint es muy baja: solo una o dos historias por sprint | Capacidad con las horas reales (antes se contaban solo las horas fuera de clase) y línea base de 18 historias *Must* y *Should*, **3 por sprint**, sin historias repartidas en dos iteraciones | Apartados 10, 11, 13 y 14 · DEC-025 · *Plan inicial* de cada historia en las `spec.md` y línea base en `goals.md` |
 
 ## 1. Empresa
 
@@ -64,17 +64,17 @@ El enunciado prevé equipos de 4 o 5 personas. Somos 3, así que, siguiendo la i
 
 ## 3. Team charter
 
-El team charter (`docs/organization/team-charter.md`, versión 1.2) recoge **20 acuerdos medibles** en siete bloques:
+El team charter (`docs/organization/team-charter.md`, versión 1.3) recoge **20 acuerdos medibles** en siete bloques:
 
 - **Comunicación (1–3):** revisar WhatsApp y Discord cada día laborable y responder en 24 h (48 h en fin de semana). WhatsApp es el canal asíncrono y Discord el técnico y de voz.
-- **Reuniones (4–6):** reunión fija los miércoles de 45 min (planning y refinamiento) con acta en la Wiki el mismo día, daily asíncrona antes de las 22:00, y review y retrospectiva al cierre de cada release, con 1 o 2 acciones de mejora con responsable y fecha.
+- **Reuniones (4–6):** reunión fija los miércoles de 16:00 a 16:45 (planning y refinamiento) con acta en la Wiki el mismo día, daily asíncrona antes de las 22:00, y review y retrospectiva de 25 min cada una los martes de 17:00 a 17:50 al cierre de cada release, con 1 o 2 acciones de mejora con responsable y fecha.
 - **Disponibilidad y ausencias (7–8):** cada miembro respeta el horario declarado en la capacidad; las ausencias se avisan con 24 h de antelación.
 - **Decisiones (9–11):** el PO decide sobre producto y alcance, el TL sobre técnica, y toda decisión relevante se registra el mismo día.
 - **Conflictos y feedback (12–13):** si no hay acuerdo en 48 h, decide el TL o el PO; el feedback es directo, en el canal o en la PR.
 - **Calidad y herramientas (14–16):** límite de una tarea activa por persona, ningún cambio en `main` sin PR revisada por otra persona, y el repositorio como única fuente oficial.
 - **Profesorado y señales de alerta (17–20):** qué hacer ante retrasos de más de 2 días, bloqueos de más de 24 h, incumplimientos repetidos o falta de implicación.
 
-El charter se revisó dos veces para alinearlo con los enunciados y con el proceso (DEC-017 y DEC-019).
+El charter se revisó dos veces para alinearlo con los enunciados y con el proceso (DEC-017 y DEC-019), y una tercera tras la evaluación para fijar el día y la hora de las reuniones (versión 1.3, DEC-025).
 
 ## 4. Idea de producto
 
