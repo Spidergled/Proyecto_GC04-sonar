@@ -524,7 +524,6 @@ Lo regula DEC-021 y queda registrado en `docs/project/reviews/registro-ia.md`.
 - **R-02 (Requirements v02), aceptada con cambios:** el agente pedía citar NFR-009 en US-015 y US-023. El equipo lo añadió también en US-001, US-003, US-006, US-012 y US-017, para que las 8 historias de entonces lo citaran igual.
 - **IPR-v01-002 (Planning v01), aceptada con cambios:** en lugar de repartir de nuevo las horas, el equipo comprobó que no ganaba margen y añadió el estado AJUSTADO y la regla de contingencia de DEC-020.
 - **Registro de riesgos:** Gled cambió los responsables de RSK-07 y RSK-08 propuestos por la IA para que coincidieran con la página *Dependencias entre requisitos* de la Wiki.
-- **ProjectLibre v3:** el borrador del script usaba un calendario de lunes a viernes. Gled lo cambió a lunes a domingo, de 16:00 a 20:00, porque el reparto del Excel tiene historias con fechas en fin de semana (apartado 14.2).
 - **Excel v03:** el equipo revisó en su reunión las horas, el reparto de historias y las fechas que propuso la IA (acta en la Wiki); lo que cambió consta en el apartado 4 del registro.
 
 ## 18. Viabilidad y conclusiones
@@ -567,7 +566,7 @@ La planificación es **viable** y es la línea base del proyecto: etiqueta `entr
 | DEC-018 | Regla de tamaño de la DoR (excepción de dos iteraciones) y consenso siempre en una carta |
 | DEC-020 | Primera planificación por persona e iteración, regla de contingencia y tarifas por rol |
 | DEC-021 | Uso de la IA: agentes de Copilot, modo *Auto* y registro |
-| DEC-022 | ProjectLibre por sprints y por épicas, registro de riesgos y agente auditor (su decisión 1 la sustituye DEC-025) |
+| DEC-022 | ProjectLibre por sprints y por épicas, registro de riesgos y agente auditor (sus decisiones 2, 4 y 5 las sustituye DEC-025) |
 | DEC-025 | Mejoras tras la evaluación: horas reales, ceremonias en su día y hora, línea base *Must* + *Should* (18 historias), historias con fechas y reserva de imprevistos con coste |
 
 La lista completa, con contexto, justificación y quién decidió, está en la página *Registro de decisiones* de la Wiki.

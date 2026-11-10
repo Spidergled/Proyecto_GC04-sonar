@@ -49,7 +49,7 @@ Con `python generar_xml.py` (05/11/2026), frente a `excel-export-v03.md`:
 
 ## Decisiones de modelado
 
-1. **Duración real, no del sprint entero (sustituye a la decisión 1 de DEC-022).** Las reuniones duran lo que duran, en su día y hora, y las historias tienen las fechas de la hoja *Planificación*. Los recursos están al 100 % con una franja diaria en la que pueden trabajar; la dedicación semanal se comprueba en el Excel y en el script, porque ProjectLibre no tiene un límite semanal de horas.
+1. **Duración real, no del sprint entero (sustituye a la decisiones 2, 4 y 5 de DEC-022).** Las reuniones duran lo que duran, en su día y hora, y las historias tienen las fechas de la hoja *Planificación*. Los recursos están al 100 % con una franja diaria en la que pueden trabajar; la dedicación semanal se comprueba en el Excel y en el script, porque ProjectLibre no tiene un límite semanal de horas.
 2. **Ausencias** en el calendario de cada persona: se quita de su franja del día el número de horas de la ausencia. La de Gled del 28/11 es sábado y también se descuenta.
 3. **Daily y coordinación repartidas en el sprint:** son asíncronas o continuas, no reuniones. ProjectLibre 1.9.3 no importa tareas periódicas desde XML.
 4. **Reserva de imprevistos como tarea con coste**, una por sprint, en vez de quedar solo descontada de la capacidad.
