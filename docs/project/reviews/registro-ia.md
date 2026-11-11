@@ -111,6 +111,7 @@ Lanzado por Gled sobre `main`, commit `16913c1` (merge de la PR #17, con los XML
 | 05/11/2026 | Claude (chat de claude.ai) | Revisión del informe del Trabajo 1 v2 frente a los comentarios del profesor y a los 15 puntos de «Planificación Práctica 1» | El equipo lo revisó antes de la entrega de la reevaluación | Sin cambios |
 | 11/11/2026 | Claude (chat de claude.ai) | TK-005: pruebas de aceptación de US-001 (AceptacionUS001Test) | José revisó las pruebas frente a los criterios de US-001 y las ejecutó: 11 en verde | Sin cambios |
 | 11/11/2026 | Claude (chat de claude.ai) | TK-011: inicio y cierre de sesión en servidor, bloqueo tras 5 intentos y caducidad por inactividad (AccesoService, SesionUsuario) | José revisó el código frente a US-003 y lo ejecutó con mvnw verify: en verde | Sin cambios |
+| 11/11/2026 | Claude (chat de claude.ai) | TK-013: pruebas de aceptación de US-003 (AceptacionUS003Test) | José revisó las pruebas frente a los criterios de US-003 y las ejecutó: 6 en verde | Sin cambios |
 
 ## 5. Cambios del equipo sobre las propuestas de la IA
 
