@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi panel · ErasmusNest</title>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 32rem; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; }
+        .campo { margin-bottom: 1.25rem; }
+        label { display: block; font-weight: 600; margin-bottom: .25rem; }
+        input { width: 100%; padding: .5rem; font-size: 1rem; border: 2px solid #555; border-radius: 4px; box-sizing: border-box; }
+        input:focus, button:focus, a:focus { outline: 3px solid #1d4ed8; outline-offset: 2px; }
+        .error { border: 2px solid #b00020; color: #b00020; font-weight: 600; padding: .75rem 1rem; margin-bottom: 1.5rem; }
+        .aviso { border: 2px solid #8a5a00; background: #fff8e5; padding: .75rem 1rem; margin-bottom: 1.5rem; }
+        .ok { border: 2px solid #1b6e2a; background: #eefaf0; padding: .75rem 1rem; margin-bottom: 1.5rem; }
+        button { padding: .6rem 1.2rem; font-size: 1rem; background: #1d4ed8; color: #fff; border: 0; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Mi panel</h1>
+    <p>Has iniciado sesión como <strong th:text="${email}">correo</strong>.</p>
+
+    <!-- RN-02: una cuenta no verificada puede entrar, pero con acciones limitadas -->
+    <div class="aviso" role="status" th:unless="${verificada}">
+        <p>Tu cuenta está pendiente de verificar. Hasta que abras el enlace que te hemos enviado a tu correo institucional, no podrás publicar anuncios ni contactar con otros estudiantes.</p>
+    </div>
+    <p th:if="${verificada}">Tu cuenta está verificada.</p>
+
+    <form th:action="@{/logout}" method="post">
+        <button type="submit">Cerrar sesión</button>
+    </form>
+</main>
+</body>
+</html>
