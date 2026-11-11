@@ -1,5 +1,6 @@
 package es.unex.gc04.erasmusnest.verificacion;
 
+import es.unex.gc04.erasmusnest.correo.EnvioCorreo;
 import es.unex.gc04.erasmusnest.usuario.Usuario;
 import es.unex.gc04.erasmusnest.usuario.UsuarioRepository;
 import java.security.SecureRandom;
@@ -9,12 +10,13 @@ import java.util.Base64;
 import java.util.List;
 import java.util.Locale;
 import java.util.Optional;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * Enlace de verificación único y caducidad de 24 h (TK-006, US-002, RN-03).
- * El envío por correo lo añade TK-008.
+ * Enlace de verificación único y caducidad de 24 h (TK-006, US-002, RN-03),
+ * enviado al buzón de pruebas (TK-008, TD-02, US-002-AC-01).
  */
 @Service
 public class VerificacionService {
@@ -22,17 +24,25 @@ public class VerificacionService {
     /** El enlace vale estrictamente menos de 24 h (caso límite de US-002). */
     static final Duration VALIDEZ = Duration.ofHours(24);
 
+    static final String ASUNTO = "Verifica tu cuenta de ErasmusNest";
+
     private static final SecureRandom ALEATORIO = new SecureRandom();
 
     private final TokenVerificacionRepository tokens;
     private final UsuarioRepository usuarios;
+    private final EnvioCorreo correo;
+    private final String urlBase;
 
-    public VerificacionService(TokenVerificacionRepository tokens, UsuarioRepository usuarios) {
+    public VerificacionService(TokenVerificacionRepository tokens, UsuarioRepository usuarios,
+                               EnvioCorreo correo,
+                               @Value("${app.url-base:http://localhost:8080}") String urlBase) {
         this.tokens = tokens;
         this.usuarios = usuarios;
+        this.correo = correo;
+        this.urlBase = urlBase.endsWith("/") ? urlBase.substring(0, urlBase.length() - 1) : urlBase;
     }
 
-    /** Emite un enlace nuevo e invalida los anteriores: solo vale el último. Devuelve el token. */
+    /** Emite un enlace nuevo, invalida los anteriores y lo envía por correo. Devuelve el token. */
     @Transactional
     public String emitirEnlace(Usuario usuario) {
         return emitirEnlace(usuario, Instant.now());
@@ -45,7 +55,20 @@ public class VerificacionService {
 
         String valor = generarValor();
         tokens.save(new TokenVerificacion(valor, usuario.getId(), ahora));
+        correo.enviar(usuario.getEmail(), ASUNTO, cuerpoDelCorreo(valor));
         return valor;
+    }
+
+    String enlace(String token) {
+        return urlBase + "/verificar?token=" + token;
+    }
+
+    private String cuerpoDelCorreo(String token) {
+        return "Hola:\n\n"
+                + "Para verificar tu cuenta de ErasmusNest, abre este enlace. Caduca en 24 horas "
+                + "y solo se puede usar una vez:\n\n"
+                + enlace(token) + "\n\n"
+                + "Si no te has registrado en ErasmusNest, ignora este mensaje.";
     }
 
     /** Abre un enlace: verifica la cuenta del enlace (no la de la sesión) si es válido. */

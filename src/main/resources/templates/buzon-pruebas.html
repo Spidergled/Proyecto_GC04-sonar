@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buzón de pruebas · ErasmusNest</title>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 48rem; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; }
+        article { border: 1px solid #555; border-radius: 4px; padding: .75rem 1rem; margin-bottom: 1rem; }
+        pre { white-space: pre-wrap; word-break: break-all; font-family: inherit; }
+        .meta { color: #444; font-size: .9rem; }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Buzón de pruebas</h1>
+    <p>Correos generados por la aplicación. No se envía ningún correo real (EXT-02).</p>
+    <p th:if="${#lists.isEmpty(mensajes)}">No hay correos todavía.</p>
+    <article th:each="m : ${mensajes}">
+        <h2 th:text="${m.asunto()}">Asunto</h2>
+        <p class="meta">Para: <span th:text="${m.para()}"></span> · <span th:text="${m.enviado()}"></span></p>
+        <pre th:text="${m.cuerpo()}"></pre>
+    </article>
+</main>
+</body>
+</html>
