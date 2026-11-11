@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iniciar sesión · ErasmusNest</title>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 32rem; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; }
+        .campo { margin-bottom: 1.25rem; }
+        label { display: block; font-weight: 600; margin-bottom: .25rem; }
+        input { width: 100%; padding: .5rem; font-size: 1rem; border: 2px solid #555; border-radius: 4px; box-sizing: border-box; }
+        input:focus, button:focus, a:focus { outline: 3px solid #1d4ed8; outline-offset: 2px; }
+        .error { border: 2px solid #b00020; color: #b00020; font-weight: 600; padding: .75rem 1rem; margin-bottom: 1.5rem; }
+        .aviso { border: 2px solid #8a5a00; background: #fff8e5; padding: .75rem 1rem; margin-bottom: 1.5rem; }
+        .ok { border: 2px solid #1b6e2a; background: #eefaf0; padding: .75rem 1rem; margin-bottom: 1.5rem; }
+        button { padding: .6rem 1.2rem; font-size: 1rem; background: #1d4ed8; color: #fff; border: 0; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Iniciar sesión</h1>
+
+    <div class="ok" role="status" th:if="${aviso}" th:text="${aviso}"></div>
+    <!-- Mensaje genérico: no indica si falla el correo o la contraseña (US-003-AC-01) -->
+    <div class="error" role="alert" id="error-login" th:if="${error}" th:text="${error}" tabindex="-1"></div>
+
+    <form th:action="@{/login}" method="post">
+        <div class="campo">
+            <label for="email">Correo institucional</label>
+            <input type="email" id="email" name="email" th:value="${email}" autocomplete="username" required
+                   th:attr="aria-describedby=${error} ? 'error-login' : null">
+        </div>
+        <div class="campo">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" autocomplete="current-password" required
+                   th:attr="aria-describedby=${error} ? 'error-login' : null">
+        </div>
+        <button type="submit">Iniciar sesión</button>
+    </form>
+    <p>¿No tienes cuenta? <a th:href="@{/registro}">Regístrate con tu correo institucional</a></p>
+</main>
+<script>
+    var error = document.getElementById('error-login');
+    if (error) { error.focus(); }
+</script>
+</body>
+</html>
