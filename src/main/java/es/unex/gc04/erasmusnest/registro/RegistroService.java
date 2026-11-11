@@ -2,6 +2,7 @@ package es.unex.gc04.erasmusnest.registro;
 
 import es.unex.gc04.erasmusnest.usuario.Usuario;
 import es.unex.gc04.erasmusnest.usuario.UsuarioRepository;
+import es.unex.gc04.erasmusnest.verificacion.VerificacionService;
 import java.util.LinkedHashMap;
 import java.util.Locale;
 import java.util.Map;
@@ -29,13 +30,16 @@ public class RegistroService {
     private final UsuarioRepository usuarios;
     private final PasswordEncoder encoder;
     private final String dominio;
+    private final VerificacionService verificacion;
 
     public RegistroService(UsuarioRepository usuarios,
                            PasswordEncoder encoder,
-                           @Value("${app.registro.dominio-institucional}") String dominio) {
+                           @Value("${app.registro.dominio-institucional}") String dominio,
+                           VerificacionService verificacion) {
         this.usuarios = usuarios;
         this.encoder = encoder;
         this.dominio = dominio.trim().toLowerCase(Locale.ROOT);
+        this.verificacion = verificacion;
     }
 
     public ResultadoRegistro registrar(RegistroForm form) {
@@ -68,8 +72,9 @@ public class RegistroService {
         }
 
         try {
-            usuarios.saveAndFlush(new Usuario(email, encoder.encode(password)));
-            // US-002 (TK-006 y TK-008) enganchará aquí el envío de la verificación (AC-04).
+            Usuario nuevo = usuarios.saveAndFlush(new Usuario(email, encoder.encode(password)));
+            // US-001-AC-04: un registro válido dispara la verificación (US-002, TK-006)
+            verificacion.emitirEnlace(nuevo);
         } catch (DataIntegrityViolationException dobleEnvio) {
             // Doble clic: la restricción única impide la segunda cuenta.
         }
