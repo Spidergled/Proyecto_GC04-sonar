@@ -85,8 +85,11 @@ tres tengan una carga similar; el reparto queda anotado en el acta.
     Projects hasta que se adopte Jira): Por hacer / En curso / Revisión /
     Hecho. El límite de trabajo en curso es de una tarea principal activa
     por persona.
-15. Ningún cambio se integra en `main` sin una pull request revisada y aprobada
-    por un miembro distinto de su autor (0 *push* directos a `main`), y ninguna
+15. Ningún cambio se integra en `develop` ni en `main` sin una pull request
+    revisada y aprobada por un miembro distinto de su autor (0 *push* directos
+    a `develop` ni a `main`). Cada historia se desarrolla en su rama
+    `feature/` creada desde Jira y se integra en `develop`; `develop` se
+    integra en `main` al cerrar cada release (GitFlow, DEC-024). Ninguna
     historia se da por terminada sin cumplir la Definition of Done
     (`docs/quality/definition-of-done.md`) y los principios de `constitution.md`.
 16. El entorno oficial para compartir documentación e información del
