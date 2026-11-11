@@ -111,6 +111,7 @@ Lanzado por Gled sobre `main`, commit `16913c1` (merge de la PR #17, con los XML
 | 05/11/2026 | Claude (chat de claude.ai) | Revisión del informe del Trabajo 1 v2 frente a los comentarios del profesor y a los 15 puntos de «Planificación Práctica 1» | El equipo lo revisó antes de la entrega de la reevaluación | Sin cambios |
 | 11/11/2026 | Claude (chat de claude.ai) | TK-005: pruebas de aceptación de US-0 | (AceptacionUS001Test) | José revisó las pruebas frente a los criterios de US-001 y las ejecutó: 11 en verde | Sin cambios |
 | 11/11/2026 | Claude (chat de claude.ai) | TK-006: enlace de verificación único y caducidad de 24 h (VerificacionService, TokenVerificacion) | José revisó el código frente a US-002 y RN-03 y lo ejecutó con mvnw verify: en verde | Sin cambios |
+| 11/11/2026 | Claude (chat de claude.ai) | TK-010: pruebas de aceptación de US-002 (AceptacionUS002Test) | José revisó las pruebas frente a los criterios de US-002 y las ejecutó: 8 en verde | Sin cambios |
 
 ## 5. Cambios del equipo sobre las propuestas de la IA
 
