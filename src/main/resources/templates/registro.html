@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crear cuenta · ErasmusNest</title>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 32rem; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; }
+        .campo { margin-bottom: 1.25rem; }
+        label { display: block; font-weight: 600; margin-bottom: .25rem; }
+        input { width: 100%; padding: .5rem; font-size: 1rem; border: 2px solid #555; border-radius: 4px; box-sizing: border-box; }
+        input:focus, button:focus { outline: 3px solid #1d4ed8; outline-offset: 2px; }
+        input[aria-invalid="true"] { border-color: #b00020; }
+        .ayuda { font-size: .9rem; color: #444; margin: .25rem 0 0; }
+        .error { color: #b00020; font-weight: 600; margin: .25rem 0 0; }
+        .resumen { border: 2px solid #b00020; padding: .75rem 1rem; margin-bottom: 1.5rem; }
+        button { padding: .6rem 1.2rem; font-size: 1rem; background: #1d4ed8; color: #fff; border: 0; border-radius: 4px; cursor: pointer; }
+        button[disabled] { background: #555; }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Crear cuenta</h1>
+    <p>Regístrate con tu correo institucional de la UEx.</p>
+
+    <!-- Resumen de errores, anunciado por los lectores de pantalla (NFR-004) -->
+    <div class="resumen" role="alert" th:if="${errores != null and !errores.isEmpty()}" tabindex="-1" id="resumen-errores">
+        <p><strong>No se ha podido crear la cuenta. Revisa los campos marcados.</strong></p>
+    </div>
+
+    <form th:action="@{/registro}" th:object="${form}" method="post" novalidate id="form-registro">
+
+        <div class="campo">
+            <label for="email">Correo institucional</label>
+            <input type="email" id="email" name="email" th:value="*{email}" autocomplete="email" required
+                   th:attr="aria-invalid=${errores != null and errores.containsKey('email')},
+                            aria-describedby=${errores != null and errores.containsKey('email')} ? 'email-error' : 'email-ayuda'">
+            <p class="ayuda" id="email-ayuda">Por ejemplo, nombre@alumnos.unex.es</p>
+            <p class="error" id="email-error" th:if="${errores != null and errores.containsKey('email')}"
+               th:text="${errores['email']}"></p>
+        </div>
+
+        <div class="campo">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" autocomplete="new-password" required
+                   th:attr="aria-invalid=${errores != null and errores.containsKey('password')},
+                            aria-describedby=${errores != null and errores.containsKey('password')} ? 'password-ayuda password-error' : 'password-ayuda'">
+            <p class="ayuda" id="password-ayuda">Al menos 8 caracteres, con una letra y un número.</p>
+            <p class="error" id="password-error" th:if="${errores != null and errores.containsKey('password')}"
+               th:text="${errores['password']}"></p>
+        </div>
+
+        <div class="campo">
+            <label for="confirmacion">Repite la contraseña</label>
+            <input type="password" id="confirmacion" name="confirmacion" autocomplete="new-password" required
+                   th:attr="aria-invalid=${errores != null and errores.containsKey('confirmacion')},
+                            aria-describedby=${errores != null and errores.containsKey('confirmacion')} ? 'confirmacion-error' : null">
+            <p class="error" id="confirmacion-error" th:if="${errores != null and errores.containsKey('confirmacion')}"
+               th:text="${errores['confirmacion']}"></p>
+        </div>
+
+        <button type="submit" id="boton-registro">Registrarse</button>
+    </form>
+</main>
+<script>
+    // Doble clic en «Registrarse»: se desactiva el botón tras el primer envío (caso límite de US-001)
+    document.getElementById('form-registro').addEventListener('submit', function () {
+        document.getElementById('boton-registro').disabled = true;
+    });
+    // Lleva el foco al resumen de errores para que se lea primero
+    var resumen = document.getElementById('resumen-errores');
+    if (resumen) { resumen.focus(); }
+</script>
+</body>
+</html>
