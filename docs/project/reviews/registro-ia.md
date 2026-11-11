@@ -109,7 +109,8 @@ Lanzado por Gled sobre `main`, commit `16913c1` (merge de la PR #17, con los XML
 | 02/11/2026 | Claude (chat de claude.ai) | ProjectLibre v2: `generar_xml.py` y los dos XML con reuniones en su día y hora, historias con su duración real y tarea de reserva por sprint, probado con las cifras de la versión 1 (la v03 aún no existía) | Gled (TL) revisó la prueba: con 5 h/semana el reparto no cabía, y eso llevó a revisar las horas reales en la v03 (PR #25) | Sin cambios |
 | 05/11/2026 | Claude (chat de claude.ai) | ProjectLibre v3: XML generados con las cifras de la v03, comprobación del script frente a `excel-export-v03.md` y `LEEME.md` v3 | Gled (TL) importó los XML, guardó los `.pod` con línea base y exportó el Gantt (PR #27). Comprobó que el trabajo (123,68 h) y el coste (4.368,32 €) coinciden con el Excel | Sin cambios |
 | 05/11/2026 | Claude (chat de claude.ai) | Revisión del informe del Trabajo 1 v2 frente a los comentarios del profesor y a los 15 puntos de «Planificación Práctica 1» | El equipo lo revisó antes de la entrega de la reevaluación | Sin cambios |
-| 11/11/2026 | Claude (chat de claude.ai) | TK-005: pruebas de aceptación de US-0 | (AceptacionUS001Test) | José revisó las pruebas frente a los criterios de US-001 y las ejecutó: 11 en verde | Sin cambios |
+| 11/11/2026 | Claude (chat de claude.ai) | TK-005: pruebas de aceptación de US-001 (AceptacionUS001Test) | José revisó las pruebas frente a los criterios de US-001 y las ejecutó: 11 en verde | Sin cambios |
+| 11/11/2026 | Claude (chat de claude.ai) | TK-011: inicio y cierre de sesión en servidor, bloqueo tras 5 intentos y caducidad por inactividad (AccesoService, SesionUsuario) | José revisó el código frente a US-003 y lo ejecutó con mvnw verify: en verde | Sin cambios |
 
 ## 5. Cambios del equipo sobre las propuestas de la IA
 
