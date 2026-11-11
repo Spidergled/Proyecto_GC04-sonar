@@ -1,0 +1,16 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Base de datos H2 local
+data/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.code-workspace
+
+# Sistema
+.DS_Store
+Thumbs.db
