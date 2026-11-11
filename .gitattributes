@@ -1,0 +1,3 @@
+# mvnw tiene que conservar LF para ejecutarse en Linux (CI); mvnw.cmd, CRLF en Windows
+mvnw text eol=lf
+*.cmd text eol=crlf
