@@ -114,6 +114,8 @@ Lanzado por Gled sobre `main`, commit `16913c1` (merge de la PR #17, con los XML
 | 11/11/2026 | Claude (chat de claude.ai) | TK-010: pruebas de aceptación de US-002 (AceptacionUS002Test) | José revisó las pruebas frente a los criterios de US-002 y las ejecutó: 8 en verde | Sin cambios |
 | 11/11/2026 | Claude (chat de claude.ai) | TK-011: inicio y cierre de sesión en servidor, bloqueo tras 5 intentos y caducidad por inactividad (AccesoService, SesionUsuario) | José revisó el código frente a US-003 y lo ejecutó con mvnw verify: en verde | Sin cambios |
 | 11/11/2026 | Claude (chat de claude.ai) | TK-013: pruebas de aceptación de US-003 (AceptacionUS003Test) | José revisó las pruebas frente a los criterios de US-003 y las ejecutó: 6 en verde | Sin cambios |
+| 11/11/2026 | Claude (chat de claude.ai), dos asistentes | TK-001 a TK-003: esqueleto Spring Boot, CI, modelo de usuario con BCrypt y validación en servidor de US-001 | Gled (TL) comparó la versión de su asistente con la del asistente de Hugo, la compiló y ejecutó las pruebas (14 en verde) | Se quedó con la versión de su asistente (probada, en la raíz y con Maven Wrapper) en lugar de la de Hugo (en subcarpeta y sin compilar). Adaptó TK-002 y TK-003 a los nombres en español para no cambiar TK-004 y TK-005, y corrigió un fallo de las pruebas, que dejaban cuentas guardadas y rompían las del modelo de usuario |
+| 11/11/2026 | Claude (chat de claude.ai) | TK-008: componente de envío de correo con buzón de pruebas en memoria (EnvioCorreo, BuzonPruebas, /buzon-pruebas) | Gled (TL) lo revisó frente a TD-02 y EXT-02 y ejecutó mvnw verify: en verde | Sin cambios |
 
 ## 5. Cambios del equipo sobre las propuestas de la IA
 
@@ -123,3 +125,5 @@ Ninguna propuesta se aplica sin revisarla, y en varias el equipo se quedó con u
 - **IPR-v01-002 (Planning v01):** no repartimos de nuevo las horas, porque comprobamos que no se ganaba margen. En su lugar añadimos el estado AJUSTADO en el Excel y la regla de contingencia de DEC-020.
 - **Registro de riesgos:** Gled cambió los responsables de RSK-07 y RSK-08 que proponía la IA para que coincidieran con *Dependencias entre requisitos* de la Wiki.
 - **Dedicación en la v03:** la IA propuso el 02/11 7, 8 y 9 h a la semana. El equipo dejó a Gled en 7 h, igual que Hugo, porque también cursa otras 5 asignaturas.
+- **Código de US-001 (Trabajo 3):** había dos versiones generadas con IA, la del asistente de Gled y la del de Hugo. El TL eligió la de Gled porque estaba en la raíz, con Maven Wrapper y ya probada, adoptó los nombres en español de Hugo en TK-002 y TK-003 y corrigió las pruebas que dejaban cuentas guardadas (perfil `test` y limpieza después de cada prueba).
+- **Buzón de pruebas en memoria (TK-008):** DEC-024 preveía Mailpit para los correos de verificación. Se usó un buzón en memoria con la página `/buzon-pruebas`, que no exige instalar nada en los equipos ni en el CI y cumple igual RN-03 y NFR-009.
