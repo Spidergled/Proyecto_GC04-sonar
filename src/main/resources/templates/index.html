@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es" th:lang="${#locale.language}" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title th:text="#{app.name}">ErasmusNest</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+</head>
+<body>
+<main>
+    <h1 th:text="#{home.title}">ErasmusNest</h1>
+    <p th:text="#{home.tagline}">Alojamiento entre estudiantes Erasmus</p>
+    <p class="status" th:text="#{home.status}">Esqueleto del proyecto en marcha.</p>
+</main>
+</body>
+</html>

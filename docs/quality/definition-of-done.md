@@ -25,7 +25,7 @@ Una historia está **Hecha** cuando cumple todas las condiciones aplicables de e
 
 ## Integración
 
-- [ ] El cambio está integrado en la rama `main` mediante una pull request.
+- [ ] El cambio está integrado en la rama `develop` mediante una pull request con merge commit (sin *squash* ni *rebase*); `develop` se integra en `main` al cerrar cada release (GitFlow, DEC-024).
 - [ ] La pull request la ha revisado y aprobado al menos **otro miembro** del equipo, distinto de quien la implementó.
 - [ ] La versión integrada se instala y arranca siguiendo el guion de instalación (G-04).
 - [ ] El cambio no introduce regresiones críticas conocidas.
@@ -39,7 +39,7 @@ Una historia está **Hecha** cuando cumple todas las condiciones aplicables de e
 
 ## Documentación y trazabilidad
 
-- [ ] Los commits y la pull request mencionan el identificador de la historia (`US-XXX`) o de la tarea (`TK-XXX`).
+- [ ] Cada commit es un smart commit con la clave de Jira de su subtarea (`GC04GPS26-n`), con `#time` y `#comment`; la rama y la pull request llevan la clave de la historia.
 - [ ] La documentación técnica o de usuario está actualizada si procede, incluido el guion de instalación.
 - [ ] Las decisiones o desviaciones relevantes están registradas en la Wiki.
 
