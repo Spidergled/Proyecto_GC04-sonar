@@ -120,6 +120,7 @@ Lanzado por Gled sobre `main`, commit `16913c1` (merge de la PR #17, con los XML
 | 11/11/2026 | Claude (chat de claude.ai) | TK-007: bloqueo de publicar y contactar sin verificar y pantalla de cuenta pendiente (ControlVerificacion, cuenta-pendiente.html) | Hugo lo revisó frente a RN-02 y US-002-AC-04 y ejecutó mvnw verify: en verde | Sin cambios |
 | 11/11/2026 | Claude (chat de claude.ai) | TK-009: pantallas de verificación correcta, caducada o usada y no válida, y botón de reenvío (VerificacionController) | Hugo recorrió en el navegador el enlace válido, reutilizado y manipulado, y ejecutó mvnw verify: en verde | Sin cambios |
 | 11/11/2026 | Claude (chat de claude.ai) | TK-012: pantallas de inicio y cierre de sesión y panel sin caché (SesionController, login.html, panel.html) | Hugo probó el acceso, el error genérico y el cierre de sesión con la flecha atrás, y ejecutó mvnw verify: en verde | Sin cambios en el código. El primer commit subió por error el fichero de TK-013; se corrigió con un segundo commit sin reescribir el historial |
+
 ## 5. Cambios del equipo sobre las propuestas de la IA
 
 Ninguna propuesta se aplica sin revisarla, y en varias el equipo se quedó con una solución distinta de la que proponía la IA:
@@ -130,3 +131,4 @@ Ninguna propuesta se aplica sin revisarla, y en varias el equipo se quedó con u
 - **Dedicación en la v03:** la IA propuso el 02/11 7, 8 y 9 h a la semana. El equipo dejó a Gled en 7 h, igual que Hugo, porque también cursa otras 5 asignaturas.
 - **Código de US-001 (Trabajo 3):** había dos versiones generadas con IA, la del asistente de Gled y la del de Hugo. El TL eligió la de Gled porque estaba en la raíz, con Maven Wrapper y ya probada, adoptó los nombres en español de Hugo en TK-002 y TK-003 y corrigió las pruebas que dejaban cuentas guardadas (perfil `test` y limpieza después de cada prueba).
 - **Buzón de pruebas en memoria (TK-008):** DEC-024 preveía Mailpit para los correos de verificación. Se usó un buzón en memoria con la página `/buzon-pruebas`, que no exige instalar nada en los equipos ni en el CI y cumple igual RN-03 y NFR-009.
+- **Transición de los smart commits:** un asistente propuso #listo porque Jira muestra la transición traducida como «Listo», pero solo registraba el tiempo y el comentario. El otro propuso #done, el nombre interno, y con TK-004 se comprobó que cierra la subtarea. Desde TK-004 se usa #done; TK-001 a TK-003 se cerraron a mano.
