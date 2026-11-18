@@ -22,6 +22,8 @@
         <sonar.organization>spidergled</sonar.organization>
         <sonar.projectKey>Spidergled_Proyecto_GC04-sonar</sonar.projectKey>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <!-- Incluye las plantillas Thymeleaf en el análisis (aviso "Some thymeleaf templates are not indexed") -->
+        <sonar.sources>pom.xml,src/main/java,src/main/resources</sonar.sources>
     </properties>
 
     <dependencies>
