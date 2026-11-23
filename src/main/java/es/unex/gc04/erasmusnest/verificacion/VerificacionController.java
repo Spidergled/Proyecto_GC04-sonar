@@ -31,15 +31,17 @@ public class VerificacionController {
     public String abrirEnlace(@RequestParam(name = "token", required = false) String token, Model model) {
         ResultadoVerificacion resultado = verificacion.verificar(token);
         switch (resultado) {
-            case VERIFICADA:
+            case VERIFICADA -> {
                 return VISTA_CORRECTA;
-            case CADUCADO:
-            case YA_USADO:
+            }
+            case CADUCADO, YA_USADO -> {
                 model.addAttribute("aviso", resultado == ResultadoVerificacion.CADUCADO ? AVISO_CADUCADO : AVISO_USADO);
                 model.addAttribute("token", token);
                 return VISTA_CADUCADA;
-            default:
+            }
+            default -> {
                 return VISTA_NO_VALIDA; // «Enlace no válido», sin más detalles
+            }
         }
     }
 
