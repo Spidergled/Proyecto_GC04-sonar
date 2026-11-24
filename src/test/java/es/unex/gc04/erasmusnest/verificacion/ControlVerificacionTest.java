@@ -39,7 +39,7 @@ class ControlVerificacionTest {
         String vista = new CuentaPendienteController().cuentaPendiente(model);
 
         assertThat(vista).isEqualTo("cuenta-pendiente");
-        assertThat(model.get("motivo")).isEqualTo(CuentaNoVerificadaException.MOTIVO);
+        assertThat(model).containsEntry("motivo", CuentaNoVerificadaException.MOTIVO);
     }
 
     @Test
