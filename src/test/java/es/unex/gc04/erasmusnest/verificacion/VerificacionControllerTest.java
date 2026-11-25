@@ -51,7 +51,7 @@ class VerificacionControllerTest {
         ExtendedModelMap model = new ExtendedModelMap();
 
         assertThat(controller.abrirEnlace(token, model)).isEqualTo("verificacion-caducada");
-        assertThat(model.get("aviso")).isEqualTo("Este enlace ya se ha usado");
+        assertThat(model).containsEntry("aviso", "Este enlace ya se ha usado");
         assertThat(model.get("token")).isEqualTo(token);
     }
 
