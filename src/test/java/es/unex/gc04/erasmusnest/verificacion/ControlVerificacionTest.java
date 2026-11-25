@@ -50,6 +50,6 @@ class ControlVerificacionTest {
                 .cuentaNoVerificada(new CuentaNoVerificadaException(), model);
 
         assertThat(vista).isEqualTo("cuenta-pendiente");
-        assertThat(model.get("motivo")).isEqualTo(CuentaNoVerificadaException.MOTIVO);
+        assertThat(model).containsEntry("motivo", CuentaNoVerificadaException.MOTIVO);
     }
 }
